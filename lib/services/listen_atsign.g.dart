@@ -6,7 +6,7 @@ part of 'listen_atsign.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$atSignStreamHash() => r'd121bd614228bb8b792af689cecc4308620ff4e7';
+String _$atSignStreamHash() => r'dea2f700b0c92418e31351f4a5e6056afbf37015';
 
 /// Provider to listen to any changes of any FHIR resources
 ///
@@ -24,7 +24,7 @@ final atSignStreamProvider = AutoDisposeNotifierProvider<AtSignStream,
 
 typedef _$AtSignStream = AutoDisposeNotifier<StreamSubscription<dynamic>>;
 String _$atSignResourceTypeStreamHash() =>
-    r'73bfaa9a086429a987b521db993abe57baf8630c';
+    r'9778835791bf694b37ea2890661bf131a910824e';
 
 /// Copied from Dart SDK
 class _SystemHash {
