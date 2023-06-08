@@ -40,22 +40,22 @@ abstract class _$AtNotify
   );
 }
 
-/// Provider to listen to any changes of any FHIR resources
+/// Provider to notify a specific atSign
 ///
 /// Copied from [AtNotify].
 @ProviderFor(AtNotify)
 const atNotifyProvider = AtNotifyFamily();
 
-/// Provider to listen to any changes of any FHIR resources
+/// Provider to notify a specific atSign
 ///
 /// Copied from [AtNotify].
 class AtNotifyFamily extends Family<AsyncValue<NotificationResult>> {
-  /// Provider to listen to any changes of any FHIR resources
+  /// Provider to notify a specific atSign
   ///
   /// Copied from [AtNotify].
   const AtNotifyFamily();
 
-  /// Provider to listen to any changes of any FHIR resources
+  /// Provider to notify a specific atSign
   ///
   /// Copied from [AtNotify].
   AtNotifyProvider call(
@@ -93,12 +93,12 @@ class AtNotifyFamily extends Family<AsyncValue<NotificationResult>> {
   String? get name => r'atNotifyProvider';
 }
 
-/// Provider to listen to any changes of any FHIR resources
+/// Provider to notify a specific atSign
 ///
 /// Copied from [AtNotify].
 class AtNotifyProvider
     extends AutoDisposeAsyncNotifierProviderImpl<AtNotify, NotificationResult> {
-  /// Provider to listen to any changes of any FHIR resources
+  /// Provider to notify a specific atSign
   ///
   /// Copied from [AtNotify].
   AtNotifyProvider(
@@ -147,22 +147,4 @@ class AtNotifyProvider
     );
   }
 }
-
-String _$atSubscribeHash() => r'2fd364a78b289b31e33019980c98fb4303e8bb96';
-
-/// Provider to listen to any changes of any FHIR resources
-///
-/// Copied from [AtSubscribe].
-@ProviderFor(AtSubscribe)
-final atSubscribeProvider =
-    AutoDisposeStreamNotifierProvider<AtSubscribe, AtNotification>.internal(
-  AtSubscribe.new,
-  name: r'atSubscribeProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$atSubscribeHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
-
-typedef _$AtSubscribe = AutoDisposeStreamNotifier<AtNotification>;
 // ignore_for_file: unnecessary_raw_strings, subtype_of_sealed_class, invalid_use_of_internal_member, do_not_use_environment, prefer_const_constructors, public_member_api_docs, avoid_private_typedef_functions

@@ -7,6 +7,7 @@ import 'package:fhir/stu3.dart' as stu3;
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'at_fhir_object.freezed.dart';
+part 'at_fhir_object.g.dart';
 
 /// A class that creates the bridge between storing FHIR data on an atSign and
 /// using it in a Dart class (and includes some convenience methods), basic
@@ -191,6 +192,21 @@ class AtFhirObject with _$AtFhirObject {
       atFhirResource: jsonEncode(newResource.toJson()),
       isOperationOutcome: resource is r5.OperationOutcome,
     );
+  }
+
+  factory AtFhirObject.fromJson(Map<String, dynamic> json) =>
+      _$AtFhirObjectFromJson(json);
+
+  /// Acts like a constructor, returns a [AtDstu2FhirRequest], accepts a
+  /// [String] as an argument, mostly because I got tired of typing it out
+  factory AtFhirObject.fromJsonString(String source) {
+    final dynamic json = jsonDecode(source);
+    if (json is Map<String, dynamic>) {
+      return _$AtFhirObjectFromJson(json);
+    } else {
+      throw FormatException('FormatException:\nYou passed $json\n'
+          'This does not properly decode to a Map<String,dynamic>.');
+    }
   }
 
   /// Changes the entry back to a FHIR resource

@@ -1,50 +1,49 @@
 import 'dart:convert';
 
-import 'package:fhir/dstu2.dart';
-import 'package:fhir_at_rest/dstu2.dart';
+import 'package:fhir/stu3.dart';
+import 'package:fhir_at_rest/stu3.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../at_fhir_request_method.dart';
 import '../at_fhir_requests.dart';
 
-part 'at_dstu2_fhir_request.freezed.dart';
-part 'at_dstu2_fhir_request.g.dart';
+part 'at_stu3_fhir_request.freezed.dart';
+part 'at_stu3_fhir_request.g.dart';
 
 @freezed
-class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
-  const AtDstu2FhirRequest._();
+class AtStu3FhirRequest with AtFhirRequest, _$AtStu3FhirRequest {
+  const AtStu3FhirRequest._();
 
-  const factory AtDstu2FhirRequest({
+  const factory AtStu3FhirRequest({
     required AtFhirRequestMethod method,
     required Uri url,
     @Default({}) Map<String, String> headers,
     Resource? resource,
-  }) = _AtDstu2FhirRequest;
+  }) = _AtStu3FhirRequest;
 
-  const factory AtDstu2FhirRequest.error({
+  const factory AtStu3FhirRequest.error({
     AtFhirRequestMethod? method,
     Uri? url,
     @Default({}) Map<String, String> headers,
     Resource? resource,
     required OperationOutcome operationOutcome,
-  }) = _AtDstu2RequestError;
+  }) = _AtStu3RequestError;
 
-  factory AtDstu2FhirRequest.fromJson(Map<String, dynamic> json) =>
-      _$AtDstu2FhirRequestFromJson(json);
+  factory AtStu3FhirRequest.fromJson(Map<String, dynamic> json) =>
+      _$AtStu3FhirRequestFromJson(json);
 
-  /// Acts like a constructor, returns a [AtDstu2FhirRequest], accepts a
+  /// Acts like a constructor, returns a [AtStu3FhirRequest], accepts a
   /// [String] as an argument, mostly because I got tired of typing it out
-  factory AtDstu2FhirRequest.fromJsonString(String source) {
+  factory AtStu3FhirRequest.fromJsonString(String source) {
     final dynamic json = jsonDecode(source);
     if (json is Map<String, dynamic>) {
-      return _$AtDstu2FhirRequestFromJson(json);
+      return _$AtStu3FhirRequestFromJson(json);
     } else {
       throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
 
-  factory AtDstu2FhirRequest.fromFhirRequest(
+  factory AtStu3FhirRequest.fromFhirRequest(
     FhirRequest request,
     Map<String, String> headers,
     String accept,
@@ -198,7 +197,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
 
     /// MAKE REQUEST
     /// where we finally and actually make the request to the outside server
-    AtDstu2FhirRequest _makeRequest({
+    AtStu3FhirRequest _makeRequest({
       required RestfulRequest type,
       required String thisRequest,
       Map<String, String>? headers,
@@ -216,7 +215,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
       switch (type) {
         case RestfulRequest.get_:
           {
-            return AtDstu2FhirRequest(
+            return AtStu3FhirRequest(
               method: AtFhirRequestMethod.get_,
               url: Uri.parse(thisRequest),
               headers: headers,
@@ -228,7 +227,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
                 mimeType == null || MimeTypeEnumMap[mimeType] == null
                     ? 'application/fhir+json'
                     : MimeTypeEnumMap[mimeType]!;
-            return AtDstu2FhirRequest(
+            return AtStu3FhirRequest(
               method: AtFhirRequestMethod.put,
               url: Uri.parse(thisRequest),
               headers: headers,
@@ -237,7 +236,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
           }
         case RestfulRequest.delete_:
           {
-            return AtDstu2FhirRequest(
+            return AtStu3FhirRequest(
               method: AtFhirRequestMethod.delete,
               url: Uri.parse(thisRequest),
               headers: headers,
@@ -250,7 +249,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
                     ? 'application/json-patch+json'
                     : MimeTypeEnumMap[mimeType]!;
 
-            return AtDstu2FhirRequest(
+            return AtStu3FhirRequest(
               method: AtFhirRequestMethod.patch,
               url: Uri.parse(thisRequest),
               headers: headers,
@@ -264,7 +263,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
                 : mimeType == null || MimeTypeEnumMap[mimeType] == null
                     ? 'application/fhir+json'
                     : MimeTypeEnumMap[mimeType]!;
-            return AtDstu2FhirRequest(
+            return AtStu3FhirRequest(
               method: AtFhirRequestMethod.post,
               url: Uri.parse(thisRequest),
               headers: headers,
@@ -274,7 +273,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
       }
     }
 
-    AtDstu2FhirRequest _request(
+    AtStu3FhirRequest _request(
       RestfulRequest type,
       String uri,
       Map<String, String>? headers,
@@ -328,8 +327,8 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
     OperationOutcome _operationOutcome(String issue, {String? diagnostics}) =>
         OperationOutcome(issue: <OperationOutcomeIssue>[
           OperationOutcomeIssue(
-            severity: IssueSeverity.error,
-            code: FhirCode('value'),
+            severity: OperationOutcomeIssueSeverity.error,
+            code: OperationOutcomeIssueCode.value,
             details: CodeableConcept(text: issue),
             diagnostics: diagnostics,
           )
@@ -436,7 +435,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
       /// TRANSACTION
       transaction: (FhirTransactionRequest request) {
         if (request.bundle.type.toString() != 'transaction') {
-          return AtDstu2FhirRequest.error(
+          return AtStu3FhirRequest.error(
             method: AtFhirRequestMethod.post,
             url: Uri.parse(uri(request: request)),
             headers: headers,
@@ -448,7 +447,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
         if (request.bundle.entry != null) {
           for (final BundleEntry entry in request.bundle.entry!) {
             if (entry.request == null) {
-              return AtDstu2FhirRequest.error(
+              return AtStu3FhirRequest.error(
                 method: AtFhirRequestMethod.post,
                 url: Uri.parse(uri(request: request)),
                 headers: headers,
@@ -458,7 +457,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
                     'the entries in this bundle is missing a request.'),
               );
             } else if (entry.request?.method == null) {
-              return AtDstu2FhirRequest.error(
+              return AtStu3FhirRequest.error(
                 method: AtFhirRequestMethod.post,
                 url: Uri.parse(uri(request: request)),
                 headers: headers,
@@ -486,7 +485,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
       /// BATCH
       batch: (FhirBatchRequest request) {
         if (request.bundle.type.toString() != 'batch') {
-          return AtDstu2FhirRequest.error(
+          return AtStu3FhirRequest.error(
             method: AtFhirRequestMethod.post,
             url: Uri.parse(uri(request: request)),
             headers: headers,
@@ -499,7 +498,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
         if (request.bundle.entry != null) {
           for (final BundleEntry entry in request.bundle.entry!) {
             if (entry.request == null) {
-              return AtDstu2FhirRequest.error(
+              return AtStu3FhirRequest.error(
                 method: AtFhirRequestMethod.post,
                 url: Uri.parse(uri(request: request)),
                 headers: headers,
@@ -509,7 +508,7 @@ class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
                     'the entries in this bundle is missing a request.'),
               );
             } else if (entry.request?.method == null) {
-              return AtDstu2FhirRequest.error(
+              return AtStu3FhirRequest.error(
                 method: AtFhirRequestMethod.post,
                 url: Uri.parse(uri(request: request)),
                 headers: headers,

@@ -4,13 +4,13 @@ import 'package:fhir/r4.dart';
 import 'package:fhir_at_rest/r4.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../at_fhir_request_method.dart';
+import '../at_fhir_requests.dart';
 
 part 'at_r4_fhir_request.freezed.dart';
 part 'at_r4_fhir_request.g.dart';
 
 @freezed
-class AtR4FhirRequest with _$AtR4FhirRequest {
+class AtR4FhirRequest with AtFhirRequest, _$AtR4FhirRequest {
   const AtR4FhirRequest._();
 
   const factory AtR4FhirRequest({

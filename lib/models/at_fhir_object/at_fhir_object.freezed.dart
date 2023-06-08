@@ -14,12 +14,17 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
+AtFhirObject _$AtFhirObjectFromJson(Map<String, dynamic> json) {
+  return _AtFhirObject.fromJson(json);
+}
+
 /// @nodoc
 mixin _$AtFhirObject {
   String get atKey => throw _privateConstructorUsedError;
   String get atFhirResource => throw _privateConstructorUsedError;
   bool get isOperationOutcome => throw _privateConstructorUsedError;
 
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $AtFhirObjectCopyWith<AtFhirObject> get copyWith =>
       throw _privateConstructorUsedError;
@@ -112,13 +117,16 @@ class __$$_AtFhirObjectCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
+@JsonSerializable()
 class _$_AtFhirObject extends _AtFhirObject {
   const _$_AtFhirObject(
       {required this.atKey,
       required this.atFhirResource,
       required this.isOperationOutcome})
       : super._();
+
+  factory _$_AtFhirObject.fromJson(Map<String, dynamic> json) =>
+      _$$_AtFhirObjectFromJson(json);
 
   @override
   final String atKey;
@@ -144,6 +152,7 @@ class _$_AtFhirObject extends _AtFhirObject {
                 other.isOperationOutcome == isOperationOutcome));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, atKey, atFhirResource, isOperationOutcome);
@@ -153,6 +162,13 @@ class _$_AtFhirObject extends _AtFhirObject {
   @pragma('vm:prefer-inline')
   _$$_AtFhirObjectCopyWith<_$_AtFhirObject> get copyWith =>
       __$$_AtFhirObjectCopyWithImpl<_$_AtFhirObject>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_AtFhirObjectToJson(
+      this,
+    );
+  }
 }
 
 abstract class _AtFhirObject extends AtFhirObject {
@@ -161,6 +177,9 @@ abstract class _AtFhirObject extends AtFhirObject {
       required final String atFhirResource,
       required final bool isOperationOutcome}) = _$_AtFhirObject;
   const _AtFhirObject._() : super._();
+
+  factory _AtFhirObject.fromJson(Map<String, dynamic> json) =
+      _$_AtFhirObject.fromJson;
 
   @override
   String get atKey;

@@ -8,7 +8,7 @@ part 'notify.g.dart';
 
 AtClient atClient = AtClientManager.getInstance().atClient;
 
-/// Provider to listen to any changes of any FHIR resources
+/// Provider to notify a specific atSign
 @riverpod
 class AtNotify extends _$AtNotify {
   Future<NotificationResult> build(Map<String, dynamic> json, String atSign) {
@@ -18,11 +18,4 @@ class AtNotify extends _$AtNotify {
       shouldEncrypt: true,
     ));
   }
-}
-
-/// Provider to listen to any changes of any FHIR resources
-@riverpod
-class AtSubscribe extends _$AtSubscribe {
-  Stream<AtNotification> build() =>
-      atClient.notificationService.subscribe(shouldDecrypt: true);
 }
