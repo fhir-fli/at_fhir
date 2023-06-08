@@ -5,12 +5,13 @@ import 'package:fhir_at_rest/dstu2.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../at_fhir_request_method.dart';
+import '../at_fhir_requests.dart';
 
 part 'at_dstu2_fhir_request.freezed.dart';
 part 'at_dstu2_fhir_request.g.dart';
 
 @freezed
-class AtDstu2FhirRequest with _$AtDstu2FhirRequest {
+class AtDstu2FhirRequest with AtFhirRequests, _$AtDstu2FhirRequest {
   const AtDstu2FhirRequest._();
 
   const factory AtDstu2FhirRequest({

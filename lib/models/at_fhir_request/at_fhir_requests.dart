@@ -1,1 +1,1 @@
-
+abstract mixin class AtFhirRequests {}
