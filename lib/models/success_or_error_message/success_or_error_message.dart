@@ -6,7 +6,6 @@ part 'success_or_error_message.freezed.dart';
 /// String message (I feel like I often need this type of return value)
 @freezed
 class SuccessOrErrorMessage with _$SuccessOrErrorMessage {
-  const factory SuccessOrErrorMessage.success() = _SuccessNotError;
-  const factory SuccessOrErrorMessage.failure(String message) =
-      _ErrorNotSuccess;
+  const factory SuccessOrErrorMessage.success() = SuccessNotError;
+  const factory SuccessOrErrorMessage.failure(String message) = ErrorNotSuccess;
 }

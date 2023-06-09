@@ -37,20 +37,20 @@ mixin _$SuccessOrErrorMessage {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_SuccessNotError value) success,
-    required TResult Function(_ErrorNotSuccess value) failure,
+    required TResult Function(SuccessNotError value) success,
+    required TResult Function(ErrorNotSuccess value) failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_SuccessNotError value)? success,
-    TResult? Function(_ErrorNotSuccess value)? failure,
+    TResult? Function(SuccessNotError value)? success,
+    TResult? Function(ErrorNotSuccess value)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_SuccessNotError value)? success,
-    TResult Function(_ErrorNotSuccess value)? failure,
+    TResult Function(SuccessNotError value)? success,
+    TResult Function(ErrorNotSuccess value)? failure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -76,25 +76,25 @@ class _$SuccessOrErrorMessageCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_SuccessNotErrorCopyWith<$Res> {
-  factory _$$_SuccessNotErrorCopyWith(
-          _$_SuccessNotError value, $Res Function(_$_SuccessNotError) then) =
-      __$$_SuccessNotErrorCopyWithImpl<$Res>;
+abstract class _$$SuccessNotErrorCopyWith<$Res> {
+  factory _$$SuccessNotErrorCopyWith(
+          _$SuccessNotError value, $Res Function(_$SuccessNotError) then) =
+      __$$SuccessNotErrorCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_SuccessNotErrorCopyWithImpl<$Res>
-    extends _$SuccessOrErrorMessageCopyWithImpl<$Res, _$_SuccessNotError>
-    implements _$$_SuccessNotErrorCopyWith<$Res> {
-  __$$_SuccessNotErrorCopyWithImpl(
-      _$_SuccessNotError _value, $Res Function(_$_SuccessNotError) _then)
+class __$$SuccessNotErrorCopyWithImpl<$Res>
+    extends _$SuccessOrErrorMessageCopyWithImpl<$Res, _$SuccessNotError>
+    implements _$$SuccessNotErrorCopyWith<$Res> {
+  __$$SuccessNotErrorCopyWithImpl(
+      _$SuccessNotError _value, $Res Function(_$SuccessNotError) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_SuccessNotError implements _SuccessNotError {
-  const _$_SuccessNotError();
+class _$SuccessNotError implements SuccessNotError {
+  const _$SuccessNotError();
 
   @override
   String toString() {
@@ -104,7 +104,7 @@ class _$_SuccessNotError implements _SuccessNotError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_SuccessNotError);
+        (other.runtimeType == runtimeType && other is _$SuccessNotError);
   }
 
   @override
@@ -144,8 +144,8 @@ class _$_SuccessNotError implements _SuccessNotError {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_SuccessNotError value) success,
-    required TResult Function(_ErrorNotSuccess value) failure,
+    required TResult Function(SuccessNotError value) success,
+    required TResult Function(ErrorNotSuccess value) failure,
   }) {
     return success(this);
   }
@@ -153,8 +153,8 @@ class _$_SuccessNotError implements _SuccessNotError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_SuccessNotError value)? success,
-    TResult? Function(_ErrorNotSuccess value)? failure,
+    TResult? Function(SuccessNotError value)? success,
+    TResult? Function(ErrorNotSuccess value)? failure,
   }) {
     return success?.call(this);
   }
@@ -162,8 +162,8 @@ class _$_SuccessNotError implements _SuccessNotError {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_SuccessNotError value)? success,
-    TResult Function(_ErrorNotSuccess value)? failure,
+    TResult Function(SuccessNotError value)? success,
+    TResult Function(ErrorNotSuccess value)? failure,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -173,25 +173,25 @@ class _$_SuccessNotError implements _SuccessNotError {
   }
 }
 
-abstract class _SuccessNotError implements SuccessOrErrorMessage {
-  const factory _SuccessNotError() = _$_SuccessNotError;
+abstract class SuccessNotError implements SuccessOrErrorMessage {
+  const factory SuccessNotError() = _$SuccessNotError;
 }
 
 /// @nodoc
-abstract class _$$_ErrorNotSuccessCopyWith<$Res> {
-  factory _$$_ErrorNotSuccessCopyWith(
-          _$_ErrorNotSuccess value, $Res Function(_$_ErrorNotSuccess) then) =
-      __$$_ErrorNotSuccessCopyWithImpl<$Res>;
+abstract class _$$ErrorNotSuccessCopyWith<$Res> {
+  factory _$$ErrorNotSuccessCopyWith(
+          _$ErrorNotSuccess value, $Res Function(_$ErrorNotSuccess) then) =
+      __$$ErrorNotSuccessCopyWithImpl<$Res>;
   @useResult
   $Res call({String message});
 }
 
 /// @nodoc
-class __$$_ErrorNotSuccessCopyWithImpl<$Res>
-    extends _$SuccessOrErrorMessageCopyWithImpl<$Res, _$_ErrorNotSuccess>
-    implements _$$_ErrorNotSuccessCopyWith<$Res> {
-  __$$_ErrorNotSuccessCopyWithImpl(
-      _$_ErrorNotSuccess _value, $Res Function(_$_ErrorNotSuccess) _then)
+class __$$ErrorNotSuccessCopyWithImpl<$Res>
+    extends _$SuccessOrErrorMessageCopyWithImpl<$Res, _$ErrorNotSuccess>
+    implements _$$ErrorNotSuccessCopyWith<$Res> {
+  __$$ErrorNotSuccessCopyWithImpl(
+      _$ErrorNotSuccess _value, $Res Function(_$ErrorNotSuccess) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -199,7 +199,7 @@ class __$$_ErrorNotSuccessCopyWithImpl<$Res>
   $Res call({
     Object? message = null,
   }) {
-    return _then(_$_ErrorNotSuccess(
+    return _then(_$ErrorNotSuccess(
       null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -210,8 +210,8 @@ class __$$_ErrorNotSuccessCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ErrorNotSuccess implements _ErrorNotSuccess {
-  const _$_ErrorNotSuccess(this.message);
+class _$ErrorNotSuccess implements ErrorNotSuccess {
+  const _$ErrorNotSuccess(this.message);
 
   @override
   final String message;
@@ -225,7 +225,7 @@ class _$_ErrorNotSuccess implements _ErrorNotSuccess {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ErrorNotSuccess &&
+            other is _$ErrorNotSuccess &&
             (identical(other.message, message) || other.message == message));
   }
 
@@ -235,8 +235,8 @@ class _$_ErrorNotSuccess implements _ErrorNotSuccess {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ErrorNotSuccessCopyWith<_$_ErrorNotSuccess> get copyWith =>
-      __$$_ErrorNotSuccessCopyWithImpl<_$_ErrorNotSuccess>(this, _$identity);
+  _$$ErrorNotSuccessCopyWith<_$ErrorNotSuccess> get copyWith =>
+      __$$ErrorNotSuccessCopyWithImpl<_$ErrorNotSuccess>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -272,8 +272,8 @@ class _$_ErrorNotSuccess implements _ErrorNotSuccess {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_SuccessNotError value) success,
-    required TResult Function(_ErrorNotSuccess value) failure,
+    required TResult Function(SuccessNotError value) success,
+    required TResult Function(ErrorNotSuccess value) failure,
   }) {
     return failure(this);
   }
@@ -281,8 +281,8 @@ class _$_ErrorNotSuccess implements _ErrorNotSuccess {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_SuccessNotError value)? success,
-    TResult? Function(_ErrorNotSuccess value)? failure,
+    TResult? Function(SuccessNotError value)? success,
+    TResult? Function(ErrorNotSuccess value)? failure,
   }) {
     return failure?.call(this);
   }
@@ -290,8 +290,8 @@ class _$_ErrorNotSuccess implements _ErrorNotSuccess {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_SuccessNotError value)? success,
-    TResult Function(_ErrorNotSuccess value)? failure,
+    TResult Function(SuccessNotError value)? success,
+    TResult Function(ErrorNotSuccess value)? failure,
     required TResult orElse(),
   }) {
     if (failure != null) {
@@ -301,11 +301,11 @@ class _$_ErrorNotSuccess implements _ErrorNotSuccess {
   }
 }
 
-abstract class _ErrorNotSuccess implements SuccessOrErrorMessage {
-  const factory _ErrorNotSuccess(final String message) = _$_ErrorNotSuccess;
+abstract class ErrorNotSuccess implements SuccessOrErrorMessage {
+  const factory ErrorNotSuccess(final String message) = _$ErrorNotSuccess;
 
   String get message;
   @JsonKey(ignore: true)
-  _$$_ErrorNotSuccessCopyWith<_$_ErrorNotSuccess> get copyWith =>
+  _$$ErrorNotSuccessCopyWith<_$ErrorNotSuccess> get copyWith =>
       throw _privateConstructorUsedError;
 }

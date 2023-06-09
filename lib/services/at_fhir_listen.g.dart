@@ -1,30 +1,30 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'listen_atsign.dart';
+part of 'at_fhir_listen.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$atSignStreamHash() => r'dea2f700b0c92418e31351f4a5e6056afbf37015';
+String _$atFhirListenHash() => r'07f5f789311f9fbc31f5948943e8d0264889f56a';
 
 /// Provider to listen to any changes of any FHIR resources
 ///
-/// Copied from [AtSignStream].
-@ProviderFor(AtSignStream)
-final atSignStreamProvider = AutoDisposeNotifierProvider<AtSignStream,
-    StreamSubscription<dynamic>>.internal(
-  AtSignStream.new,
-  name: r'atSignStreamProvider',
+/// Copied from [AtFhirListen].
+@ProviderFor(AtFhirListen)
+final atFhirListenProvider =
+    AutoDisposeStreamNotifierProvider<AtFhirListen, AtNotification>.internal(
+  AtFhirListen.new,
+  name: r'atFhirListenProvider',
   debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$atSignStreamHash,
+      const bool.fromEnvironment('dart.vm.product') ? null : _$atFhirListenHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$AtSignStream = AutoDisposeNotifier<StreamSubscription<dynamic>>;
+typedef _$AtFhirListen = AutoDisposeStreamNotifier<AtNotification>;
 String _$atSignResourceTypeStreamHash() =>
-    r'9778835791bf694b37ea2890661bf131a910824e';
+    r'9eb5d4e99de00a966f1f5d9b39dbda66dc40119a';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -48,10 +48,10 @@ class _SystemHash {
 }
 
 abstract class _$AtSignResourceTypeStream
-    extends BuildlessAutoDisposeNotifier<StreamSubscription<dynamic>> {
+    extends BuildlessAutoDisposeStreamNotifier<AtNotification> {
   late final String resourceType;
 
-  StreamSubscription<dynamic> build(
+  Stream<AtNotification> build(
     String resourceType,
   );
 }
@@ -66,7 +66,7 @@ const atSignResourceTypeStreamProvider = AtSignResourceTypeStreamFamily();
 ///
 /// Copied from [AtSignResourceTypeStream].
 class AtSignResourceTypeStreamFamily
-    extends Family<StreamSubscription<dynamic>> {
+    extends Family<AsyncValue<AtNotification>> {
   /// Provider to listen to any changes to FHIR resources of the specified type
   ///
   /// Copied from [AtSignResourceTypeStream].
@@ -110,8 +110,9 @@ class AtSignResourceTypeStreamFamily
 /// Provider to listen to any changes to FHIR resources of the specified type
 ///
 /// Copied from [AtSignResourceTypeStream].
-class AtSignResourceTypeStreamProvider extends AutoDisposeNotifierProviderImpl<
-    AtSignResourceTypeStream, StreamSubscription<dynamic>> {
+class AtSignResourceTypeStreamProvider
+    extends AutoDisposeStreamNotifierProviderImpl<AtSignResourceTypeStream,
+        AtNotification> {
   /// Provider to listen to any changes to FHIR resources of the specified type
   ///
   /// Copied from [AtSignResourceTypeStream].
@@ -147,7 +148,7 @@ class AtSignResourceTypeStreamProvider extends AutoDisposeNotifierProviderImpl<
   }
 
   @override
-  StreamSubscription<dynamic> runNotifierBuild(
+  Stream<AtNotification> runNotifierBuild(
     covariant AtSignResourceTypeStream notifier,
   ) {
     return notifier.build(
@@ -157,35 +158,35 @@ class AtSignResourceTypeStreamProvider extends AutoDisposeNotifierProviderImpl<
 }
 
 String _$atSignResourceStreamHash() =>
-    r'fe07cf754d496857729b3bcf0911ad63b99f89f4';
+    r'dedbc40cb3cb46a19da2e8752b60ee1ada57d891';
 
 abstract class _$AtSignResourceStream
-    extends BuildlessAutoDisposeNotifier<StreamSubscription<dynamic>> {
+    extends BuildlessAutoDisposeStreamNotifier<AtNotification> {
   late final String resourceType;
   late final String id;
 
-  StreamSubscription<dynamic> build(
+  Stream<AtNotification> build(
     String resourceType,
     String id,
   );
 }
 
-/// Provider to listen to any changes to FHIR resources of the specified type
+/// Provider to listen to any changes to a specific FHIR resource
 ///
 /// Copied from [AtSignResourceStream].
 @ProviderFor(AtSignResourceStream)
 const atSignResourceStreamProvider = AtSignResourceStreamFamily();
 
-/// Provider to listen to any changes to FHIR resources of the specified type
+/// Provider to listen to any changes to a specific FHIR resource
 ///
 /// Copied from [AtSignResourceStream].
-class AtSignResourceStreamFamily extends Family<StreamSubscription<dynamic>> {
-  /// Provider to listen to any changes to FHIR resources of the specified type
+class AtSignResourceStreamFamily extends Family<AsyncValue<AtNotification>> {
+  /// Provider to listen to any changes to a specific FHIR resource
   ///
   /// Copied from [AtSignResourceStream].
   const AtSignResourceStreamFamily();
 
-  /// Provider to listen to any changes to FHIR resources of the specified type
+  /// Provider to listen to any changes to a specific FHIR resource
   ///
   /// Copied from [AtSignResourceStream].
   AtSignResourceStreamProvider call(
@@ -223,12 +224,13 @@ class AtSignResourceStreamFamily extends Family<StreamSubscription<dynamic>> {
   String? get name => r'atSignResourceStreamProvider';
 }
 
-/// Provider to listen to any changes to FHIR resources of the specified type
+/// Provider to listen to any changes to a specific FHIR resource
 ///
 /// Copied from [AtSignResourceStream].
-class AtSignResourceStreamProvider extends AutoDisposeNotifierProviderImpl<
-    AtSignResourceStream, StreamSubscription<dynamic>> {
-  /// Provider to listen to any changes to FHIR resources of the specified type
+class AtSignResourceStreamProvider
+    extends AutoDisposeStreamNotifierProviderImpl<AtSignResourceStream,
+        AtNotification> {
+  /// Provider to listen to any changes to a specific FHIR resource
   ///
   /// Copied from [AtSignResourceStream].
   AtSignResourceStreamProvider(
@@ -269,7 +271,7 @@ class AtSignResourceStreamProvider extends AutoDisposeNotifierProviderImpl<
   }
 
   @override
-  StreamSubscription<dynamic> runNotifierBuild(
+  Stream<AtNotification> runNotifierBuild(
     covariant AtSignResourceStream notifier,
   ) {
     return notifier.build(
