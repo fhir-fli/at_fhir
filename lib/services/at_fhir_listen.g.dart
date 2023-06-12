@@ -6,7 +6,7 @@ part of 'at_fhir_listen.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$atFhirListenHash() => r'07f5f789311f9fbc31f5948943e8d0264889f56a';
+String _$atFhirListenHash() => r'c8c93c4d0219609b882194b7872c5de451ba3bc9';
 
 /// Provider to listen to any changes of any FHIR resources
 ///
@@ -23,8 +23,8 @@ final atFhirListenProvider =
 );
 
 typedef _$AtFhirListen = AutoDisposeStreamNotifier<AtNotification>;
-String _$atSignResourceTypeStreamHash() =>
-    r'9eb5d4e99de00a966f1f5d9b39dbda66dc40119a';
+String _$atFhirResourceTypeListenHash() =>
+    r'2e93f9cab735c03139eb71c77f89e17a3715c2c8';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -47,7 +47,7 @@ class _SystemHash {
   }
 }
 
-abstract class _$AtSignResourceTypeStream
+abstract class _$AtFhirResourceTypeListen
     extends BuildlessAutoDisposeStreamNotifier<AtNotification> {
   late final String resourceType;
 
@@ -58,34 +58,34 @@ abstract class _$AtSignResourceTypeStream
 
 /// Provider to listen to any changes to FHIR resources of the specified type
 ///
-/// Copied from [AtSignResourceTypeStream].
-@ProviderFor(AtSignResourceTypeStream)
-const atSignResourceTypeStreamProvider = AtSignResourceTypeStreamFamily();
+/// Copied from [AtFhirResourceTypeListen].
+@ProviderFor(AtFhirResourceTypeListen)
+const atFhirResourceTypeListenProvider = AtFhirResourceTypeListenFamily();
 
 /// Provider to listen to any changes to FHIR resources of the specified type
 ///
-/// Copied from [AtSignResourceTypeStream].
-class AtSignResourceTypeStreamFamily
+/// Copied from [AtFhirResourceTypeListen].
+class AtFhirResourceTypeListenFamily
     extends Family<AsyncValue<AtNotification>> {
   /// Provider to listen to any changes to FHIR resources of the specified type
   ///
-  /// Copied from [AtSignResourceTypeStream].
-  const AtSignResourceTypeStreamFamily();
+  /// Copied from [AtFhirResourceTypeListen].
+  const AtFhirResourceTypeListenFamily();
 
   /// Provider to listen to any changes to FHIR resources of the specified type
   ///
-  /// Copied from [AtSignResourceTypeStream].
-  AtSignResourceTypeStreamProvider call(
+  /// Copied from [AtFhirResourceTypeListen].
+  AtFhirResourceTypeListenProvider call(
     String resourceType,
   ) {
-    return AtSignResourceTypeStreamProvider(
+    return AtFhirResourceTypeListenProvider(
       resourceType,
     );
   }
 
   @override
-  AtSignResourceTypeStreamProvider getProviderOverride(
-    covariant AtSignResourceTypeStreamProvider provider,
+  AtFhirResourceTypeListenProvider getProviderOverride(
+    covariant AtFhirResourceTypeListenProvider provider,
   ) {
     return call(
       provider.resourceType,
@@ -104,38 +104,38 @@ class AtSignResourceTypeStreamFamily
       _allTransitiveDependencies;
 
   @override
-  String? get name => r'atSignResourceTypeStreamProvider';
+  String? get name => r'atFhirResourceTypeListenProvider';
 }
 
 /// Provider to listen to any changes to FHIR resources of the specified type
 ///
-/// Copied from [AtSignResourceTypeStream].
-class AtSignResourceTypeStreamProvider
-    extends AutoDisposeStreamNotifierProviderImpl<AtSignResourceTypeStream,
+/// Copied from [AtFhirResourceTypeListen].
+class AtFhirResourceTypeListenProvider
+    extends AutoDisposeStreamNotifierProviderImpl<AtFhirResourceTypeListen,
         AtNotification> {
   /// Provider to listen to any changes to FHIR resources of the specified type
   ///
-  /// Copied from [AtSignResourceTypeStream].
-  AtSignResourceTypeStreamProvider(
+  /// Copied from [AtFhirResourceTypeListen].
+  AtFhirResourceTypeListenProvider(
     this.resourceType,
   ) : super.internal(
-          () => AtSignResourceTypeStream()..resourceType = resourceType,
-          from: atSignResourceTypeStreamProvider,
-          name: r'atSignResourceTypeStreamProvider',
+          () => AtFhirResourceTypeListen()..resourceType = resourceType,
+          from: atFhirResourceTypeListenProvider,
+          name: r'atFhirResourceTypeListenProvider',
           debugGetCreateSourceHash:
               const bool.fromEnvironment('dart.vm.product')
                   ? null
-                  : _$atSignResourceTypeStreamHash,
-          dependencies: AtSignResourceTypeStreamFamily._dependencies,
+                  : _$atFhirResourceTypeListenHash,
+          dependencies: AtFhirResourceTypeListenFamily._dependencies,
           allTransitiveDependencies:
-              AtSignResourceTypeStreamFamily._allTransitiveDependencies,
+              AtFhirResourceTypeListenFamily._allTransitiveDependencies,
         );
 
   final String resourceType;
 
   @override
   bool operator ==(Object other) {
-    return other is AtSignResourceTypeStreamProvider &&
+    return other is AtFhirResourceTypeListenProvider &&
         other.resourceType == resourceType;
   }
 
@@ -149,7 +149,7 @@ class AtSignResourceTypeStreamProvider
 
   @override
   Stream<AtNotification> runNotifierBuild(
-    covariant AtSignResourceTypeStream notifier,
+    covariant AtFhirResourceTypeListen notifier,
   ) {
     return notifier.build(
       resourceType,
@@ -157,10 +157,10 @@ class AtSignResourceTypeStreamProvider
   }
 }
 
-String _$atSignResourceStreamHash() =>
-    r'dedbc40cb3cb46a19da2e8752b60ee1ada57d891';
+String _$atFhirSingleResourceListenHash() =>
+    r'efd47daebdd0f3c1f63d5e45146ba23f318027cb';
 
-abstract class _$AtSignResourceStream
+abstract class _$AtFhirSingleResourceListen
     extends BuildlessAutoDisposeStreamNotifier<AtNotification> {
   late final String resourceType;
   late final String id;
@@ -173,35 +173,36 @@ abstract class _$AtSignResourceStream
 
 /// Provider to listen to any changes to a specific FHIR resource
 ///
-/// Copied from [AtSignResourceStream].
-@ProviderFor(AtSignResourceStream)
-const atSignResourceStreamProvider = AtSignResourceStreamFamily();
+/// Copied from [AtFhirSingleResourceListen].
+@ProviderFor(AtFhirSingleResourceListen)
+const atFhirSingleResourceListenProvider = AtFhirSingleResourceListenFamily();
 
 /// Provider to listen to any changes to a specific FHIR resource
 ///
-/// Copied from [AtSignResourceStream].
-class AtSignResourceStreamFamily extends Family<AsyncValue<AtNotification>> {
+/// Copied from [AtFhirSingleResourceListen].
+class AtFhirSingleResourceListenFamily
+    extends Family<AsyncValue<AtNotification>> {
   /// Provider to listen to any changes to a specific FHIR resource
   ///
-  /// Copied from [AtSignResourceStream].
-  const AtSignResourceStreamFamily();
+  /// Copied from [AtFhirSingleResourceListen].
+  const AtFhirSingleResourceListenFamily();
 
   /// Provider to listen to any changes to a specific FHIR resource
   ///
-  /// Copied from [AtSignResourceStream].
-  AtSignResourceStreamProvider call(
+  /// Copied from [AtFhirSingleResourceListen].
+  AtFhirSingleResourceListenProvider call(
     String resourceType,
     String id,
   ) {
-    return AtSignResourceStreamProvider(
+    return AtFhirSingleResourceListenProvider(
       resourceType,
       id,
     );
   }
 
   @override
-  AtSignResourceStreamProvider getProviderOverride(
-    covariant AtSignResourceStreamProvider provider,
+  AtFhirSingleResourceListenProvider getProviderOverride(
+    covariant AtFhirSingleResourceListenProvider provider,
   ) {
     return call(
       provider.resourceType,
@@ -221,34 +222,34 @@ class AtSignResourceStreamFamily extends Family<AsyncValue<AtNotification>> {
       _allTransitiveDependencies;
 
   @override
-  String? get name => r'atSignResourceStreamProvider';
+  String? get name => r'atFhirSingleResourceListenProvider';
 }
 
 /// Provider to listen to any changes to a specific FHIR resource
 ///
-/// Copied from [AtSignResourceStream].
-class AtSignResourceStreamProvider
-    extends AutoDisposeStreamNotifierProviderImpl<AtSignResourceStream,
+/// Copied from [AtFhirSingleResourceListen].
+class AtFhirSingleResourceListenProvider
+    extends AutoDisposeStreamNotifierProviderImpl<AtFhirSingleResourceListen,
         AtNotification> {
   /// Provider to listen to any changes to a specific FHIR resource
   ///
-  /// Copied from [AtSignResourceStream].
-  AtSignResourceStreamProvider(
+  /// Copied from [AtFhirSingleResourceListen].
+  AtFhirSingleResourceListenProvider(
     this.resourceType,
     this.id,
   ) : super.internal(
-          () => AtSignResourceStream()
+          () => AtFhirSingleResourceListen()
             ..resourceType = resourceType
             ..id = id,
-          from: atSignResourceStreamProvider,
-          name: r'atSignResourceStreamProvider',
+          from: atFhirSingleResourceListenProvider,
+          name: r'atFhirSingleResourceListenProvider',
           debugGetCreateSourceHash:
               const bool.fromEnvironment('dart.vm.product')
                   ? null
-                  : _$atSignResourceStreamHash,
-          dependencies: AtSignResourceStreamFamily._dependencies,
+                  : _$atFhirSingleResourceListenHash,
+          dependencies: AtFhirSingleResourceListenFamily._dependencies,
           allTransitiveDependencies:
-              AtSignResourceStreamFamily._allTransitiveDependencies,
+              AtFhirSingleResourceListenFamily._allTransitiveDependencies,
         );
 
   final String resourceType;
@@ -256,7 +257,7 @@ class AtSignResourceStreamProvider
 
   @override
   bool operator ==(Object other) {
-    return other is AtSignResourceStreamProvider &&
+    return other is AtFhirSingleResourceListenProvider &&
         other.resourceType == resourceType &&
         other.id == id;
   }
@@ -272,7 +273,7 @@ class AtSignResourceStreamProvider
 
   @override
   Stream<AtNotification> runNotifierBuild(
-    covariant AtSignResourceStream notifier,
+    covariant AtFhirSingleResourceListen notifier,
   ) {
     return notifier.build(
       resourceType,
@@ -280,4 +281,22 @@ class AtSignResourceStreamProvider
     );
   }
 }
+
+String _$atListenHash() => r'42f6ec80cc0b040111e8560e4ba62945f38e0270';
+
+/// Listens to All Changes
+///
+/// Copied from [AtListen].
+@ProviderFor(AtListen)
+final atListenProvider =
+    AutoDisposeStreamNotifierProvider<AtListen, AtNotification>.internal(
+  AtListen.new,
+  name: r'atListenProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$atListenHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+typedef _$AtListen = AutoDisposeStreamNotifier<AtNotification>;
 // ignore_for_file: unnecessary_raw_strings, subtype_of_sealed_class, invalid_use_of_internal_member, do_not_use_environment, prefer_const_constructors, public_member_api_docs, avoid_private_typedef_functions

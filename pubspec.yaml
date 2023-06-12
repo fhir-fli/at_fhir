@@ -7,9 +7,9 @@ environment:
   sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
-  at_client: ^3.0.60
-  fhir: ^0.11.1
-  fhir_at_rest: ^0.11.1
+  at_client: ^3.0.61
+  fhir: ^0.11.2
+  fhir_at_rest: ^0.11.2
   freezed_annotation: ^2.2.0
   json_annotation: ^4.8.1
   riverpod: ^2.3.6
@@ -20,7 +20,7 @@ dev_dependencies:
   build_runner: ^2.4.5
   freezed: ^2.3.5
   json_serializable: ^6.7.0
-  mockito: ^5.4.1
+  mockito: ^5.4.2
   riverpod_generator: ^2.2.3
   test: ^1.24.3
 

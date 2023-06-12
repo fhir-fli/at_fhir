@@ -157,19 +157,27 @@ void atFhirObjectTest() {
 
     // Test case for AtFhirObject.fromJsonString
     test('fromJsonString returns valid AtFhirObject', () {
-      final jsonString =
-          '{"atKey": "someKey", "atFhirResource": "{\'resourceType\': \'Patient\'}", "isOperationOutcome": false}';
+      final resource = r4.Patient(fhirId: '12345');
+      final oldAtFhirObject = AtFhirObject(
+          atKey: 'someKey',
+          atFhirResource: jsonEncode(resource.toJson()),
+          isOperationOutcome: false);
+      final jsonString = jsonEncode(oldAtFhirObject.toJson());
       final atFhirObject = AtFhirObject.fromJsonString(jsonString);
 
       expect(atFhirObject.atKey, 'someKey');
-      expect(atFhirObject.atFhirResource, "{\'resourceType\': \'Patient\'}");
+      expect(atFhirObject.atFhirResource, jsonEncode(resource.toJson()));
       expect(atFhirObject.isOperationOutcome, isFalse);
     });
 
     // Test case for toFhir method
     test('toFhir returns the original FHIR resource', () {
-      final jsonString =
-          '{"atKey": "fhir.r4.Patient.123", "atFhirResource": "{\'resourceType\': \'Patient\'}", "isOperationOutcome": false}';
+      final resource = r4.Patient(fhirId: '12345');
+      final oldAtFhirObject = AtFhirObject(
+          atKey: 'fhir.r4.patient.12345',
+          atFhirResource: jsonEncode(resource.toJson()),
+          isOperationOutcome: false);
+      final jsonString = jsonEncode(oldAtFhirObject.toJson());
       final atFhirObject = AtFhirObject.fromJsonString(jsonString);
       final fhirResource = atFhirObject.toFhir();
 

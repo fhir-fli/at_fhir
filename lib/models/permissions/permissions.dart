@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../permission_group.dart';
@@ -18,6 +20,9 @@ class Permissions with _$Permissions {
 
   /// Generates the key for storing the group at the atSign
   String get atKey => 'fhir.permission.$permissionGroup';
+
+  /// Turns the list of atSigns to a single json String
+  String get atSignsString => jsonEncode(atSigns);
 
   /// returns a Permissions with the new atSign added
   Permissions addAtsign(String newAtSign) => Permissions(
