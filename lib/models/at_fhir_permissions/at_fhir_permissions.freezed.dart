@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'permissions.dart';
+part of 'at_fhir_permissions.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -16,7 +16,7 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$Permissions {
-  PermissionGroup get permissionGroup => throw _privateConstructorUsedError;
+  String get permissionGroup => throw _privateConstructorUsedError;
   List<String> get atSigns => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -30,7 +30,7 @@ abstract class $PermissionsCopyWith<$Res> {
           Permissions value, $Res Function(Permissions) then) =
       _$PermissionsCopyWithImpl<$Res, Permissions>;
   @useResult
-  $Res call({PermissionGroup permissionGroup, List<String> atSigns});
+  $Res call({String permissionGroup, List<String> atSigns});
 }
 
 /// @nodoc
@@ -53,7 +53,7 @@ class _$PermissionsCopyWithImpl<$Res, $Val extends Permissions>
       permissionGroup: null == permissionGroup
           ? _value.permissionGroup
           : permissionGroup // ignore: cast_nullable_to_non_nullable
-              as PermissionGroup,
+              as String,
       atSigns: null == atSigns
           ? _value.atSigns
           : atSigns // ignore: cast_nullable_to_non_nullable
@@ -70,7 +70,7 @@ abstract class _$$_PermissionsCopyWith<$Res>
       __$$_PermissionsCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({PermissionGroup permissionGroup, List<String> atSigns});
+  $Res call({String permissionGroup, List<String> atSigns});
 }
 
 /// @nodoc
@@ -91,7 +91,7 @@ class __$$_PermissionsCopyWithImpl<$Res>
       permissionGroup: null == permissionGroup
           ? _value.permissionGroup
           : permissionGroup // ignore: cast_nullable_to_non_nullable
-              as PermissionGroup,
+              as String,
       atSigns: null == atSigns
           ? _value._atSigns
           : atSigns // ignore: cast_nullable_to_non_nullable
@@ -110,7 +110,7 @@ class _$_Permissions extends _Permissions {
         super._();
 
   @override
-  final PermissionGroup permissionGroup;
+  final String permissionGroup;
   final List<String> _atSigns;
   @override
   @JsonKey()
@@ -148,12 +148,12 @@ class _$_Permissions extends _Permissions {
 
 abstract class _Permissions extends Permissions {
   const factory _Permissions(
-      {required final PermissionGroup permissionGroup,
+      {required final String permissionGroup,
       final List<String> atSigns}) = _$_Permissions;
   const _Permissions._() : super._();
 
   @override
-  PermissionGroup get permissionGroup;
+  String get permissionGroup;
   @override
   List<String> get atSigns;
   @override

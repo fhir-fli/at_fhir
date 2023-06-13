@@ -2,9 +2,7 @@ import 'dart:convert';
 
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../permission_group.dart';
-
-part 'permissions.freezed.dart';
+part 'at_fhir_permissions.freezed.dart';
 
 /// Class to store Permissions for a group
 @freezed
@@ -14,7 +12,7 @@ class Permissions with _$Permissions {
 
   /// Class to store Permissions for a group
   const factory Permissions({
-    required PermissionGroup permissionGroup,
+    required String permissionGroup,
     @Default(<String>[]) List<String> atSigns,
   }) = _Permissions;
 

@@ -19,10 +19,10 @@ Future<SuccessOrErrorMessage> updatePermissions(Permissions permissions) async {
 
 /// Returns a Permissions object that contains all of the atSigns included
 /// in that particular PermissionGroup
-Future<Permissions> getPermissions(PermissionGroup permissionGroup) async {
+Future<Permissions> getPermissions(String permissionGroup) async {
   AtClient atClient = AtClientManager.getInstance().atClient;
 
-  AtKey atKey = AtKey()..key = permissionGroup.toKey();
+  AtKey atKey = AtKey()..key = permissionGroup;
   final AtValue atValue = await atClient.get(atKey);
   if (atValue.value is! List<String>) {
     return Permissions(permissionGroup: permissionGroup, atSigns: []);
