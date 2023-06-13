@@ -82,10 +82,12 @@ Future<SuccessOrError> atSignPut({
   required String value,
   required String atKey,
   String? nameSpace = 'fhir',
+  String? sharedWith,
 }) async {
   AtClient atClient = AtClientManager.getInstance().atClient;
   AtKey newAtKey = AtKey();
   newAtKey
+    ..sharedWith = sharedWith
     ..key = atKey
     ..namespace = nameSpace;
   try {

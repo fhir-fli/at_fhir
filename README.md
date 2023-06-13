@@ -23,23 +23,23 @@ Group of utility classes for working with the atsign and fhir
 
 ### Permission Groups
 
-    - [Create new permission group](lib/services/at_permissions.dart#L68)
-    - [Remove permission group](lib/services/at_permissions.dart#L96)
-    - [Rename permission group](lib/services/at_permissions.dart#L125)
-    - [Add atsign to permission group](lib/services/at_permissions.dart#L9)
-    - [Remove atsign from permission group](lib/services/at_permissions.dart#L38)
+    - [Create new permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L68)
+    - [Remove permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L96)
+    - [Rename permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L125)
+    - [Add atsign to permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L9)
+    - [Remove atsign from permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L38)
     - decide what permission groups actually have access to
 
 ### Requests
 
-    - Request listener
+    - [Request listener](https://github.com/fhir-fli/fhirlite_central/blob/main/bin/server.dart#L11)
     - Check permissions
-    - Reform request
-    - Log request
-    - Make request
-    - Receive result
-    - Reform result
+    - [Reform request](https://github.com/fhir-fli/fhirlite_central/blob/main/bin/server.dart#L15)
+    - [Log request](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/src/services/log_request.dart)
+    - [Make request](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/src/services/make_request.dart)
+    - [Receive result](https://github.com/fhir-fli/fhirlite_central/blob/main/bin/server.dart#L27)
     - Notify @sign of result
+    - Create/update all listening groups (one for each resource), that @sign should now be subscribed to
 
 ### Listening group
 
@@ -51,4 +51,8 @@ Group of utility classes for working with the atsign and fhir
 
 ### Patient Workflow
 
-![Patient Workflow](./png/patient_workflow.png)
+![Patient Workflow](https://github.com/fhir-fli/at_fhir/blob/main/png/patient_workflow.png)
+
+### Server Workflow
+
+![Server Workflow](https://github.com/fhir-fli/at_fhir/blob/main/png/server_workflow.png)
