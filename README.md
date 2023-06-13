@@ -19,15 +19,15 @@ Group of utility classes for working with the atsign and fhir
     - fhir.permission.groupname.namespace:@fhircentral - a specific permission group, value would be a list of atsigns belonging to this group
     - @sharedWith:fhir.request.YYYYMMDDHHMMSSSS:@owner - how a request is logged. 4-digit year, 2-digit month, 2-digit day, 2-digit hour (24 hour format), 2-digit minute, 4-digit second (ss.ss - but no decimal)
 
-## TODO Utilities
+## TODO Utilities (if it's a link, it's been completed)
 
 ### Permission Groups
 
-    - Create new permission group
-    - Remove permission group
-    - Rename permission group
-    - Add atsign to permission group
-    - Remove atsign from permission group
+    - [Create new permission group](lib/services/at_permissions.dart#L68)
+    - [Remove permission group](lib/services/at_permissions.dart#L96)
+    - [Rename permission group](lib/services/at_permissions.dart#L125)
+    - [Add atsign to permission group](lib/services/at_permissions.dart#L9)
+    - [Remove atsign from permission group](lib/services/at_permissions.dart#L38)
     - decide what permission groups actually have access to
 
 ### Requests
@@ -51,4 +51,4 @@ Group of utility classes for working with the atsign and fhir
 
 ### Patient Workflow
 
-    ![Patient Workflow](./png/patient_workflow.png)
+![Patient Workflow](./png/patient_workflow.png)
