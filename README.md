@@ -23,31 +23,31 @@ Group of utility classes for working with the atsign and fhir
 
 ### Permission Groups
 
-    - [Create new permission group](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/services/at_permissions.dart#L68)
-    - [Remove permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L96)
-    - [Rename permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L125)
-    - [Add atsign to permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L9)
-    - [Remove atsign from permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L38)
-    - decide what permission groups actually have access to
+- [Create new permission group](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/services/at_permissions.dart#L74)
+- [Remove permission group](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/services/at_permissions.dart#L101)
+- [Rename permission group](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/services/at_permissions.dart#L129)
+- [Add atsign to permission group](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/services/at_permissions.dart#L15)
+- [Remove atsign from permission group](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/services/at_permissions.dart#L44)
+- decide what permission groups actually have access to
 
 ### Requests
 
-    - [Request listener](https://github.com/fhir-fli/fhirlite_central/blob/main/bin/server.dart#L11)
-    - Check permissions
-    - [Reform request](https://github.com/fhir-fli/fhirlite_central/blob/main/bin/server.dart#L15)
-    - [Log request](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/src/services/log_request.dart)
-    - [Make request](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/src/services/make_request.dart)
-    - [Receive result](https://github.com/fhir-fli/fhirlite_central/blob/main/bin/server.dart#L27)
-    - Notify @sign of result
-    - Create/update all listening groups (one for each resource), that @sign should now be subscribed to
+- [Request listener](https://github.com/fhir-fli/fhirlite_central/blob/main/bin/server.dart#L11)
+- Check permissions
+- [Reform request](https://github.com/fhir-fli/fhirlite_central/blob/main/bin/server.dart#L19)
+- [Log request](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/services/log_request.dart)
+- [Make request](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/services/make_request.dart)
+- [Receive result](https://github.com/fhir-fli/fhirlite_central/blob/main/bin/server.dart#L29)
+- [Notify @sign](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/services/at_notify.dart) of [result](https://github.com/fhir-fli/fhirlite_central/blob/main/bin/server.dart#L31)
+- Create/update all listening groups (one for each resource), that @sign should now be subscribed to
 
 ### Listening group
 
-    - a listening group is a list of atsigns that has currently downloaded/requested a particular resource
-    - on the server, the key is a typical FHIR resource key (fhir.version.resourceType.id), but the value is the list of atsigns that is listening to that resource
-    - Anytime a resource is requested, add the requester to the listening group
-    - Anytime a resource is created, add the requester to the listening group
-    - Anytime an update occurs for that particular resource, the server pushes the new resource as a notification to all of the listening atsigns
+- a listening group is a list of atsigns that has currently downloaded/requested a particular resource
+- on the server, the key is a typical FHIR resource key (fhir.version.resourceType.id), but the value is the list of atsigns that is listening to that resource
+- Anytime a resource is requested, add the requester to the listening group
+- Anytime a resource is created, add the requester to the listening group
+- Anytime an update occurs for that particular resource, the server pushes the new resource as a notification to all of the listening atsigns
 
 ### Patient Workflow
 
