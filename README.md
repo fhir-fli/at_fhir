@@ -23,7 +23,7 @@ Group of utility classes for working with the atsign and fhir
 
 ### Permission Groups
 
-    - [Create new permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L68)
+    - [Create new permission group](https://github.com/fhir-fli/fhirlite_central/blob/main/lib/services/at_permissions.dart#L68)
     - [Remove permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L96)
     - [Rename permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L125)
     - [Add atsign to permission group](https://github.com/fhir-fli/at_fhir/blob/main/lib/services/at_permissions.dart#L9)

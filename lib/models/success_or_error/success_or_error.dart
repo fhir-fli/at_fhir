@@ -10,6 +10,8 @@ class SuccessOrError with _$SuccessOrError {
   const factory SuccessOrError.success() = SuccessNotError;
   const factory SuccessOrError.successString(String value) = SuccessString;
   const factory SuccessOrError.successBool(bool value) = SuccessBool;
+  const factory SuccessOrError.successNotificationResult(
+      NotificationResult value) = SuccessNotificationResult;
   const factory SuccessOrError.failureMessage(String exception) =
       FailureMessageError;
   const factory SuccessOrError.exception(

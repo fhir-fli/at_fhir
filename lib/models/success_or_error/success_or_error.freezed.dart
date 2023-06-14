@@ -21,6 +21,8 @@ mixin _$SuccessOrError {
     required TResult Function() success,
     required TResult Function(String value) successString,
     required TResult Function(bool value) successBool,
+    required TResult Function(NotificationResult value)
+        successNotificationResult,
     required TResult Function(String exception) failureMessage,
     required TResult Function(Object exception, StackTrace stackTrace)
         exception,
@@ -33,6 +35,7 @@ mixin _$SuccessOrError {
     TResult? Function()? success,
     TResult? Function(String value)? successString,
     TResult? Function(bool value)? successBool,
+    TResult? Function(NotificationResult value)? successNotificationResult,
     TResult? Function(String exception)? failureMessage,
     TResult? Function(Object exception, StackTrace stackTrace)? exception,
     TResult? Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -43,6 +46,7 @@ mixin _$SuccessOrError {
     TResult Function()? success,
     TResult Function(String value)? successString,
     TResult Function(bool value)? successBool,
+    TResult Function(NotificationResult value)? successNotificationResult,
     TResult Function(String exception)? failureMessage,
     TResult Function(Object exception, StackTrace stackTrace)? exception,
     TResult Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -54,6 +58,8 @@ mixin _$SuccessOrError {
     required TResult Function(SuccessNotError value) success,
     required TResult Function(SuccessString value) successString,
     required TResult Function(SuccessBool value) successBool,
+    required TResult Function(SuccessNotificationResult value)
+        successNotificationResult,
     required TResult Function(FailureMessageError value) failureMessage,
     required TResult Function(ExceptionError value) exception,
     required TResult Function(AtError value) atSign,
@@ -64,6 +70,8 @@ mixin _$SuccessOrError {
     TResult? Function(SuccessNotError value)? success,
     TResult? Function(SuccessString value)? successString,
     TResult? Function(SuccessBool value)? successBool,
+    TResult? Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult? Function(FailureMessageError value)? failureMessage,
     TResult? Function(ExceptionError value)? exception,
     TResult? Function(AtError value)? atSign,
@@ -74,6 +82,8 @@ mixin _$SuccessOrError {
     TResult Function(SuccessNotError value)? success,
     TResult Function(SuccessString value)? successString,
     TResult Function(SuccessBool value)? successBool,
+    TResult Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult Function(FailureMessageError value)? failureMessage,
     TResult Function(ExceptionError value)? exception,
     TResult Function(AtError value)? atSign,
@@ -141,6 +151,8 @@ class _$SuccessNotError implements SuccessNotError {
     required TResult Function() success,
     required TResult Function(String value) successString,
     required TResult Function(bool value) successBool,
+    required TResult Function(NotificationResult value)
+        successNotificationResult,
     required TResult Function(String exception) failureMessage,
     required TResult Function(Object exception, StackTrace stackTrace)
         exception,
@@ -156,6 +168,7 @@ class _$SuccessNotError implements SuccessNotError {
     TResult? Function()? success,
     TResult? Function(String value)? successString,
     TResult? Function(bool value)? successBool,
+    TResult? Function(NotificationResult value)? successNotificationResult,
     TResult? Function(String exception)? failureMessage,
     TResult? Function(Object exception, StackTrace stackTrace)? exception,
     TResult? Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -169,6 +182,7 @@ class _$SuccessNotError implements SuccessNotError {
     TResult Function()? success,
     TResult Function(String value)? successString,
     TResult Function(bool value)? successBool,
+    TResult Function(NotificationResult value)? successNotificationResult,
     TResult Function(String exception)? failureMessage,
     TResult Function(Object exception, StackTrace stackTrace)? exception,
     TResult Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -186,6 +200,8 @@ class _$SuccessNotError implements SuccessNotError {
     required TResult Function(SuccessNotError value) success,
     required TResult Function(SuccessString value) successString,
     required TResult Function(SuccessBool value) successBool,
+    required TResult Function(SuccessNotificationResult value)
+        successNotificationResult,
     required TResult Function(FailureMessageError value) failureMessage,
     required TResult Function(ExceptionError value) exception,
     required TResult Function(AtError value) atSign,
@@ -199,6 +215,8 @@ class _$SuccessNotError implements SuccessNotError {
     TResult? Function(SuccessNotError value)? success,
     TResult? Function(SuccessString value)? successString,
     TResult? Function(SuccessBool value)? successBool,
+    TResult? Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult? Function(FailureMessageError value)? failureMessage,
     TResult? Function(ExceptionError value)? exception,
     TResult? Function(AtError value)? atSign,
@@ -212,6 +230,8 @@ class _$SuccessNotError implements SuccessNotError {
     TResult Function(SuccessNotError value)? success,
     TResult Function(SuccessString value)? successString,
     TResult Function(SuccessBool value)? successBool,
+    TResult Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult Function(FailureMessageError value)? failureMessage,
     TResult Function(ExceptionError value)? exception,
     TResult Function(AtError value)? atSign,
@@ -295,6 +315,8 @@ class _$SuccessString implements SuccessString {
     required TResult Function() success,
     required TResult Function(String value) successString,
     required TResult Function(bool value) successBool,
+    required TResult Function(NotificationResult value)
+        successNotificationResult,
     required TResult Function(String exception) failureMessage,
     required TResult Function(Object exception, StackTrace stackTrace)
         exception,
@@ -310,6 +332,7 @@ class _$SuccessString implements SuccessString {
     TResult? Function()? success,
     TResult? Function(String value)? successString,
     TResult? Function(bool value)? successBool,
+    TResult? Function(NotificationResult value)? successNotificationResult,
     TResult? Function(String exception)? failureMessage,
     TResult? Function(Object exception, StackTrace stackTrace)? exception,
     TResult? Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -323,6 +346,7 @@ class _$SuccessString implements SuccessString {
     TResult Function()? success,
     TResult Function(String value)? successString,
     TResult Function(bool value)? successBool,
+    TResult Function(NotificationResult value)? successNotificationResult,
     TResult Function(String exception)? failureMessage,
     TResult Function(Object exception, StackTrace stackTrace)? exception,
     TResult Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -340,6 +364,8 @@ class _$SuccessString implements SuccessString {
     required TResult Function(SuccessNotError value) success,
     required TResult Function(SuccessString value) successString,
     required TResult Function(SuccessBool value) successBool,
+    required TResult Function(SuccessNotificationResult value)
+        successNotificationResult,
     required TResult Function(FailureMessageError value) failureMessage,
     required TResult Function(ExceptionError value) exception,
     required TResult Function(AtError value) atSign,
@@ -353,6 +379,8 @@ class _$SuccessString implements SuccessString {
     TResult? Function(SuccessNotError value)? success,
     TResult? Function(SuccessString value)? successString,
     TResult? Function(SuccessBool value)? successBool,
+    TResult? Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult? Function(FailureMessageError value)? failureMessage,
     TResult? Function(ExceptionError value)? exception,
     TResult? Function(AtError value)? atSign,
@@ -366,6 +394,8 @@ class _$SuccessString implements SuccessString {
     TResult Function(SuccessNotError value)? success,
     TResult Function(SuccessString value)? successString,
     TResult Function(SuccessBool value)? successBool,
+    TResult Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult Function(FailureMessageError value)? failureMessage,
     TResult Function(ExceptionError value)? exception,
     TResult Function(AtError value)? atSign,
@@ -454,6 +484,8 @@ class _$SuccessBool implements SuccessBool {
     required TResult Function() success,
     required TResult Function(String value) successString,
     required TResult Function(bool value) successBool,
+    required TResult Function(NotificationResult value)
+        successNotificationResult,
     required TResult Function(String exception) failureMessage,
     required TResult Function(Object exception, StackTrace stackTrace)
         exception,
@@ -469,6 +501,7 @@ class _$SuccessBool implements SuccessBool {
     TResult? Function()? success,
     TResult? Function(String value)? successString,
     TResult? Function(bool value)? successBool,
+    TResult? Function(NotificationResult value)? successNotificationResult,
     TResult? Function(String exception)? failureMessage,
     TResult? Function(Object exception, StackTrace stackTrace)? exception,
     TResult? Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -482,6 +515,7 @@ class _$SuccessBool implements SuccessBool {
     TResult Function()? success,
     TResult Function(String value)? successString,
     TResult Function(bool value)? successBool,
+    TResult Function(NotificationResult value)? successNotificationResult,
     TResult Function(String exception)? failureMessage,
     TResult Function(Object exception, StackTrace stackTrace)? exception,
     TResult Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -499,6 +533,8 @@ class _$SuccessBool implements SuccessBool {
     required TResult Function(SuccessNotError value) success,
     required TResult Function(SuccessString value) successString,
     required TResult Function(SuccessBool value) successBool,
+    required TResult Function(SuccessNotificationResult value)
+        successNotificationResult,
     required TResult Function(FailureMessageError value) failureMessage,
     required TResult Function(ExceptionError value) exception,
     required TResult Function(AtError value) atSign,
@@ -512,6 +548,8 @@ class _$SuccessBool implements SuccessBool {
     TResult? Function(SuccessNotError value)? success,
     TResult? Function(SuccessString value)? successString,
     TResult? Function(SuccessBool value)? successBool,
+    TResult? Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult? Function(FailureMessageError value)? failureMessage,
     TResult? Function(ExceptionError value)? exception,
     TResult? Function(AtError value)? atSign,
@@ -525,6 +563,8 @@ class _$SuccessBool implements SuccessBool {
     TResult Function(SuccessNotError value)? success,
     TResult Function(SuccessString value)? successString,
     TResult Function(SuccessBool value)? successBool,
+    TResult Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult Function(FailureMessageError value)? failureMessage,
     TResult Function(ExceptionError value)? exception,
     TResult Function(AtError value)? atSign,
@@ -544,6 +584,178 @@ abstract class SuccessBool implements SuccessOrError {
   @JsonKey(ignore: true)
   _$$SuccessBoolCopyWith<_$SuccessBool> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$SuccessNotificationResultCopyWith<$Res> {
+  factory _$$SuccessNotificationResultCopyWith(
+          _$SuccessNotificationResult value,
+          $Res Function(_$SuccessNotificationResult) then) =
+      __$$SuccessNotificationResultCopyWithImpl<$Res>;
+  @useResult
+  $Res call({NotificationResult value});
+}
+
+/// @nodoc
+class __$$SuccessNotificationResultCopyWithImpl<$Res>
+    extends _$SuccessOrErrorCopyWithImpl<$Res, _$SuccessNotificationResult>
+    implements _$$SuccessNotificationResultCopyWith<$Res> {
+  __$$SuccessNotificationResultCopyWithImpl(_$SuccessNotificationResult _value,
+      $Res Function(_$SuccessNotificationResult) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? value = null,
+  }) {
+    return _then(_$SuccessNotificationResult(
+      null == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as NotificationResult,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SuccessNotificationResult implements SuccessNotificationResult {
+  const _$SuccessNotificationResult(this.value);
+
+  @override
+  final NotificationResult value;
+
+  @override
+  String toString() {
+    return 'SuccessOrError.successNotificationResult(value: $value)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessNotificationResult &&
+            (identical(other.value, value) || other.value == value));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, value);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SuccessNotificationResultCopyWith<_$SuccessNotificationResult>
+      get copyWith => __$$SuccessNotificationResultCopyWithImpl<
+          _$SuccessNotificationResult>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() success,
+    required TResult Function(String value) successString,
+    required TResult Function(bool value) successBool,
+    required TResult Function(NotificationResult value)
+        successNotificationResult,
+    required TResult Function(String exception) failureMessage,
+    required TResult Function(Object exception, StackTrace stackTrace)
+        exception,
+    required TResult Function(AtException exception, StackTrace stackTrace)
+        atSign,
+  }) {
+    return successNotificationResult(value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? success,
+    TResult? Function(String value)? successString,
+    TResult? Function(bool value)? successBool,
+    TResult? Function(NotificationResult value)? successNotificationResult,
+    TResult? Function(String exception)? failureMessage,
+    TResult? Function(Object exception, StackTrace stackTrace)? exception,
+    TResult? Function(AtException exception, StackTrace stackTrace)? atSign,
+  }) {
+    return successNotificationResult?.call(value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? success,
+    TResult Function(String value)? successString,
+    TResult Function(bool value)? successBool,
+    TResult Function(NotificationResult value)? successNotificationResult,
+    TResult Function(String exception)? failureMessage,
+    TResult Function(Object exception, StackTrace stackTrace)? exception,
+    TResult Function(AtException exception, StackTrace stackTrace)? atSign,
+    required TResult orElse(),
+  }) {
+    if (successNotificationResult != null) {
+      return successNotificationResult(value);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(SuccessNotError value) success,
+    required TResult Function(SuccessString value) successString,
+    required TResult Function(SuccessBool value) successBool,
+    required TResult Function(SuccessNotificationResult value)
+        successNotificationResult,
+    required TResult Function(FailureMessageError value) failureMessage,
+    required TResult Function(ExceptionError value) exception,
+    required TResult Function(AtError value) atSign,
+  }) {
+    return successNotificationResult(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(SuccessNotError value)? success,
+    TResult? Function(SuccessString value)? successString,
+    TResult? Function(SuccessBool value)? successBool,
+    TResult? Function(SuccessNotificationResult value)?
+        successNotificationResult,
+    TResult? Function(FailureMessageError value)? failureMessage,
+    TResult? Function(ExceptionError value)? exception,
+    TResult? Function(AtError value)? atSign,
+  }) {
+    return successNotificationResult?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(SuccessNotError value)? success,
+    TResult Function(SuccessString value)? successString,
+    TResult Function(SuccessBool value)? successBool,
+    TResult Function(SuccessNotificationResult value)?
+        successNotificationResult,
+    TResult Function(FailureMessageError value)? failureMessage,
+    TResult Function(ExceptionError value)? exception,
+    TResult Function(AtError value)? atSign,
+    required TResult orElse(),
+  }) {
+    if (successNotificationResult != null) {
+      return successNotificationResult(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessNotificationResult implements SuccessOrError {
+  const factory SuccessNotificationResult(final NotificationResult value) =
+      _$SuccessNotificationResult;
+
+  NotificationResult get value;
+  @JsonKey(ignore: true)
+  _$$SuccessNotificationResultCopyWith<_$SuccessNotificationResult>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -615,6 +827,8 @@ class _$FailureMessageError implements FailureMessageError {
     required TResult Function() success,
     required TResult Function(String value) successString,
     required TResult Function(bool value) successBool,
+    required TResult Function(NotificationResult value)
+        successNotificationResult,
     required TResult Function(String exception) failureMessage,
     required TResult Function(Object exception, StackTrace stackTrace)
         exception,
@@ -630,6 +844,7 @@ class _$FailureMessageError implements FailureMessageError {
     TResult? Function()? success,
     TResult? Function(String value)? successString,
     TResult? Function(bool value)? successBool,
+    TResult? Function(NotificationResult value)? successNotificationResult,
     TResult? Function(String exception)? failureMessage,
     TResult? Function(Object exception, StackTrace stackTrace)? exception,
     TResult? Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -643,6 +858,7 @@ class _$FailureMessageError implements FailureMessageError {
     TResult Function()? success,
     TResult Function(String value)? successString,
     TResult Function(bool value)? successBool,
+    TResult Function(NotificationResult value)? successNotificationResult,
     TResult Function(String exception)? failureMessage,
     TResult Function(Object exception, StackTrace stackTrace)? exception,
     TResult Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -660,6 +876,8 @@ class _$FailureMessageError implements FailureMessageError {
     required TResult Function(SuccessNotError value) success,
     required TResult Function(SuccessString value) successString,
     required TResult Function(SuccessBool value) successBool,
+    required TResult Function(SuccessNotificationResult value)
+        successNotificationResult,
     required TResult Function(FailureMessageError value) failureMessage,
     required TResult Function(ExceptionError value) exception,
     required TResult Function(AtError value) atSign,
@@ -673,6 +891,8 @@ class _$FailureMessageError implements FailureMessageError {
     TResult? Function(SuccessNotError value)? success,
     TResult? Function(SuccessString value)? successString,
     TResult? Function(SuccessBool value)? successBool,
+    TResult? Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult? Function(FailureMessageError value)? failureMessage,
     TResult? Function(ExceptionError value)? exception,
     TResult? Function(AtError value)? atSign,
@@ -686,6 +906,8 @@ class _$FailureMessageError implements FailureMessageError {
     TResult Function(SuccessNotError value)? success,
     TResult Function(SuccessString value)? successString,
     TResult Function(SuccessBool value)? successBool,
+    TResult Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult Function(FailureMessageError value)? failureMessage,
     TResult Function(ExceptionError value)? exception,
     TResult Function(AtError value)? atSign,
@@ -782,6 +1004,8 @@ class _$ExceptionError implements ExceptionError {
     required TResult Function() success,
     required TResult Function(String value) successString,
     required TResult Function(bool value) successBool,
+    required TResult Function(NotificationResult value)
+        successNotificationResult,
     required TResult Function(String exception) failureMessage,
     required TResult Function(Object exception, StackTrace stackTrace)
         exception,
@@ -797,6 +1021,7 @@ class _$ExceptionError implements ExceptionError {
     TResult? Function()? success,
     TResult? Function(String value)? successString,
     TResult? Function(bool value)? successBool,
+    TResult? Function(NotificationResult value)? successNotificationResult,
     TResult? Function(String exception)? failureMessage,
     TResult? Function(Object exception, StackTrace stackTrace)? exception,
     TResult? Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -810,6 +1035,7 @@ class _$ExceptionError implements ExceptionError {
     TResult Function()? success,
     TResult Function(String value)? successString,
     TResult Function(bool value)? successBool,
+    TResult Function(NotificationResult value)? successNotificationResult,
     TResult Function(String exception)? failureMessage,
     TResult Function(Object exception, StackTrace stackTrace)? exception,
     TResult Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -827,6 +1053,8 @@ class _$ExceptionError implements ExceptionError {
     required TResult Function(SuccessNotError value) success,
     required TResult Function(SuccessString value) successString,
     required TResult Function(SuccessBool value) successBool,
+    required TResult Function(SuccessNotificationResult value)
+        successNotificationResult,
     required TResult Function(FailureMessageError value) failureMessage,
     required TResult Function(ExceptionError value) exception,
     required TResult Function(AtError value) atSign,
@@ -840,6 +1068,8 @@ class _$ExceptionError implements ExceptionError {
     TResult? Function(SuccessNotError value)? success,
     TResult? Function(SuccessString value)? successString,
     TResult? Function(SuccessBool value)? successBool,
+    TResult? Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult? Function(FailureMessageError value)? failureMessage,
     TResult? Function(ExceptionError value)? exception,
     TResult? Function(AtError value)? atSign,
@@ -853,6 +1083,8 @@ class _$ExceptionError implements ExceptionError {
     TResult Function(SuccessNotError value)? success,
     TResult Function(SuccessString value)? successString,
     TResult Function(SuccessBool value)? successBool,
+    TResult Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult Function(FailureMessageError value)? failureMessage,
     TResult Function(ExceptionError value)? exception,
     TResult Function(AtError value)? atSign,
@@ -951,6 +1183,8 @@ class _$AtError implements AtError {
     required TResult Function() success,
     required TResult Function(String value) successString,
     required TResult Function(bool value) successBool,
+    required TResult Function(NotificationResult value)
+        successNotificationResult,
     required TResult Function(String exception) failureMessage,
     required TResult Function(Object exception, StackTrace stackTrace)
         exception,
@@ -966,6 +1200,7 @@ class _$AtError implements AtError {
     TResult? Function()? success,
     TResult? Function(String value)? successString,
     TResult? Function(bool value)? successBool,
+    TResult? Function(NotificationResult value)? successNotificationResult,
     TResult? Function(String exception)? failureMessage,
     TResult? Function(Object exception, StackTrace stackTrace)? exception,
     TResult? Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -979,6 +1214,7 @@ class _$AtError implements AtError {
     TResult Function()? success,
     TResult Function(String value)? successString,
     TResult Function(bool value)? successBool,
+    TResult Function(NotificationResult value)? successNotificationResult,
     TResult Function(String exception)? failureMessage,
     TResult Function(Object exception, StackTrace stackTrace)? exception,
     TResult Function(AtException exception, StackTrace stackTrace)? atSign,
@@ -996,6 +1232,8 @@ class _$AtError implements AtError {
     required TResult Function(SuccessNotError value) success,
     required TResult Function(SuccessString value) successString,
     required TResult Function(SuccessBool value) successBool,
+    required TResult Function(SuccessNotificationResult value)
+        successNotificationResult,
     required TResult Function(FailureMessageError value) failureMessage,
     required TResult Function(ExceptionError value) exception,
     required TResult Function(AtError value) atSign,
@@ -1009,6 +1247,8 @@ class _$AtError implements AtError {
     TResult? Function(SuccessNotError value)? success,
     TResult? Function(SuccessString value)? successString,
     TResult? Function(SuccessBool value)? successBool,
+    TResult? Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult? Function(FailureMessageError value)? failureMessage,
     TResult? Function(ExceptionError value)? exception,
     TResult? Function(AtError value)? atSign,
@@ -1022,6 +1262,8 @@ class _$AtError implements AtError {
     TResult Function(SuccessNotError value)? success,
     TResult Function(SuccessString value)? successString,
     TResult Function(SuccessBool value)? successBool,
+    TResult Function(SuccessNotificationResult value)?
+        successNotificationResult,
     TResult Function(FailureMessageError value)? failureMessage,
     TResult Function(ExceptionError value)? exception,
     TResult Function(AtError value)? atSign,

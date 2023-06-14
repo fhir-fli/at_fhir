@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:at_client/at_client.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-part 'notify.g.dart';
+part 'at_notify.g.dart';
 
 AtClient atClient = AtClientManager.getInstance().atClient;
 
