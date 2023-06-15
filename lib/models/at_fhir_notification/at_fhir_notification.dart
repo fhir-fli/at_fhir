@@ -1,13 +1,13 @@
 import 'dart:convert';
 
 import 'package:fhir/dstu2.dart' as dstu2;
-import 'package:fhir_at_rest/dstu2.dart' as dstu2_request;
-import 'package:fhir/stu3.dart' as stu3;
-import 'package:fhir_at_rest/stu3.dart' as stu3_request;
 import 'package:fhir/r4.dart' as r4;
-import 'package:fhir_at_rest/r4.dart' as r4_request;
 import 'package:fhir/r5.dart' as r5;
+import 'package:fhir/stu3.dart' as stu3;
+import 'package:fhir_at_rest/dstu2.dart' as dstu2_request;
+import 'package:fhir_at_rest/r4.dart' as r4_request;
 import 'package:fhir_at_rest/r5.dart' as r5_request;
+import 'package:fhir_at_rest/stu3.dart' as stu3_request;
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'at_fhir_notification.freezed.dart';
@@ -39,7 +39,7 @@ class AtFhirNotification with _$AtFhirNotification {
   /// Acts like a constructor, returns a [Resource], accepts a
   /// [String] as an argument, mostly because I got tired of typing it out
   factory AtFhirNotification.fromJsonString(String source) {
-    final json = jsonDecode(source);
+    final dynamic json = jsonDecode(source);
     if (json is Map<String, dynamic>) {
       return _$AtFhirNotificationFromJson(json);
     } else {
