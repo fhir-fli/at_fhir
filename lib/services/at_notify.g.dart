@@ -6,7 +6,7 @@ part of 'at_notify.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$atNotifyHash() => r'fb692d18e597582ab171726e7f1a4a7893c55113';
+String _$atNotifyHash() => r'3bd54758e41f137c9fbb84128bbc34faa1547bba';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -143,6 +143,128 @@ class AtNotifyProvider
   ) {
     return notifier.build(
       json,
+      atSign,
+    );
+  }
+}
+
+String _$atFhirNotifyHash() => r'd98cc66dba8cf2553425e8b02f3f39caa791df32';
+
+abstract class _$AtFhirNotify
+    extends BuildlessAutoDisposeAsyncNotifier<NotificationResult> {
+  late final AtFhirNotification atFhirNotification;
+  late final String atSign;
+
+  Future<NotificationResult> build(
+    AtFhirNotification atFhirNotification,
+    String atSign,
+  );
+}
+
+/// Provider to notify a specific atSign
+///
+/// Copied from [AtFhirNotify].
+@ProviderFor(AtFhirNotify)
+const atFhirNotifyProvider = AtFhirNotifyFamily();
+
+/// Provider to notify a specific atSign
+///
+/// Copied from [AtFhirNotify].
+class AtFhirNotifyFamily extends Family<AsyncValue<NotificationResult>> {
+  /// Provider to notify a specific atSign
+  ///
+  /// Copied from [AtFhirNotify].
+  const AtFhirNotifyFamily();
+
+  /// Provider to notify a specific atSign
+  ///
+  /// Copied from [AtFhirNotify].
+  AtFhirNotifyProvider call(
+    AtFhirNotification atFhirNotification,
+    String atSign,
+  ) {
+    return AtFhirNotifyProvider(
+      atFhirNotification,
+      atSign,
+    );
+  }
+
+  @override
+  AtFhirNotifyProvider getProviderOverride(
+    covariant AtFhirNotifyProvider provider,
+  ) {
+    return call(
+      provider.atFhirNotification,
+      provider.atSign,
+    );
+  }
+
+  static const Iterable<ProviderOrFamily>? _dependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
+
+  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
+      _allTransitiveDependencies;
+
+  @override
+  String? get name => r'atFhirNotifyProvider';
+}
+
+/// Provider to notify a specific atSign
+///
+/// Copied from [AtFhirNotify].
+class AtFhirNotifyProvider extends AutoDisposeAsyncNotifierProviderImpl<
+    AtFhirNotify, NotificationResult> {
+  /// Provider to notify a specific atSign
+  ///
+  /// Copied from [AtFhirNotify].
+  AtFhirNotifyProvider(
+    this.atFhirNotification,
+    this.atSign,
+  ) : super.internal(
+          () => AtFhirNotify()
+            ..atFhirNotification = atFhirNotification
+            ..atSign = atSign,
+          from: atFhirNotifyProvider,
+          name: r'atFhirNotifyProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$atFhirNotifyHash,
+          dependencies: AtFhirNotifyFamily._dependencies,
+          allTransitiveDependencies:
+              AtFhirNotifyFamily._allTransitiveDependencies,
+        );
+
+  final AtFhirNotification atFhirNotification;
+  final String atSign;
+
+  @override
+  bool operator ==(Object other) {
+    return other is AtFhirNotifyProvider &&
+        other.atFhirNotification == atFhirNotification &&
+        other.atSign == atSign;
+  }
+
+  @override
+  int get hashCode {
+    var hash = _SystemHash.combine(0, runtimeType.hashCode);
+    hash = _SystemHash.combine(hash, atFhirNotification.hashCode);
+    hash = _SystemHash.combine(hash, atSign.hashCode);
+
+    return _SystemHash.finish(hash);
+  }
+
+  @override
+  Future<NotificationResult> runNotifierBuild(
+    covariant AtFhirNotify notifier,
+  ) {
+    return notifier.build(
+      atFhirNotification,
       atSign,
     );
   }
