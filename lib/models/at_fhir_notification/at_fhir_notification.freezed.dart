@@ -17,21 +17,21 @@ final _privateConstructorUsedError = UnsupportedError(
 AtFhirNotification _$AtFhirNotificationFromJson(Map<String, dynamic> json) {
   switch (json['runtimeType']) {
     case 'dstu2Resource':
-      return Dstu2ResourceNotification.fromJson(json);
+      return AtFhirDstu2ResourceNotification.fromJson(json);
     case 'stu3Resource':
-      return Stu3ResourceNotification.fromJson(json);
+      return AtFhirStu3ResourceNotification.fromJson(json);
     case 'r4Resource':
-      return R4ResourceNotification.fromJson(json);
+      return AtFhirR4ResourceNotification.fromJson(json);
     case 'r5Resource':
-      return R5ResourceNotification.fromJson(json);
+      return AtFhirR5ResourceNotification.fromJson(json);
     case 'dstu2Request':
-      return Dstu2Request.fromJson(json);
+      return AtFhirDstu2RequestNotification.fromJson(json);
     case 'stu3Request':
-      return Stu3Request.fromJson(json);
+      return AtFhirStu3RequestNotification.fromJson(json);
     case 'r4Request':
-      return R4Request.fromJson(json);
+      return AtFhirR4RequestNotification.fromJson(json);
     case 'r5Request':
-      return R5Request.fromJson(json);
+      return AtFhirR5RequestNotification.fromJson(json);
 
     default:
       throw CheckedFromJsonException(json, 'runtimeType', 'AtFhirNotification',
@@ -81,38 +81,41 @@ mixin _$AtFhirNotification {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Dstu2ResourceNotification value) dstu2Resource,
-    required TResult Function(Stu3ResourceNotification value) stu3Resource,
-    required TResult Function(R4ResourceNotification value) r4Resource,
-    required TResult Function(R5ResourceNotification value) r5Resource,
-    required TResult Function(Dstu2Request value) dstu2Request,
-    required TResult Function(Stu3Request value) stu3Request,
-    required TResult Function(R4Request value) r4Request,
-    required TResult Function(R5Request value) r5Request,
+    required TResult Function(AtFhirDstu2ResourceNotification value)
+        dstu2Resource,
+    required TResult Function(AtFhirStu3ResourceNotification value)
+        stu3Resource,
+    required TResult Function(AtFhirR4ResourceNotification value) r4Resource,
+    required TResult Function(AtFhirR5ResourceNotification value) r5Resource,
+    required TResult Function(AtFhirDstu2RequestNotification value)
+        dstu2Request,
+    required TResult Function(AtFhirStu3RequestNotification value) stu3Request,
+    required TResult Function(AtFhirR4RequestNotification value) r4Request,
+    required TResult Function(AtFhirR5RequestNotification value) r5Request,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult? Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult? Function(R4ResourceNotification value)? r4Resource,
-    TResult? Function(R5ResourceNotification value)? r5Resource,
-    TResult? Function(Dstu2Request value)? dstu2Request,
-    TResult? Function(Stu3Request value)? stu3Request,
-    TResult? Function(R4Request value)? r4Request,
-    TResult? Function(R5Request value)? r5Request,
+    TResult? Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult? Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult? Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult? Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult? Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult? Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult? Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult? Function(AtFhirR5RequestNotification value)? r5Request,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult Function(R4ResourceNotification value)? r4Resource,
-    TResult Function(R5ResourceNotification value)? r5Resource,
-    TResult Function(Dstu2Request value)? dstu2Request,
-    TResult Function(Stu3Request value)? stu3Request,
-    TResult Function(R4Request value)? r4Request,
-    TResult Function(R5Request value)? r5Request,
+    TResult Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult Function(AtFhirR5RequestNotification value)? r5Request,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -138,21 +141,23 @@ class _$AtFhirNotificationCopyWithImpl<$Res, $Val extends AtFhirNotification>
 }
 
 /// @nodoc
-abstract class _$$Dstu2ResourceNotificationCopyWith<$Res> {
-  factory _$$Dstu2ResourceNotificationCopyWith(
-          _$Dstu2ResourceNotification value,
-          $Res Function(_$Dstu2ResourceNotification) then) =
-      __$$Dstu2ResourceNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirDstu2ResourceNotificationCopyWith<$Res> {
+  factory _$$AtFhirDstu2ResourceNotificationCopyWith(
+          _$AtFhirDstu2ResourceNotification value,
+          $Res Function(_$AtFhirDstu2ResourceNotification) then) =
+      __$$AtFhirDstu2ResourceNotificationCopyWithImpl<$Res>;
   @useResult
   $Res call({dstu2.Resource value});
 }
 
 /// @nodoc
-class __$$Dstu2ResourceNotificationCopyWithImpl<$Res>
-    extends _$AtFhirNotificationCopyWithImpl<$Res, _$Dstu2ResourceNotification>
-    implements _$$Dstu2ResourceNotificationCopyWith<$Res> {
-  __$$Dstu2ResourceNotificationCopyWithImpl(_$Dstu2ResourceNotification _value,
-      $Res Function(_$Dstu2ResourceNotification) _then)
+class __$$AtFhirDstu2ResourceNotificationCopyWithImpl<$Res>
+    extends _$AtFhirNotificationCopyWithImpl<$Res,
+        _$AtFhirDstu2ResourceNotification>
+    implements _$$AtFhirDstu2ResourceNotificationCopyWith<$Res> {
+  __$$AtFhirDstu2ResourceNotificationCopyWithImpl(
+      _$AtFhirDstu2ResourceNotification _value,
+      $Res Function(_$AtFhirDstu2ResourceNotification) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -160,7 +165,7 @@ class __$$Dstu2ResourceNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$Dstu2ResourceNotification(
+    return _then(_$AtFhirDstu2ResourceNotification(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -171,13 +176,15 @@ class __$$Dstu2ResourceNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$Dstu2ResourceNotification extends Dstu2ResourceNotification {
-  const _$Dstu2ResourceNotification(this.value, {final String? $type})
+class _$AtFhirDstu2ResourceNotification
+    extends AtFhirDstu2ResourceNotification {
+  const _$AtFhirDstu2ResourceNotification(this.value, {final String? $type})
       : $type = $type ?? 'dstu2Resource',
         super._();
 
-  factory _$Dstu2ResourceNotification.fromJson(Map<String, dynamic> json) =>
-      _$$Dstu2ResourceNotificationFromJson(json);
+  factory _$AtFhirDstu2ResourceNotification.fromJson(
+          Map<String, dynamic> json) =>
+      _$$AtFhirDstu2ResourceNotificationFromJson(json);
 
   @override
   final dstu2.Resource value;
@@ -194,7 +201,7 @@ class _$Dstu2ResourceNotification extends Dstu2ResourceNotification {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Dstu2ResourceNotification &&
+            other is _$AtFhirDstu2ResourceNotification &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -205,9 +212,9 @@ class _$Dstu2ResourceNotification extends Dstu2ResourceNotification {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$Dstu2ResourceNotificationCopyWith<_$Dstu2ResourceNotification>
-      get copyWith => __$$Dstu2ResourceNotificationCopyWithImpl<
-          _$Dstu2ResourceNotification>(this, _$identity);
+  _$$AtFhirDstu2ResourceNotificationCopyWith<_$AtFhirDstu2ResourceNotification>
+      get copyWith => __$$AtFhirDstu2ResourceNotificationCopyWithImpl<
+          _$AtFhirDstu2ResourceNotification>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -261,14 +268,17 @@ class _$Dstu2ResourceNotification extends Dstu2ResourceNotification {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Dstu2ResourceNotification value) dstu2Resource,
-    required TResult Function(Stu3ResourceNotification value) stu3Resource,
-    required TResult Function(R4ResourceNotification value) r4Resource,
-    required TResult Function(R5ResourceNotification value) r5Resource,
-    required TResult Function(Dstu2Request value) dstu2Request,
-    required TResult Function(Stu3Request value) stu3Request,
-    required TResult Function(R4Request value) r4Request,
-    required TResult Function(R5Request value) r5Request,
+    required TResult Function(AtFhirDstu2ResourceNotification value)
+        dstu2Resource,
+    required TResult Function(AtFhirStu3ResourceNotification value)
+        stu3Resource,
+    required TResult Function(AtFhirR4ResourceNotification value) r4Resource,
+    required TResult Function(AtFhirR5ResourceNotification value) r5Resource,
+    required TResult Function(AtFhirDstu2RequestNotification value)
+        dstu2Request,
+    required TResult Function(AtFhirStu3RequestNotification value) stu3Request,
+    required TResult Function(AtFhirR4RequestNotification value) r4Request,
+    required TResult Function(AtFhirR5RequestNotification value) r5Request,
   }) {
     return dstu2Resource(this);
   }
@@ -276,14 +286,14 @@ class _$Dstu2ResourceNotification extends Dstu2ResourceNotification {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult? Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult? Function(R4ResourceNotification value)? r4Resource,
-    TResult? Function(R5ResourceNotification value)? r5Resource,
-    TResult? Function(Dstu2Request value)? dstu2Request,
-    TResult? Function(Stu3Request value)? stu3Request,
-    TResult? Function(R4Request value)? r4Request,
-    TResult? Function(R5Request value)? r5Request,
+    TResult? Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult? Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult? Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult? Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult? Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult? Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult? Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult? Function(AtFhirR5RequestNotification value)? r5Request,
   }) {
     return dstu2Resource?.call(this);
   }
@@ -291,14 +301,14 @@ class _$Dstu2ResourceNotification extends Dstu2ResourceNotification {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult Function(R4ResourceNotification value)? r4Resource,
-    TResult Function(R5ResourceNotification value)? r5Resource,
-    TResult Function(Dstu2Request value)? dstu2Request,
-    TResult Function(Stu3Request value)? stu3Request,
-    TResult Function(R4Request value)? r4Request,
-    TResult Function(R5Request value)? r5Request,
+    TResult Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult Function(AtFhirR5RequestNotification value)? r5Request,
     required TResult orElse(),
   }) {
     if (dstu2Resource != null) {
@@ -309,42 +319,45 @@ class _$Dstu2ResourceNotification extends Dstu2ResourceNotification {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$Dstu2ResourceNotificationToJson(
+    return _$$AtFhirDstu2ResourceNotificationToJson(
       this,
     );
   }
 }
 
-abstract class Dstu2ResourceNotification extends AtFhirNotification {
-  const factory Dstu2ResourceNotification(final dstu2.Resource value) =
-      _$Dstu2ResourceNotification;
-  const Dstu2ResourceNotification._() : super._();
+abstract class AtFhirDstu2ResourceNotification extends AtFhirNotification {
+  const factory AtFhirDstu2ResourceNotification(final dstu2.Resource value) =
+      _$AtFhirDstu2ResourceNotification;
+  const AtFhirDstu2ResourceNotification._() : super._();
 
-  factory Dstu2ResourceNotification.fromJson(Map<String, dynamic> json) =
-      _$Dstu2ResourceNotification.fromJson;
+  factory AtFhirDstu2ResourceNotification.fromJson(Map<String, dynamic> json) =
+      _$AtFhirDstu2ResourceNotification.fromJson;
 
   @override
   dstu2.Resource get value;
   @JsonKey(ignore: true)
-  _$$Dstu2ResourceNotificationCopyWith<_$Dstu2ResourceNotification>
+  _$$AtFhirDstu2ResourceNotificationCopyWith<_$AtFhirDstu2ResourceNotification>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$Stu3ResourceNotificationCopyWith<$Res> {
-  factory _$$Stu3ResourceNotificationCopyWith(_$Stu3ResourceNotification value,
-          $Res Function(_$Stu3ResourceNotification) then) =
-      __$$Stu3ResourceNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirStu3ResourceNotificationCopyWith<$Res> {
+  factory _$$AtFhirStu3ResourceNotificationCopyWith(
+          _$AtFhirStu3ResourceNotification value,
+          $Res Function(_$AtFhirStu3ResourceNotification) then) =
+      __$$AtFhirStu3ResourceNotificationCopyWithImpl<$Res>;
   @useResult
   $Res call({stu3.Resource value});
 }
 
 /// @nodoc
-class __$$Stu3ResourceNotificationCopyWithImpl<$Res>
-    extends _$AtFhirNotificationCopyWithImpl<$Res, _$Stu3ResourceNotification>
-    implements _$$Stu3ResourceNotificationCopyWith<$Res> {
-  __$$Stu3ResourceNotificationCopyWithImpl(_$Stu3ResourceNotification _value,
-      $Res Function(_$Stu3ResourceNotification) _then)
+class __$$AtFhirStu3ResourceNotificationCopyWithImpl<$Res>
+    extends _$AtFhirNotificationCopyWithImpl<$Res,
+        _$AtFhirStu3ResourceNotification>
+    implements _$$AtFhirStu3ResourceNotificationCopyWith<$Res> {
+  __$$AtFhirStu3ResourceNotificationCopyWithImpl(
+      _$AtFhirStu3ResourceNotification _value,
+      $Res Function(_$AtFhirStu3ResourceNotification) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -352,7 +365,7 @@ class __$$Stu3ResourceNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$Stu3ResourceNotification(
+    return _then(_$AtFhirStu3ResourceNotification(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -363,13 +376,14 @@ class __$$Stu3ResourceNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$Stu3ResourceNotification extends Stu3ResourceNotification {
-  const _$Stu3ResourceNotification(this.value, {final String? $type})
+class _$AtFhirStu3ResourceNotification extends AtFhirStu3ResourceNotification {
+  const _$AtFhirStu3ResourceNotification(this.value, {final String? $type})
       : $type = $type ?? 'stu3Resource',
         super._();
 
-  factory _$Stu3ResourceNotification.fromJson(Map<String, dynamic> json) =>
-      _$$Stu3ResourceNotificationFromJson(json);
+  factory _$AtFhirStu3ResourceNotification.fromJson(
+          Map<String, dynamic> json) =>
+      _$$AtFhirStu3ResourceNotificationFromJson(json);
 
   @override
   final stu3.Resource value;
@@ -386,7 +400,7 @@ class _$Stu3ResourceNotification extends Stu3ResourceNotification {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Stu3ResourceNotification &&
+            other is _$AtFhirStu3ResourceNotification &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -397,10 +411,9 @@ class _$Stu3ResourceNotification extends Stu3ResourceNotification {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$Stu3ResourceNotificationCopyWith<_$Stu3ResourceNotification>
-      get copyWith =>
-          __$$Stu3ResourceNotificationCopyWithImpl<_$Stu3ResourceNotification>(
-              this, _$identity);
+  _$$AtFhirStu3ResourceNotificationCopyWith<_$AtFhirStu3ResourceNotification>
+      get copyWith => __$$AtFhirStu3ResourceNotificationCopyWithImpl<
+          _$AtFhirStu3ResourceNotification>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -454,14 +467,17 @@ class _$Stu3ResourceNotification extends Stu3ResourceNotification {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Dstu2ResourceNotification value) dstu2Resource,
-    required TResult Function(Stu3ResourceNotification value) stu3Resource,
-    required TResult Function(R4ResourceNotification value) r4Resource,
-    required TResult Function(R5ResourceNotification value) r5Resource,
-    required TResult Function(Dstu2Request value) dstu2Request,
-    required TResult Function(Stu3Request value) stu3Request,
-    required TResult Function(R4Request value) r4Request,
-    required TResult Function(R5Request value) r5Request,
+    required TResult Function(AtFhirDstu2ResourceNotification value)
+        dstu2Resource,
+    required TResult Function(AtFhirStu3ResourceNotification value)
+        stu3Resource,
+    required TResult Function(AtFhirR4ResourceNotification value) r4Resource,
+    required TResult Function(AtFhirR5ResourceNotification value) r5Resource,
+    required TResult Function(AtFhirDstu2RequestNotification value)
+        dstu2Request,
+    required TResult Function(AtFhirStu3RequestNotification value) stu3Request,
+    required TResult Function(AtFhirR4RequestNotification value) r4Request,
+    required TResult Function(AtFhirR5RequestNotification value) r5Request,
   }) {
     return stu3Resource(this);
   }
@@ -469,14 +485,14 @@ class _$Stu3ResourceNotification extends Stu3ResourceNotification {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult? Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult? Function(R4ResourceNotification value)? r4Resource,
-    TResult? Function(R5ResourceNotification value)? r5Resource,
-    TResult? Function(Dstu2Request value)? dstu2Request,
-    TResult? Function(Stu3Request value)? stu3Request,
-    TResult? Function(R4Request value)? r4Request,
-    TResult? Function(R5Request value)? r5Request,
+    TResult? Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult? Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult? Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult? Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult? Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult? Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult? Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult? Function(AtFhirR5RequestNotification value)? r5Request,
   }) {
     return stu3Resource?.call(this);
   }
@@ -484,14 +500,14 @@ class _$Stu3ResourceNotification extends Stu3ResourceNotification {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult Function(R4ResourceNotification value)? r4Resource,
-    TResult Function(R5ResourceNotification value)? r5Resource,
-    TResult Function(Dstu2Request value)? dstu2Request,
-    TResult Function(Stu3Request value)? stu3Request,
-    TResult Function(R4Request value)? r4Request,
-    TResult Function(R5Request value)? r5Request,
+    TResult Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult Function(AtFhirR5RequestNotification value)? r5Request,
     required TResult orElse(),
   }) {
     if (stu3Resource != null) {
@@ -502,42 +518,45 @@ class _$Stu3ResourceNotification extends Stu3ResourceNotification {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$Stu3ResourceNotificationToJson(
+    return _$$AtFhirStu3ResourceNotificationToJson(
       this,
     );
   }
 }
 
-abstract class Stu3ResourceNotification extends AtFhirNotification {
-  const factory Stu3ResourceNotification(final stu3.Resource value) =
-      _$Stu3ResourceNotification;
-  const Stu3ResourceNotification._() : super._();
+abstract class AtFhirStu3ResourceNotification extends AtFhirNotification {
+  const factory AtFhirStu3ResourceNotification(final stu3.Resource value) =
+      _$AtFhirStu3ResourceNotification;
+  const AtFhirStu3ResourceNotification._() : super._();
 
-  factory Stu3ResourceNotification.fromJson(Map<String, dynamic> json) =
-      _$Stu3ResourceNotification.fromJson;
+  factory AtFhirStu3ResourceNotification.fromJson(Map<String, dynamic> json) =
+      _$AtFhirStu3ResourceNotification.fromJson;
 
   @override
   stu3.Resource get value;
   @JsonKey(ignore: true)
-  _$$Stu3ResourceNotificationCopyWith<_$Stu3ResourceNotification>
+  _$$AtFhirStu3ResourceNotificationCopyWith<_$AtFhirStu3ResourceNotification>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$R4ResourceNotificationCopyWith<$Res> {
-  factory _$$R4ResourceNotificationCopyWith(_$R4ResourceNotification value,
-          $Res Function(_$R4ResourceNotification) then) =
-      __$$R4ResourceNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirR4ResourceNotificationCopyWith<$Res> {
+  factory _$$AtFhirR4ResourceNotificationCopyWith(
+          _$AtFhirR4ResourceNotification value,
+          $Res Function(_$AtFhirR4ResourceNotification) then) =
+      __$$AtFhirR4ResourceNotificationCopyWithImpl<$Res>;
   @useResult
   $Res call({r4.Resource value});
 }
 
 /// @nodoc
-class __$$R4ResourceNotificationCopyWithImpl<$Res>
-    extends _$AtFhirNotificationCopyWithImpl<$Res, _$R4ResourceNotification>
-    implements _$$R4ResourceNotificationCopyWith<$Res> {
-  __$$R4ResourceNotificationCopyWithImpl(_$R4ResourceNotification _value,
-      $Res Function(_$R4ResourceNotification) _then)
+class __$$AtFhirR4ResourceNotificationCopyWithImpl<$Res>
+    extends _$AtFhirNotificationCopyWithImpl<$Res,
+        _$AtFhirR4ResourceNotification>
+    implements _$$AtFhirR4ResourceNotificationCopyWith<$Res> {
+  __$$AtFhirR4ResourceNotificationCopyWithImpl(
+      _$AtFhirR4ResourceNotification _value,
+      $Res Function(_$AtFhirR4ResourceNotification) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -545,7 +564,7 @@ class __$$R4ResourceNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$R4ResourceNotification(
+    return _then(_$AtFhirR4ResourceNotification(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -556,13 +575,13 @@ class __$$R4ResourceNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$R4ResourceNotification extends R4ResourceNotification {
-  const _$R4ResourceNotification(this.value, {final String? $type})
+class _$AtFhirR4ResourceNotification extends AtFhirR4ResourceNotification {
+  const _$AtFhirR4ResourceNotification(this.value, {final String? $type})
       : $type = $type ?? 'r4Resource',
         super._();
 
-  factory _$R4ResourceNotification.fromJson(Map<String, dynamic> json) =>
-      _$$R4ResourceNotificationFromJson(json);
+  factory _$AtFhirR4ResourceNotification.fromJson(Map<String, dynamic> json) =>
+      _$$AtFhirR4ResourceNotificationFromJson(json);
 
   @override
   final r4.Resource value;
@@ -579,7 +598,7 @@ class _$R4ResourceNotification extends R4ResourceNotification {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$R4ResourceNotification &&
+            other is _$AtFhirR4ResourceNotification &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -590,9 +609,9 @@ class _$R4ResourceNotification extends R4ResourceNotification {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$R4ResourceNotificationCopyWith<_$R4ResourceNotification> get copyWith =>
-      __$$R4ResourceNotificationCopyWithImpl<_$R4ResourceNotification>(
-          this, _$identity);
+  _$$AtFhirR4ResourceNotificationCopyWith<_$AtFhirR4ResourceNotification>
+      get copyWith => __$$AtFhirR4ResourceNotificationCopyWithImpl<
+          _$AtFhirR4ResourceNotification>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -646,14 +665,17 @@ class _$R4ResourceNotification extends R4ResourceNotification {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Dstu2ResourceNotification value) dstu2Resource,
-    required TResult Function(Stu3ResourceNotification value) stu3Resource,
-    required TResult Function(R4ResourceNotification value) r4Resource,
-    required TResult Function(R5ResourceNotification value) r5Resource,
-    required TResult Function(Dstu2Request value) dstu2Request,
-    required TResult Function(Stu3Request value) stu3Request,
-    required TResult Function(R4Request value) r4Request,
-    required TResult Function(R5Request value) r5Request,
+    required TResult Function(AtFhirDstu2ResourceNotification value)
+        dstu2Resource,
+    required TResult Function(AtFhirStu3ResourceNotification value)
+        stu3Resource,
+    required TResult Function(AtFhirR4ResourceNotification value) r4Resource,
+    required TResult Function(AtFhirR5ResourceNotification value) r5Resource,
+    required TResult Function(AtFhirDstu2RequestNotification value)
+        dstu2Request,
+    required TResult Function(AtFhirStu3RequestNotification value) stu3Request,
+    required TResult Function(AtFhirR4RequestNotification value) r4Request,
+    required TResult Function(AtFhirR5RequestNotification value) r5Request,
   }) {
     return r4Resource(this);
   }
@@ -661,14 +683,14 @@ class _$R4ResourceNotification extends R4ResourceNotification {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult? Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult? Function(R4ResourceNotification value)? r4Resource,
-    TResult? Function(R5ResourceNotification value)? r5Resource,
-    TResult? Function(Dstu2Request value)? dstu2Request,
-    TResult? Function(Stu3Request value)? stu3Request,
-    TResult? Function(R4Request value)? r4Request,
-    TResult? Function(R5Request value)? r5Request,
+    TResult? Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult? Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult? Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult? Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult? Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult? Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult? Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult? Function(AtFhirR5RequestNotification value)? r5Request,
   }) {
     return r4Resource?.call(this);
   }
@@ -676,14 +698,14 @@ class _$R4ResourceNotification extends R4ResourceNotification {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult Function(R4ResourceNotification value)? r4Resource,
-    TResult Function(R5ResourceNotification value)? r5Resource,
-    TResult Function(Dstu2Request value)? dstu2Request,
-    TResult Function(Stu3Request value)? stu3Request,
-    TResult Function(R4Request value)? r4Request,
-    TResult Function(R5Request value)? r5Request,
+    TResult Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult Function(AtFhirR5RequestNotification value)? r5Request,
     required TResult orElse(),
   }) {
     if (r4Resource != null) {
@@ -694,42 +716,45 @@ class _$R4ResourceNotification extends R4ResourceNotification {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$R4ResourceNotificationToJson(
+    return _$$AtFhirR4ResourceNotificationToJson(
       this,
     );
   }
 }
 
-abstract class R4ResourceNotification extends AtFhirNotification {
-  const factory R4ResourceNotification(final r4.Resource value) =
-      _$R4ResourceNotification;
-  const R4ResourceNotification._() : super._();
+abstract class AtFhirR4ResourceNotification extends AtFhirNotification {
+  const factory AtFhirR4ResourceNotification(final r4.Resource value) =
+      _$AtFhirR4ResourceNotification;
+  const AtFhirR4ResourceNotification._() : super._();
 
-  factory R4ResourceNotification.fromJson(Map<String, dynamic> json) =
-      _$R4ResourceNotification.fromJson;
+  factory AtFhirR4ResourceNotification.fromJson(Map<String, dynamic> json) =
+      _$AtFhirR4ResourceNotification.fromJson;
 
   @override
   r4.Resource get value;
   @JsonKey(ignore: true)
-  _$$R4ResourceNotificationCopyWith<_$R4ResourceNotification> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AtFhirR4ResourceNotificationCopyWith<_$AtFhirR4ResourceNotification>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$R5ResourceNotificationCopyWith<$Res> {
-  factory _$$R5ResourceNotificationCopyWith(_$R5ResourceNotification value,
-          $Res Function(_$R5ResourceNotification) then) =
-      __$$R5ResourceNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirR5ResourceNotificationCopyWith<$Res> {
+  factory _$$AtFhirR5ResourceNotificationCopyWith(
+          _$AtFhirR5ResourceNotification value,
+          $Res Function(_$AtFhirR5ResourceNotification) then) =
+      __$$AtFhirR5ResourceNotificationCopyWithImpl<$Res>;
   @useResult
   $Res call({r5.Resource value});
 }
 
 /// @nodoc
-class __$$R5ResourceNotificationCopyWithImpl<$Res>
-    extends _$AtFhirNotificationCopyWithImpl<$Res, _$R5ResourceNotification>
-    implements _$$R5ResourceNotificationCopyWith<$Res> {
-  __$$R5ResourceNotificationCopyWithImpl(_$R5ResourceNotification _value,
-      $Res Function(_$R5ResourceNotification) _then)
+class __$$AtFhirR5ResourceNotificationCopyWithImpl<$Res>
+    extends _$AtFhirNotificationCopyWithImpl<$Res,
+        _$AtFhirR5ResourceNotification>
+    implements _$$AtFhirR5ResourceNotificationCopyWith<$Res> {
+  __$$AtFhirR5ResourceNotificationCopyWithImpl(
+      _$AtFhirR5ResourceNotification _value,
+      $Res Function(_$AtFhirR5ResourceNotification) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -737,7 +762,7 @@ class __$$R5ResourceNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$R5ResourceNotification(
+    return _then(_$AtFhirR5ResourceNotification(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -748,13 +773,13 @@ class __$$R5ResourceNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$R5ResourceNotification extends R5ResourceNotification {
-  const _$R5ResourceNotification(this.value, {final String? $type})
+class _$AtFhirR5ResourceNotification extends AtFhirR5ResourceNotification {
+  const _$AtFhirR5ResourceNotification(this.value, {final String? $type})
       : $type = $type ?? 'r5Resource',
         super._();
 
-  factory _$R5ResourceNotification.fromJson(Map<String, dynamic> json) =>
-      _$$R5ResourceNotificationFromJson(json);
+  factory _$AtFhirR5ResourceNotification.fromJson(Map<String, dynamic> json) =>
+      _$$AtFhirR5ResourceNotificationFromJson(json);
 
   @override
   final r5.Resource value;
@@ -771,7 +796,7 @@ class _$R5ResourceNotification extends R5ResourceNotification {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$R5ResourceNotification &&
+            other is _$AtFhirR5ResourceNotification &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -782,9 +807,9 @@ class _$R5ResourceNotification extends R5ResourceNotification {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$R5ResourceNotificationCopyWith<_$R5ResourceNotification> get copyWith =>
-      __$$R5ResourceNotificationCopyWithImpl<_$R5ResourceNotification>(
-          this, _$identity);
+  _$$AtFhirR5ResourceNotificationCopyWith<_$AtFhirR5ResourceNotification>
+      get copyWith => __$$AtFhirR5ResourceNotificationCopyWithImpl<
+          _$AtFhirR5ResourceNotification>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -838,14 +863,17 @@ class _$R5ResourceNotification extends R5ResourceNotification {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Dstu2ResourceNotification value) dstu2Resource,
-    required TResult Function(Stu3ResourceNotification value) stu3Resource,
-    required TResult Function(R4ResourceNotification value) r4Resource,
-    required TResult Function(R5ResourceNotification value) r5Resource,
-    required TResult Function(Dstu2Request value) dstu2Request,
-    required TResult Function(Stu3Request value) stu3Request,
-    required TResult Function(R4Request value) r4Request,
-    required TResult Function(R5Request value) r5Request,
+    required TResult Function(AtFhirDstu2ResourceNotification value)
+        dstu2Resource,
+    required TResult Function(AtFhirStu3ResourceNotification value)
+        stu3Resource,
+    required TResult Function(AtFhirR4ResourceNotification value) r4Resource,
+    required TResult Function(AtFhirR5ResourceNotification value) r5Resource,
+    required TResult Function(AtFhirDstu2RequestNotification value)
+        dstu2Request,
+    required TResult Function(AtFhirStu3RequestNotification value) stu3Request,
+    required TResult Function(AtFhirR4RequestNotification value) r4Request,
+    required TResult Function(AtFhirR5RequestNotification value) r5Request,
   }) {
     return r5Resource(this);
   }
@@ -853,14 +881,14 @@ class _$R5ResourceNotification extends R5ResourceNotification {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult? Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult? Function(R4ResourceNotification value)? r4Resource,
-    TResult? Function(R5ResourceNotification value)? r5Resource,
-    TResult? Function(Dstu2Request value)? dstu2Request,
-    TResult? Function(Stu3Request value)? stu3Request,
-    TResult? Function(R4Request value)? r4Request,
-    TResult? Function(R5Request value)? r5Request,
+    TResult? Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult? Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult? Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult? Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult? Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult? Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult? Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult? Function(AtFhirR5RequestNotification value)? r5Request,
   }) {
     return r5Resource?.call(this);
   }
@@ -868,14 +896,14 @@ class _$R5ResourceNotification extends R5ResourceNotification {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult Function(R4ResourceNotification value)? r4Resource,
-    TResult Function(R5ResourceNotification value)? r5Resource,
-    TResult Function(Dstu2Request value)? dstu2Request,
-    TResult Function(Stu3Request value)? stu3Request,
-    TResult Function(R4Request value)? r4Request,
-    TResult Function(R5Request value)? r5Request,
+    TResult Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult Function(AtFhirR5RequestNotification value)? r5Request,
     required TResult orElse(),
   }) {
     if (r5Resource != null) {
@@ -886,32 +914,33 @@ class _$R5ResourceNotification extends R5ResourceNotification {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$R5ResourceNotificationToJson(
+    return _$$AtFhirR5ResourceNotificationToJson(
       this,
     );
   }
 }
 
-abstract class R5ResourceNotification extends AtFhirNotification {
-  const factory R5ResourceNotification(final r5.Resource value) =
-      _$R5ResourceNotification;
-  const R5ResourceNotification._() : super._();
+abstract class AtFhirR5ResourceNotification extends AtFhirNotification {
+  const factory AtFhirR5ResourceNotification(final r5.Resource value) =
+      _$AtFhirR5ResourceNotification;
+  const AtFhirR5ResourceNotification._() : super._();
 
-  factory R5ResourceNotification.fromJson(Map<String, dynamic> json) =
-      _$R5ResourceNotification.fromJson;
+  factory AtFhirR5ResourceNotification.fromJson(Map<String, dynamic> json) =
+      _$AtFhirR5ResourceNotification.fromJson;
 
   @override
   r5.Resource get value;
   @JsonKey(ignore: true)
-  _$$R5ResourceNotificationCopyWith<_$R5ResourceNotification> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AtFhirR5ResourceNotificationCopyWith<_$AtFhirR5ResourceNotification>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$Dstu2RequestCopyWith<$Res> {
-  factory _$$Dstu2RequestCopyWith(
-          _$Dstu2Request value, $Res Function(_$Dstu2Request) then) =
-      __$$Dstu2RequestCopyWithImpl<$Res>;
+abstract class _$$AtFhirDstu2RequestNotificationCopyWith<$Res> {
+  factory _$$AtFhirDstu2RequestNotificationCopyWith(
+          _$AtFhirDstu2RequestNotification value,
+          $Res Function(_$AtFhirDstu2RequestNotification) then) =
+      __$$AtFhirDstu2RequestNotificationCopyWithImpl<$Res>;
   @useResult
   $Res call({dstu2_request.FhirRequest value});
 
@@ -919,11 +948,13 @@ abstract class _$$Dstu2RequestCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$Dstu2RequestCopyWithImpl<$Res>
-    extends _$AtFhirNotificationCopyWithImpl<$Res, _$Dstu2Request>
-    implements _$$Dstu2RequestCopyWith<$Res> {
-  __$$Dstu2RequestCopyWithImpl(
-      _$Dstu2Request _value, $Res Function(_$Dstu2Request) _then)
+class __$$AtFhirDstu2RequestNotificationCopyWithImpl<$Res>
+    extends _$AtFhirNotificationCopyWithImpl<$Res,
+        _$AtFhirDstu2RequestNotification>
+    implements _$$AtFhirDstu2RequestNotificationCopyWith<$Res> {
+  __$$AtFhirDstu2RequestNotificationCopyWithImpl(
+      _$AtFhirDstu2RequestNotification _value,
+      $Res Function(_$AtFhirDstu2RequestNotification) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -931,7 +962,7 @@ class __$$Dstu2RequestCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$Dstu2Request(
+    return _then(_$AtFhirDstu2RequestNotification(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -950,13 +981,14 @@ class __$$Dstu2RequestCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$Dstu2Request extends Dstu2Request {
-  const _$Dstu2Request(this.value, {final String? $type})
+class _$AtFhirDstu2RequestNotification extends AtFhirDstu2RequestNotification {
+  const _$AtFhirDstu2RequestNotification(this.value, {final String? $type})
       : $type = $type ?? 'dstu2Request',
         super._();
 
-  factory _$Dstu2Request.fromJson(Map<String, dynamic> json) =>
-      _$$Dstu2RequestFromJson(json);
+  factory _$AtFhirDstu2RequestNotification.fromJson(
+          Map<String, dynamic> json) =>
+      _$$AtFhirDstu2RequestNotificationFromJson(json);
 
   @override
   final dstu2_request.FhirRequest value;
@@ -973,7 +1005,7 @@ class _$Dstu2Request extends Dstu2Request {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Dstu2Request &&
+            other is _$AtFhirDstu2RequestNotification &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -984,8 +1016,9 @@ class _$Dstu2Request extends Dstu2Request {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$Dstu2RequestCopyWith<_$Dstu2Request> get copyWith =>
-      __$$Dstu2RequestCopyWithImpl<_$Dstu2Request>(this, _$identity);
+  _$$AtFhirDstu2RequestNotificationCopyWith<_$AtFhirDstu2RequestNotification>
+      get copyWith => __$$AtFhirDstu2RequestNotificationCopyWithImpl<
+          _$AtFhirDstu2RequestNotification>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1039,14 +1072,17 @@ class _$Dstu2Request extends Dstu2Request {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Dstu2ResourceNotification value) dstu2Resource,
-    required TResult Function(Stu3ResourceNotification value) stu3Resource,
-    required TResult Function(R4ResourceNotification value) r4Resource,
-    required TResult Function(R5ResourceNotification value) r5Resource,
-    required TResult Function(Dstu2Request value) dstu2Request,
-    required TResult Function(Stu3Request value) stu3Request,
-    required TResult Function(R4Request value) r4Request,
-    required TResult Function(R5Request value) r5Request,
+    required TResult Function(AtFhirDstu2ResourceNotification value)
+        dstu2Resource,
+    required TResult Function(AtFhirStu3ResourceNotification value)
+        stu3Resource,
+    required TResult Function(AtFhirR4ResourceNotification value) r4Resource,
+    required TResult Function(AtFhirR5ResourceNotification value) r5Resource,
+    required TResult Function(AtFhirDstu2RequestNotification value)
+        dstu2Request,
+    required TResult Function(AtFhirStu3RequestNotification value) stu3Request,
+    required TResult Function(AtFhirR4RequestNotification value) r4Request,
+    required TResult Function(AtFhirR5RequestNotification value) r5Request,
   }) {
     return dstu2Request(this);
   }
@@ -1054,14 +1090,14 @@ class _$Dstu2Request extends Dstu2Request {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult? Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult? Function(R4ResourceNotification value)? r4Resource,
-    TResult? Function(R5ResourceNotification value)? r5Resource,
-    TResult? Function(Dstu2Request value)? dstu2Request,
-    TResult? Function(Stu3Request value)? stu3Request,
-    TResult? Function(R4Request value)? r4Request,
-    TResult? Function(R5Request value)? r5Request,
+    TResult? Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult? Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult? Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult? Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult? Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult? Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult? Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult? Function(AtFhirR5RequestNotification value)? r5Request,
   }) {
     return dstu2Request?.call(this);
   }
@@ -1069,14 +1105,14 @@ class _$Dstu2Request extends Dstu2Request {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult Function(R4ResourceNotification value)? r4Resource,
-    TResult Function(R5ResourceNotification value)? r5Resource,
-    TResult Function(Dstu2Request value)? dstu2Request,
-    TResult Function(Stu3Request value)? stu3Request,
-    TResult Function(R4Request value)? r4Request,
-    TResult Function(R5Request value)? r5Request,
+    TResult Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult Function(AtFhirR5RequestNotification value)? r5Request,
     required TResult orElse(),
   }) {
     if (dstu2Request != null) {
@@ -1087,32 +1123,33 @@ class _$Dstu2Request extends Dstu2Request {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$Dstu2RequestToJson(
+    return _$$AtFhirDstu2RequestNotificationToJson(
       this,
     );
   }
 }
 
-abstract class Dstu2Request extends AtFhirNotification {
-  const factory Dstu2Request(final dstu2_request.FhirRequest value) =
-      _$Dstu2Request;
-  const Dstu2Request._() : super._();
+abstract class AtFhirDstu2RequestNotification extends AtFhirNotification {
+  const factory AtFhirDstu2RequestNotification(
+      final dstu2_request.FhirRequest value) = _$AtFhirDstu2RequestNotification;
+  const AtFhirDstu2RequestNotification._() : super._();
 
-  factory Dstu2Request.fromJson(Map<String, dynamic> json) =
-      _$Dstu2Request.fromJson;
+  factory AtFhirDstu2RequestNotification.fromJson(Map<String, dynamic> json) =
+      _$AtFhirDstu2RequestNotification.fromJson;
 
   @override
   dstu2_request.FhirRequest get value;
   @JsonKey(ignore: true)
-  _$$Dstu2RequestCopyWith<_$Dstu2Request> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AtFhirDstu2RequestNotificationCopyWith<_$AtFhirDstu2RequestNotification>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$Stu3RequestCopyWith<$Res> {
-  factory _$$Stu3RequestCopyWith(
-          _$Stu3Request value, $Res Function(_$Stu3Request) then) =
-      __$$Stu3RequestCopyWithImpl<$Res>;
+abstract class _$$AtFhirStu3RequestNotificationCopyWith<$Res> {
+  factory _$$AtFhirStu3RequestNotificationCopyWith(
+          _$AtFhirStu3RequestNotification value,
+          $Res Function(_$AtFhirStu3RequestNotification) then) =
+      __$$AtFhirStu3RequestNotificationCopyWithImpl<$Res>;
   @useResult
   $Res call({stu3_request.FhirRequest value});
 
@@ -1120,11 +1157,13 @@ abstract class _$$Stu3RequestCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$Stu3RequestCopyWithImpl<$Res>
-    extends _$AtFhirNotificationCopyWithImpl<$Res, _$Stu3Request>
-    implements _$$Stu3RequestCopyWith<$Res> {
-  __$$Stu3RequestCopyWithImpl(
-      _$Stu3Request _value, $Res Function(_$Stu3Request) _then)
+class __$$AtFhirStu3RequestNotificationCopyWithImpl<$Res>
+    extends _$AtFhirNotificationCopyWithImpl<$Res,
+        _$AtFhirStu3RequestNotification>
+    implements _$$AtFhirStu3RequestNotificationCopyWith<$Res> {
+  __$$AtFhirStu3RequestNotificationCopyWithImpl(
+      _$AtFhirStu3RequestNotification _value,
+      $Res Function(_$AtFhirStu3RequestNotification) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1132,7 +1171,7 @@ class __$$Stu3RequestCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$Stu3Request(
+    return _then(_$AtFhirStu3RequestNotification(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -1151,13 +1190,13 @@ class __$$Stu3RequestCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$Stu3Request extends Stu3Request {
-  const _$Stu3Request(this.value, {final String? $type})
+class _$AtFhirStu3RequestNotification extends AtFhirStu3RequestNotification {
+  const _$AtFhirStu3RequestNotification(this.value, {final String? $type})
       : $type = $type ?? 'stu3Request',
         super._();
 
-  factory _$Stu3Request.fromJson(Map<String, dynamic> json) =>
-      _$$Stu3RequestFromJson(json);
+  factory _$AtFhirStu3RequestNotification.fromJson(Map<String, dynamic> json) =>
+      _$$AtFhirStu3RequestNotificationFromJson(json);
 
   @override
   final stu3_request.FhirRequest value;
@@ -1174,7 +1213,7 @@ class _$Stu3Request extends Stu3Request {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Stu3Request &&
+            other is _$AtFhirStu3RequestNotification &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -1185,8 +1224,9 @@ class _$Stu3Request extends Stu3Request {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$Stu3RequestCopyWith<_$Stu3Request> get copyWith =>
-      __$$Stu3RequestCopyWithImpl<_$Stu3Request>(this, _$identity);
+  _$$AtFhirStu3RequestNotificationCopyWith<_$AtFhirStu3RequestNotification>
+      get copyWith => __$$AtFhirStu3RequestNotificationCopyWithImpl<
+          _$AtFhirStu3RequestNotification>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1240,14 +1280,17 @@ class _$Stu3Request extends Stu3Request {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Dstu2ResourceNotification value) dstu2Resource,
-    required TResult Function(Stu3ResourceNotification value) stu3Resource,
-    required TResult Function(R4ResourceNotification value) r4Resource,
-    required TResult Function(R5ResourceNotification value) r5Resource,
-    required TResult Function(Dstu2Request value) dstu2Request,
-    required TResult Function(Stu3Request value) stu3Request,
-    required TResult Function(R4Request value) r4Request,
-    required TResult Function(R5Request value) r5Request,
+    required TResult Function(AtFhirDstu2ResourceNotification value)
+        dstu2Resource,
+    required TResult Function(AtFhirStu3ResourceNotification value)
+        stu3Resource,
+    required TResult Function(AtFhirR4ResourceNotification value) r4Resource,
+    required TResult Function(AtFhirR5ResourceNotification value) r5Resource,
+    required TResult Function(AtFhirDstu2RequestNotification value)
+        dstu2Request,
+    required TResult Function(AtFhirStu3RequestNotification value) stu3Request,
+    required TResult Function(AtFhirR4RequestNotification value) r4Request,
+    required TResult Function(AtFhirR5RequestNotification value) r5Request,
   }) {
     return stu3Request(this);
   }
@@ -1255,14 +1298,14 @@ class _$Stu3Request extends Stu3Request {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult? Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult? Function(R4ResourceNotification value)? r4Resource,
-    TResult? Function(R5ResourceNotification value)? r5Resource,
-    TResult? Function(Dstu2Request value)? dstu2Request,
-    TResult? Function(Stu3Request value)? stu3Request,
-    TResult? Function(R4Request value)? r4Request,
-    TResult? Function(R5Request value)? r5Request,
+    TResult? Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult? Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult? Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult? Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult? Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult? Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult? Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult? Function(AtFhirR5RequestNotification value)? r5Request,
   }) {
     return stu3Request?.call(this);
   }
@@ -1270,14 +1313,14 @@ class _$Stu3Request extends Stu3Request {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult Function(R4ResourceNotification value)? r4Resource,
-    TResult Function(R5ResourceNotification value)? r5Resource,
-    TResult Function(Dstu2Request value)? dstu2Request,
-    TResult Function(Stu3Request value)? stu3Request,
-    TResult Function(R4Request value)? r4Request,
-    TResult Function(R5Request value)? r5Request,
+    TResult Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult Function(AtFhirR5RequestNotification value)? r5Request,
     required TResult orElse(),
   }) {
     if (stu3Request != null) {
@@ -1288,32 +1331,33 @@ class _$Stu3Request extends Stu3Request {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$Stu3RequestToJson(
+    return _$$AtFhirStu3RequestNotificationToJson(
       this,
     );
   }
 }
 
-abstract class Stu3Request extends AtFhirNotification {
-  const factory Stu3Request(final stu3_request.FhirRequest value) =
-      _$Stu3Request;
-  const Stu3Request._() : super._();
+abstract class AtFhirStu3RequestNotification extends AtFhirNotification {
+  const factory AtFhirStu3RequestNotification(
+      final stu3_request.FhirRequest value) = _$AtFhirStu3RequestNotification;
+  const AtFhirStu3RequestNotification._() : super._();
 
-  factory Stu3Request.fromJson(Map<String, dynamic> json) =
-      _$Stu3Request.fromJson;
+  factory AtFhirStu3RequestNotification.fromJson(Map<String, dynamic> json) =
+      _$AtFhirStu3RequestNotification.fromJson;
 
   @override
   stu3_request.FhirRequest get value;
   @JsonKey(ignore: true)
-  _$$Stu3RequestCopyWith<_$Stu3Request> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AtFhirStu3RequestNotificationCopyWith<_$AtFhirStu3RequestNotification>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$R4RequestCopyWith<$Res> {
-  factory _$$R4RequestCopyWith(
-          _$R4Request value, $Res Function(_$R4Request) then) =
-      __$$R4RequestCopyWithImpl<$Res>;
+abstract class _$$AtFhirR4RequestNotificationCopyWith<$Res> {
+  factory _$$AtFhirR4RequestNotificationCopyWith(
+          _$AtFhirR4RequestNotification value,
+          $Res Function(_$AtFhirR4RequestNotification) then) =
+      __$$AtFhirR4RequestNotificationCopyWithImpl<$Res>;
   @useResult
   $Res call({r4_request.FhirRequest value});
 
@@ -1321,11 +1365,13 @@ abstract class _$$R4RequestCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$R4RequestCopyWithImpl<$Res>
-    extends _$AtFhirNotificationCopyWithImpl<$Res, _$R4Request>
-    implements _$$R4RequestCopyWith<$Res> {
-  __$$R4RequestCopyWithImpl(
-      _$R4Request _value, $Res Function(_$R4Request) _then)
+class __$$AtFhirR4RequestNotificationCopyWithImpl<$Res>
+    extends _$AtFhirNotificationCopyWithImpl<$Res,
+        _$AtFhirR4RequestNotification>
+    implements _$$AtFhirR4RequestNotificationCopyWith<$Res> {
+  __$$AtFhirR4RequestNotificationCopyWithImpl(
+      _$AtFhirR4RequestNotification _value,
+      $Res Function(_$AtFhirR4RequestNotification) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1333,7 +1379,7 @@ class __$$R4RequestCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$R4Request(
+    return _then(_$AtFhirR4RequestNotification(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -1352,13 +1398,13 @@ class __$$R4RequestCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$R4Request extends R4Request {
-  const _$R4Request(this.value, {final String? $type})
+class _$AtFhirR4RequestNotification extends AtFhirR4RequestNotification {
+  const _$AtFhirR4RequestNotification(this.value, {final String? $type})
       : $type = $type ?? 'r4Request',
         super._();
 
-  factory _$R4Request.fromJson(Map<String, dynamic> json) =>
-      _$$R4RequestFromJson(json);
+  factory _$AtFhirR4RequestNotification.fromJson(Map<String, dynamic> json) =>
+      _$$AtFhirR4RequestNotificationFromJson(json);
 
   @override
   final r4_request.FhirRequest value;
@@ -1375,7 +1421,7 @@ class _$R4Request extends R4Request {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$R4Request &&
+            other is _$AtFhirR4RequestNotification &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -1386,8 +1432,9 @@ class _$R4Request extends R4Request {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$R4RequestCopyWith<_$R4Request> get copyWith =>
-      __$$R4RequestCopyWithImpl<_$R4Request>(this, _$identity);
+  _$$AtFhirR4RequestNotificationCopyWith<_$AtFhirR4RequestNotification>
+      get copyWith => __$$AtFhirR4RequestNotificationCopyWithImpl<
+          _$AtFhirR4RequestNotification>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1441,14 +1488,17 @@ class _$R4Request extends R4Request {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Dstu2ResourceNotification value) dstu2Resource,
-    required TResult Function(Stu3ResourceNotification value) stu3Resource,
-    required TResult Function(R4ResourceNotification value) r4Resource,
-    required TResult Function(R5ResourceNotification value) r5Resource,
-    required TResult Function(Dstu2Request value) dstu2Request,
-    required TResult Function(Stu3Request value) stu3Request,
-    required TResult Function(R4Request value) r4Request,
-    required TResult Function(R5Request value) r5Request,
+    required TResult Function(AtFhirDstu2ResourceNotification value)
+        dstu2Resource,
+    required TResult Function(AtFhirStu3ResourceNotification value)
+        stu3Resource,
+    required TResult Function(AtFhirR4ResourceNotification value) r4Resource,
+    required TResult Function(AtFhirR5ResourceNotification value) r5Resource,
+    required TResult Function(AtFhirDstu2RequestNotification value)
+        dstu2Request,
+    required TResult Function(AtFhirStu3RequestNotification value) stu3Request,
+    required TResult Function(AtFhirR4RequestNotification value) r4Request,
+    required TResult Function(AtFhirR5RequestNotification value) r5Request,
   }) {
     return r4Request(this);
   }
@@ -1456,14 +1506,14 @@ class _$R4Request extends R4Request {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult? Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult? Function(R4ResourceNotification value)? r4Resource,
-    TResult? Function(R5ResourceNotification value)? r5Resource,
-    TResult? Function(Dstu2Request value)? dstu2Request,
-    TResult? Function(Stu3Request value)? stu3Request,
-    TResult? Function(R4Request value)? r4Request,
-    TResult? Function(R5Request value)? r5Request,
+    TResult? Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult? Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult? Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult? Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult? Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult? Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult? Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult? Function(AtFhirR5RequestNotification value)? r5Request,
   }) {
     return r4Request?.call(this);
   }
@@ -1471,14 +1521,14 @@ class _$R4Request extends R4Request {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult Function(R4ResourceNotification value)? r4Resource,
-    TResult Function(R5ResourceNotification value)? r5Resource,
-    TResult Function(Dstu2Request value)? dstu2Request,
-    TResult Function(Stu3Request value)? stu3Request,
-    TResult Function(R4Request value)? r4Request,
-    TResult Function(R5Request value)? r5Request,
+    TResult Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult Function(AtFhirR5RequestNotification value)? r5Request,
     required TResult orElse(),
   }) {
     if (r4Request != null) {
@@ -1489,30 +1539,33 @@ class _$R4Request extends R4Request {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$R4RequestToJson(
+    return _$$AtFhirR4RequestNotificationToJson(
       this,
     );
   }
 }
 
-abstract class R4Request extends AtFhirNotification {
-  const factory R4Request(final r4_request.FhirRequest value) = _$R4Request;
-  const R4Request._() : super._();
+abstract class AtFhirR4RequestNotification extends AtFhirNotification {
+  const factory AtFhirR4RequestNotification(
+      final r4_request.FhirRequest value) = _$AtFhirR4RequestNotification;
+  const AtFhirR4RequestNotification._() : super._();
 
-  factory R4Request.fromJson(Map<String, dynamic> json) = _$R4Request.fromJson;
+  factory AtFhirR4RequestNotification.fromJson(Map<String, dynamic> json) =
+      _$AtFhirR4RequestNotification.fromJson;
 
   @override
   r4_request.FhirRequest get value;
   @JsonKey(ignore: true)
-  _$$R4RequestCopyWith<_$R4Request> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AtFhirR4RequestNotificationCopyWith<_$AtFhirR4RequestNotification>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$R5RequestCopyWith<$Res> {
-  factory _$$R5RequestCopyWith(
-          _$R5Request value, $Res Function(_$R5Request) then) =
-      __$$R5RequestCopyWithImpl<$Res>;
+abstract class _$$AtFhirR5RequestNotificationCopyWith<$Res> {
+  factory _$$AtFhirR5RequestNotificationCopyWith(
+          _$AtFhirR5RequestNotification value,
+          $Res Function(_$AtFhirR5RequestNotification) then) =
+      __$$AtFhirR5RequestNotificationCopyWithImpl<$Res>;
   @useResult
   $Res call({r5_request.FhirRequest value});
 
@@ -1520,11 +1573,13 @@ abstract class _$$R5RequestCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$R5RequestCopyWithImpl<$Res>
-    extends _$AtFhirNotificationCopyWithImpl<$Res, _$R5Request>
-    implements _$$R5RequestCopyWith<$Res> {
-  __$$R5RequestCopyWithImpl(
-      _$R5Request _value, $Res Function(_$R5Request) _then)
+class __$$AtFhirR5RequestNotificationCopyWithImpl<$Res>
+    extends _$AtFhirNotificationCopyWithImpl<$Res,
+        _$AtFhirR5RequestNotification>
+    implements _$$AtFhirR5RequestNotificationCopyWith<$Res> {
+  __$$AtFhirR5RequestNotificationCopyWithImpl(
+      _$AtFhirR5RequestNotification _value,
+      $Res Function(_$AtFhirR5RequestNotification) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1532,7 +1587,7 @@ class __$$R5RequestCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$R5Request(
+    return _then(_$AtFhirR5RequestNotification(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -1551,13 +1606,13 @@ class __$$R5RequestCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$R5Request extends R5Request {
-  const _$R5Request(this.value, {final String? $type})
+class _$AtFhirR5RequestNotification extends AtFhirR5RequestNotification {
+  const _$AtFhirR5RequestNotification(this.value, {final String? $type})
       : $type = $type ?? 'r5Request',
         super._();
 
-  factory _$R5Request.fromJson(Map<String, dynamic> json) =>
-      _$$R5RequestFromJson(json);
+  factory _$AtFhirR5RequestNotification.fromJson(Map<String, dynamic> json) =>
+      _$$AtFhirR5RequestNotificationFromJson(json);
 
   @override
   final r5_request.FhirRequest value;
@@ -1574,7 +1629,7 @@ class _$R5Request extends R5Request {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$R5Request &&
+            other is _$AtFhirR5RequestNotification &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -1585,8 +1640,9 @@ class _$R5Request extends R5Request {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$R5RequestCopyWith<_$R5Request> get copyWith =>
-      __$$R5RequestCopyWithImpl<_$R5Request>(this, _$identity);
+  _$$AtFhirR5RequestNotificationCopyWith<_$AtFhirR5RequestNotification>
+      get copyWith => __$$AtFhirR5RequestNotificationCopyWithImpl<
+          _$AtFhirR5RequestNotification>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1640,14 +1696,17 @@ class _$R5Request extends R5Request {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Dstu2ResourceNotification value) dstu2Resource,
-    required TResult Function(Stu3ResourceNotification value) stu3Resource,
-    required TResult Function(R4ResourceNotification value) r4Resource,
-    required TResult Function(R5ResourceNotification value) r5Resource,
-    required TResult Function(Dstu2Request value) dstu2Request,
-    required TResult Function(Stu3Request value) stu3Request,
-    required TResult Function(R4Request value) r4Request,
-    required TResult Function(R5Request value) r5Request,
+    required TResult Function(AtFhirDstu2ResourceNotification value)
+        dstu2Resource,
+    required TResult Function(AtFhirStu3ResourceNotification value)
+        stu3Resource,
+    required TResult Function(AtFhirR4ResourceNotification value) r4Resource,
+    required TResult Function(AtFhirR5ResourceNotification value) r5Resource,
+    required TResult Function(AtFhirDstu2RequestNotification value)
+        dstu2Request,
+    required TResult Function(AtFhirStu3RequestNotification value) stu3Request,
+    required TResult Function(AtFhirR4RequestNotification value) r4Request,
+    required TResult Function(AtFhirR5RequestNotification value) r5Request,
   }) {
     return r5Request(this);
   }
@@ -1655,14 +1714,14 @@ class _$R5Request extends R5Request {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult? Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult? Function(R4ResourceNotification value)? r4Resource,
-    TResult? Function(R5ResourceNotification value)? r5Resource,
-    TResult? Function(Dstu2Request value)? dstu2Request,
-    TResult? Function(Stu3Request value)? stu3Request,
-    TResult? Function(R4Request value)? r4Request,
-    TResult? Function(R5Request value)? r5Request,
+    TResult? Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult? Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult? Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult? Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult? Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult? Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult? Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult? Function(AtFhirR5RequestNotification value)? r5Request,
   }) {
     return r5Request?.call(this);
   }
@@ -1670,14 +1729,14 @@ class _$R5Request extends R5Request {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Dstu2ResourceNotification value)? dstu2Resource,
-    TResult Function(Stu3ResourceNotification value)? stu3Resource,
-    TResult Function(R4ResourceNotification value)? r4Resource,
-    TResult Function(R5ResourceNotification value)? r5Resource,
-    TResult Function(Dstu2Request value)? dstu2Request,
-    TResult Function(Stu3Request value)? stu3Request,
-    TResult Function(R4Request value)? r4Request,
-    TResult Function(R5Request value)? r5Request,
+    TResult Function(AtFhirDstu2ResourceNotification value)? dstu2Resource,
+    TResult Function(AtFhirStu3ResourceNotification value)? stu3Resource,
+    TResult Function(AtFhirR4ResourceNotification value)? r4Resource,
+    TResult Function(AtFhirR5ResourceNotification value)? r5Resource,
+    TResult Function(AtFhirDstu2RequestNotification value)? dstu2Request,
+    TResult Function(AtFhirStu3RequestNotification value)? stu3Request,
+    TResult Function(AtFhirR4RequestNotification value)? r4Request,
+    TResult Function(AtFhirR5RequestNotification value)? r5Request,
     required TResult orElse(),
   }) {
     if (r5Request != null) {
@@ -1688,21 +1747,23 @@ class _$R5Request extends R5Request {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$R5RequestToJson(
+    return _$$AtFhirR5RequestNotificationToJson(
       this,
     );
   }
 }
 
-abstract class R5Request extends AtFhirNotification {
-  const factory R5Request(final r5_request.FhirRequest value) = _$R5Request;
-  const R5Request._() : super._();
+abstract class AtFhirR5RequestNotification extends AtFhirNotification {
+  const factory AtFhirR5RequestNotification(
+      final r5_request.FhirRequest value) = _$AtFhirR5RequestNotification;
+  const AtFhirR5RequestNotification._() : super._();
 
-  factory R5Request.fromJson(Map<String, dynamic> json) = _$R5Request.fromJson;
+  factory AtFhirR5RequestNotification.fromJson(Map<String, dynamic> json) =
+      _$AtFhirR5RequestNotification.fromJson;
 
   @override
   r5_request.FhirRequest get value;
   @JsonKey(ignore: true)
-  _$$R5RequestCopyWith<_$R5Request> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AtFhirR5RequestNotificationCopyWith<_$AtFhirR5RequestNotification>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -6,103 +6,113 @@ part of 'at_fhir_notification.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$Dstu2ResourceNotification _$$Dstu2ResourceNotificationFromJson(
+_$AtFhirDstu2ResourceNotification _$$AtFhirDstu2ResourceNotificationFromJson(
         Map<String, dynamic> json) =>
-    _$Dstu2ResourceNotification(
+    _$AtFhirDstu2ResourceNotification(
       dstu2.Resource.fromJson(json['value'] as Map<String, dynamic>),
       $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$Dstu2ResourceNotificationToJson(
-        _$Dstu2ResourceNotification instance) =>
+Map<String, dynamic> _$$AtFhirDstu2ResourceNotificationToJson(
+        _$AtFhirDstu2ResourceNotification instance) =>
     <String, dynamic>{
       'value': instance.value,
       'runtimeType': instance.$type,
     };
 
-_$Stu3ResourceNotification _$$Stu3ResourceNotificationFromJson(
+_$AtFhirStu3ResourceNotification _$$AtFhirStu3ResourceNotificationFromJson(
         Map<String, dynamic> json) =>
-    _$Stu3ResourceNotification(
+    _$AtFhirStu3ResourceNotification(
       stu3.Resource.fromJson(json['value'] as Map<String, dynamic>),
       $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$Stu3ResourceNotificationToJson(
-        _$Stu3ResourceNotification instance) =>
+Map<String, dynamic> _$$AtFhirStu3ResourceNotificationToJson(
+        _$AtFhirStu3ResourceNotification instance) =>
     <String, dynamic>{
       'value': instance.value,
       'runtimeType': instance.$type,
     };
 
-_$R4ResourceNotification _$$R4ResourceNotificationFromJson(
+_$AtFhirR4ResourceNotification _$$AtFhirR4ResourceNotificationFromJson(
         Map<String, dynamic> json) =>
-    _$R4ResourceNotification(
+    _$AtFhirR4ResourceNotification(
       r4.Resource.fromJson(json['value'] as Map<String, dynamic>),
       $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$R4ResourceNotificationToJson(
-        _$R4ResourceNotification instance) =>
+Map<String, dynamic> _$$AtFhirR4ResourceNotificationToJson(
+        _$AtFhirR4ResourceNotification instance) =>
     <String, dynamic>{
       'value': instance.value,
       'runtimeType': instance.$type,
     };
 
-_$R5ResourceNotification _$$R5ResourceNotificationFromJson(
+_$AtFhirR5ResourceNotification _$$AtFhirR5ResourceNotificationFromJson(
         Map<String, dynamic> json) =>
-    _$R5ResourceNotification(
+    _$AtFhirR5ResourceNotification(
       r5.Resource.fromJson(json['value'] as Map<String, dynamic>),
       $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$R5ResourceNotificationToJson(
-        _$R5ResourceNotification instance) =>
+Map<String, dynamic> _$$AtFhirR5ResourceNotificationToJson(
+        _$AtFhirR5ResourceNotification instance) =>
     <String, dynamic>{
       'value': instance.value,
       'runtimeType': instance.$type,
     };
 
-_$Dstu2Request _$$Dstu2RequestFromJson(Map<String, dynamic> json) =>
-    _$Dstu2Request(
+_$AtFhirDstu2RequestNotification _$$AtFhirDstu2RequestNotificationFromJson(
+        Map<String, dynamic> json) =>
+    _$AtFhirDstu2RequestNotification(
       dstu2_request.FhirRequest.fromJson(json['value'] as Map<String, dynamic>),
       $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$Dstu2RequestToJson(_$Dstu2Request instance) =>
+Map<String, dynamic> _$$AtFhirDstu2RequestNotificationToJson(
+        _$AtFhirDstu2RequestNotification instance) =>
     <String, dynamic>{
       'value': instance.value,
       'runtimeType': instance.$type,
     };
 
-_$Stu3Request _$$Stu3RequestFromJson(Map<String, dynamic> json) =>
-    _$Stu3Request(
+_$AtFhirStu3RequestNotification _$$AtFhirStu3RequestNotificationFromJson(
+        Map<String, dynamic> json) =>
+    _$AtFhirStu3RequestNotification(
       stu3_request.FhirRequest.fromJson(json['value'] as Map<String, dynamic>),
       $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$Stu3RequestToJson(_$Stu3Request instance) =>
+Map<String, dynamic> _$$AtFhirStu3RequestNotificationToJson(
+        _$AtFhirStu3RequestNotification instance) =>
     <String, dynamic>{
       'value': instance.value,
       'runtimeType': instance.$type,
     };
 
-_$R4Request _$$R4RequestFromJson(Map<String, dynamic> json) => _$R4Request(
+_$AtFhirR4RequestNotification _$$AtFhirR4RequestNotificationFromJson(
+        Map<String, dynamic> json) =>
+    _$AtFhirR4RequestNotification(
       r4_request.FhirRequest.fromJson(json['value'] as Map<String, dynamic>),
       $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$R4RequestToJson(_$R4Request instance) =>
+Map<String, dynamic> _$$AtFhirR4RequestNotificationToJson(
+        _$AtFhirR4RequestNotification instance) =>
     <String, dynamic>{
       'value': instance.value,
       'runtimeType': instance.$type,
     };
 
-_$R5Request _$$R5RequestFromJson(Map<String, dynamic> json) => _$R5Request(
+_$AtFhirR5RequestNotification _$$AtFhirR5RequestNotificationFromJson(
+        Map<String, dynamic> json) =>
+    _$AtFhirR5RequestNotification(
       r5_request.FhirRequest.fromJson(json['value'] as Map<String, dynamic>),
       $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$R5RequestToJson(_$R5Request instance) =>
+Map<String, dynamic> _$$AtFhirR5RequestNotificationToJson(
+        _$AtFhirR5RequestNotification instance) =>
     <String, dynamic>{
       'value': instance.value,
       'runtimeType': instance.$type,

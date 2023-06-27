@@ -16,7 +16,7 @@ class MockNotificationService extends Mock implements NotificationService {
     return Stream<AtNotification>.fromIterable(<AtNotification>[
       AtNotification('id1', 'key1', '@from1', '@to1', 12345, 'text', true),
       AtNotification('id2', 'key2', '@from2', '@to2', 12345, 'text', true,
-          value: Dstu2ResourceNotification(
+          value: AtFhirDstu2ResourceNotification(
                   dstu2.Patient(fhirId: dstu2.FhirId('id2')))
               .toJsonString()),
       AtNotification('id3', 'key3', '@from3', '@to3', 12345, 'text', true),
@@ -46,7 +46,7 @@ void main() {
         () => listener(
             null,
             AsyncData<AtFhirNotification>(
-              Dstu2ResourceNotification(
+              AtFhirDstu2ResourceNotification(
                   dstu2.Patient(fhirId: dstu2.FhirId('id2'))),
             )),
       );

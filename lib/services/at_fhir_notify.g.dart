@@ -6,7 +6,7 @@ part of 'at_fhir_notify.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$atFhirNotifyHash() => r'1dde554f35deefb6522e0f7e6691e42d647010a0';
+String _$atFhirNotifyHash() => r'59fb4e3980c58ef4a7ff9295920416fa79fddb85';
 
 /// Copied from Dart SDK
 class _SystemHash {

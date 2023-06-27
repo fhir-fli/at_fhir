@@ -17,21 +17,21 @@ part 'at_fhir_notification.g.dart';
 class AtFhirNotification with _$AtFhirNotification {
   const AtFhirNotification._();
   const factory AtFhirNotification.dstu2Resource(dstu2.Resource value) =
-      Dstu2ResourceNotification;
+      AtFhirDstu2ResourceNotification;
   const factory AtFhirNotification.stu3Resource(stu3.Resource value) =
-      Stu3ResourceNotification;
+      AtFhirStu3ResourceNotification;
   const factory AtFhirNotification.r4Resource(r4.Resource value) =
-      R4ResourceNotification;
+      AtFhirR4ResourceNotification;
   const factory AtFhirNotification.r5Resource(r5.Resource value) =
-      R5ResourceNotification;
+      AtFhirR5ResourceNotification;
   const factory AtFhirNotification.dstu2Request(
-      dstu2_request.FhirRequest value) = Dstu2Request;
+      dstu2_request.FhirRequest value) = AtFhirDstu2RequestNotification;
   const factory AtFhirNotification.stu3Request(stu3_request.FhirRequest value) =
-      Stu3Request;
+      AtFhirStu3RequestNotification;
   const factory AtFhirNotification.r4Request(r4_request.FhirRequest value) =
-      R4Request;
+      AtFhirR4RequestNotification;
   const factory AtFhirNotification.r5Request(r5_request.FhirRequest value) =
-      R5Request;
+      AtFhirR5RequestNotification;
 
   factory AtFhirNotification.fromJson(Map<String, dynamic> json) =>
       _$AtFhirNotificationFromJson(json);
