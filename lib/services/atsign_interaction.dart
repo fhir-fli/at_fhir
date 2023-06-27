@@ -38,12 +38,14 @@ Future<SuccessOrError> atSignGet({
 /// Stores a FHIR value at an atSign. Checks to be sure it's a Resource for one
 /// of the supported FHIR versions, if not, returns an error
 Future<SuccessOrError> atSignPutFhir({
+  required AtClient atClient,
   required dynamic resource,
   String nameSpace = 'fhir',
 }) async {
   if (resource is r5.Resource) {
     final r5.Resource newResource = resource.newIdIfNoId();
     return atSignPut(
+      atClient: atClient,
       value: resource.toJsonString(),
       atKey: 'fhir.r5.${newResource.resourceTypeString}.${newResource.fhirId}',
       nameSpace: nameSpace,
@@ -51,6 +53,7 @@ Future<SuccessOrError> atSignPutFhir({
   } else if (resource is r4.Resource) {
     final r4.Resource newResource = resource.newIdIfNoId();
     return atSignPut(
+      atClient: atClient,
       value: resource.toJsonString(),
       atKey: 'fhir.r4.${newResource.resourceTypeString}.${newResource.fhirId}',
       nameSpace: nameSpace,
@@ -58,6 +61,7 @@ Future<SuccessOrError> atSignPutFhir({
   } else if (resource is stu3.Resource) {
     final stu3.Resource newResource = resource.newIdIfNoId();
     return atSignPut(
+      atClient: atClient,
       value: resource.toJsonString(),
       atKey:
           'fhir.stu3.${newResource.resourceTypeString}.${newResource.fhirId}',
@@ -66,6 +70,7 @@ Future<SuccessOrError> atSignPutFhir({
   } else if (resource is dstu2.Resource) {
     final dstu2.Resource newResource = resource.newIdIfNoId();
     return atSignPut(
+      atClient: atClient,
       value: resource.toJsonString(),
       atKey:
           'fhir.dstu2.${newResource.resourceTypeString}.${newResource.fhirId}',
@@ -80,12 +85,12 @@ Future<SuccessOrError> atSignPutFhir({
 /// Puts the specied value at the specified atKey location, nameSpace can be
 /// defined, but for us the default will be fhir
 Future<SuccessOrError> atSignPut({
+  required AtClient atClient,
   required String value,
   required String atKey,
   String? nameSpace = 'fhir',
   String? sharedWith,
 }) async {
-  final AtClient atClient = AtClientManager.getInstance().atClient;
   final AtKey newAtKey = AtKey();
   newAtKey
     ..sharedWith = sharedWith

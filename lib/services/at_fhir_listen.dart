@@ -10,9 +10,8 @@ part 'at_fhir_listen.g.dart';
 /// Listens to All Changes
 @Riverpod(keepAlive: true)
 class AtFhirListen extends _$AtFhirListen {
-  AtClient atClient = AtClientManager.getInstance().atClient;
   @override
-  Stream<AtFhirNotification> build() async* {
+  Stream<AtFhirNotification> build(AtClient atClient) async* {
     atClient.notificationService
         .subscribe(shouldDecrypt: true)
         .map((AtNotification atNotification) async* {
@@ -20,7 +19,6 @@ class AtFhirListen extends _$AtFhirListen {
         try {
           final AtFhirNotification atFhirNotification =
               AtFhirNotification.fromJsonString(atNotification.value!);
-          prettyPrintJson(atFhirNotification.toJson());
           yield atFhirNotification;
         } catch (exception) {
           // TODO(Dokotela): what do to with this error

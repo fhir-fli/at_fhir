@@ -10,14 +10,15 @@ part 'at_fhir_notify.g.dart';
 /// Provider to notify a specific atSign
 @riverpod
 class AtFhirNotify extends _$AtFhirNotify {
-  AtClient atClient = AtClientManager.getInstance().atClient;
   @override
   Future<NotificationResult> build(
-      AtFhirNotification atFhirNotification, String atSign) {
-    return atClient.notificationService.notify(NotificationParams.forText(
-      atFhirNotification.toJsonString(),
-      atSign,
-      shouldEncrypt: true,
-    ));
-  }
+    AtClient atClient,
+    AtFhirNotification atFhirNotification,
+    String atSign,
+  ) =>
+      atClient.notificationService.notify(NotificationParams.forText(
+        atFhirNotification.toJsonString(),
+        atSign,
+        shouldEncrypt: true,
+      ));
 }

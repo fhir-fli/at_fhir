@@ -6,7 +6,7 @@ part of 'at_fhir_notify.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$atFhirNotifyHash() => r'30aac1fe3f8179d9b295b23f91fadfee2cd0c989';
+String _$atFhirNotifyHash() => r'1dde554f35deefb6522e0f7e6691e42d647010a0';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -31,10 +31,12 @@ class _SystemHash {
 
 abstract class _$AtFhirNotify
     extends BuildlessAutoDisposeAsyncNotifier<NotificationResult> {
+  late final AtClient atClient;
   late final AtFhirNotification atFhirNotification;
   late final String atSign;
 
   Future<NotificationResult> build(
+    AtClient atClient,
     AtFhirNotification atFhirNotification,
     String atSign,
   );
@@ -59,10 +61,12 @@ class AtFhirNotifyFamily extends Family<AsyncValue<NotificationResult>> {
   ///
   /// Copied from [AtFhirNotify].
   AtFhirNotifyProvider call(
+    AtClient atClient,
     AtFhirNotification atFhirNotification,
     String atSign,
   ) {
     return AtFhirNotifyProvider(
+      atClient,
       atFhirNotification,
       atSign,
     );
@@ -73,6 +77,7 @@ class AtFhirNotifyFamily extends Family<AsyncValue<NotificationResult>> {
     covariant AtFhirNotifyProvider provider,
   ) {
     return call(
+      provider.atClient,
       provider.atFhirNotification,
       provider.atSign,
     );
@@ -102,10 +107,12 @@ class AtFhirNotifyProvider extends AutoDisposeAsyncNotifierProviderImpl<
   ///
   /// Copied from [AtFhirNotify].
   AtFhirNotifyProvider(
+    this.atClient,
     this.atFhirNotification,
     this.atSign,
   ) : super.internal(
           () => AtFhirNotify()
+            ..atClient = atClient
             ..atFhirNotification = atFhirNotification
             ..atSign = atSign,
           from: atFhirNotifyProvider,
@@ -119,12 +126,14 @@ class AtFhirNotifyProvider extends AutoDisposeAsyncNotifierProviderImpl<
               AtFhirNotifyFamily._allTransitiveDependencies,
         );
 
+  final AtClient atClient;
   final AtFhirNotification atFhirNotification;
   final String atSign;
 
   @override
   bool operator ==(Object other) {
     return other is AtFhirNotifyProvider &&
+        other.atClient == atClient &&
         other.atFhirNotification == atFhirNotification &&
         other.atSign == atSign;
   }
@@ -132,6 +141,7 @@ class AtFhirNotifyProvider extends AutoDisposeAsyncNotifierProviderImpl<
   @override
   int get hashCode {
     var hash = _SystemHash.combine(0, runtimeType.hashCode);
+    hash = _SystemHash.combine(hash, atClient.hashCode);
     hash = _SystemHash.combine(hash, atFhirNotification.hashCode);
     hash = _SystemHash.combine(hash, atSign.hashCode);
 
@@ -143,6 +153,7 @@ class AtFhirNotifyProvider extends AutoDisposeAsyncNotifierProviderImpl<
     covariant AtFhirNotify notifier,
   ) {
     return notifier.build(
+      atClient,
       atFhirNotification,
       atSign,
     );
