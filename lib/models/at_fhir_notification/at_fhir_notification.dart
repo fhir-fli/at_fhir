@@ -43,7 +43,7 @@ class AtFhirNotification with _$AtFhirNotification {
     if (json is Map<String, dynamic>) {
       return _$AtFhirNotificationFromJson(json);
     } else {
-      throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('You passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
