@@ -5,7 +5,6 @@ void atFhirListen(
   atClient.notificationService
       .subscribe(shouldDecrypt: true)
       .listen((AtNotification atNotification) async {
-    print(atNotification.toJson());
     listenFunction(atClient, atNotification);
   });
 }
