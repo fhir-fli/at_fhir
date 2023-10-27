@@ -1,13 +1,13 @@
 name: at_fhir
 description: Group of utility classes for working with the atsign and fhir
-publish_to: 'none' 
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  at_client: ^3.0.62
+  at_client: ^3.0.65
   fhir: ^0.11.2
   fhir_at_rest: ^0.11.2
   freezed_annotation: ^2.2.0
