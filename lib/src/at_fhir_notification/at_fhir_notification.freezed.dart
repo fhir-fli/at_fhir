@@ -141,23 +141,23 @@ class _$AtFhirNotificationCopyWithImpl<$Res, $Val extends AtFhirNotification>
 }
 
 /// @nodoc
-abstract class _$$AtFhirDstu2ResourceNotificationCopyWith<$Res> {
-  factory _$$AtFhirDstu2ResourceNotificationCopyWith(
-          _$AtFhirDstu2ResourceNotification value,
-          $Res Function(_$AtFhirDstu2ResourceNotification) then) =
-      __$$AtFhirDstu2ResourceNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirDstu2ResourceNotificationImplCopyWith<$Res> {
+  factory _$$AtFhirDstu2ResourceNotificationImplCopyWith(
+          _$AtFhirDstu2ResourceNotificationImpl value,
+          $Res Function(_$AtFhirDstu2ResourceNotificationImpl) then) =
+      __$$AtFhirDstu2ResourceNotificationImplCopyWithImpl<$Res>;
   @useResult
   $Res call({dstu2.Resource value});
 }
 
 /// @nodoc
-class __$$AtFhirDstu2ResourceNotificationCopyWithImpl<$Res>
+class __$$AtFhirDstu2ResourceNotificationImplCopyWithImpl<$Res>
     extends _$AtFhirNotificationCopyWithImpl<$Res,
-        _$AtFhirDstu2ResourceNotification>
-    implements _$$AtFhirDstu2ResourceNotificationCopyWith<$Res> {
-  __$$AtFhirDstu2ResourceNotificationCopyWithImpl(
-      _$AtFhirDstu2ResourceNotification _value,
-      $Res Function(_$AtFhirDstu2ResourceNotification) _then)
+        _$AtFhirDstu2ResourceNotificationImpl>
+    implements _$$AtFhirDstu2ResourceNotificationImplCopyWith<$Res> {
+  __$$AtFhirDstu2ResourceNotificationImplCopyWithImpl(
+      _$AtFhirDstu2ResourceNotificationImpl _value,
+      $Res Function(_$AtFhirDstu2ResourceNotificationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -165,7 +165,7 @@ class __$$AtFhirDstu2ResourceNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$AtFhirDstu2ResourceNotification(
+    return _then(_$AtFhirDstu2ResourceNotificationImpl(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -176,15 +176,15 @@ class __$$AtFhirDstu2ResourceNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$AtFhirDstu2ResourceNotification
+class _$AtFhirDstu2ResourceNotificationImpl
     extends AtFhirDstu2ResourceNotification {
-  const _$AtFhirDstu2ResourceNotification(this.value, {final String? $type})
+  const _$AtFhirDstu2ResourceNotificationImpl(this.value, {final String? $type})
       : $type = $type ?? 'dstu2Resource',
         super._();
 
-  factory _$AtFhirDstu2ResourceNotification.fromJson(
+  factory _$AtFhirDstu2ResourceNotificationImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$AtFhirDstu2ResourceNotificationFromJson(json);
+      _$$AtFhirDstu2ResourceNotificationImplFromJson(json);
 
   @override
   final dstu2.Resource value;
@@ -201,7 +201,7 @@ class _$AtFhirDstu2ResourceNotification
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AtFhirDstu2ResourceNotification &&
+            other is _$AtFhirDstu2ResourceNotificationImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -212,9 +212,10 @@ class _$AtFhirDstu2ResourceNotification
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AtFhirDstu2ResourceNotificationCopyWith<_$AtFhirDstu2ResourceNotification>
-      get copyWith => __$$AtFhirDstu2ResourceNotificationCopyWithImpl<
-          _$AtFhirDstu2ResourceNotification>(this, _$identity);
+  _$$AtFhirDstu2ResourceNotificationImplCopyWith<
+          _$AtFhirDstu2ResourceNotificationImpl>
+      get copyWith => __$$AtFhirDstu2ResourceNotificationImplCopyWithImpl<
+          _$AtFhirDstu2ResourceNotificationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -319,7 +320,7 @@ class _$AtFhirDstu2ResourceNotification
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AtFhirDstu2ResourceNotificationToJson(
+    return _$$AtFhirDstu2ResourceNotificationImplToJson(
       this,
     );
   }
@@ -327,37 +328,38 @@ class _$AtFhirDstu2ResourceNotification
 
 abstract class AtFhirDstu2ResourceNotification extends AtFhirNotification {
   const factory AtFhirDstu2ResourceNotification(final dstu2.Resource value) =
-      _$AtFhirDstu2ResourceNotification;
+      _$AtFhirDstu2ResourceNotificationImpl;
   const AtFhirDstu2ResourceNotification._() : super._();
 
   factory AtFhirDstu2ResourceNotification.fromJson(Map<String, dynamic> json) =
-      _$AtFhirDstu2ResourceNotification.fromJson;
+      _$AtFhirDstu2ResourceNotificationImpl.fromJson;
 
   @override
   dstu2.Resource get value;
   @JsonKey(ignore: true)
-  _$$AtFhirDstu2ResourceNotificationCopyWith<_$AtFhirDstu2ResourceNotification>
+  _$$AtFhirDstu2ResourceNotificationImplCopyWith<
+          _$AtFhirDstu2ResourceNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AtFhirStu3ResourceNotificationCopyWith<$Res> {
-  factory _$$AtFhirStu3ResourceNotificationCopyWith(
-          _$AtFhirStu3ResourceNotification value,
-          $Res Function(_$AtFhirStu3ResourceNotification) then) =
-      __$$AtFhirStu3ResourceNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirStu3ResourceNotificationImplCopyWith<$Res> {
+  factory _$$AtFhirStu3ResourceNotificationImplCopyWith(
+          _$AtFhirStu3ResourceNotificationImpl value,
+          $Res Function(_$AtFhirStu3ResourceNotificationImpl) then) =
+      __$$AtFhirStu3ResourceNotificationImplCopyWithImpl<$Res>;
   @useResult
   $Res call({stu3.Resource value});
 }
 
 /// @nodoc
-class __$$AtFhirStu3ResourceNotificationCopyWithImpl<$Res>
+class __$$AtFhirStu3ResourceNotificationImplCopyWithImpl<$Res>
     extends _$AtFhirNotificationCopyWithImpl<$Res,
-        _$AtFhirStu3ResourceNotification>
-    implements _$$AtFhirStu3ResourceNotificationCopyWith<$Res> {
-  __$$AtFhirStu3ResourceNotificationCopyWithImpl(
-      _$AtFhirStu3ResourceNotification _value,
-      $Res Function(_$AtFhirStu3ResourceNotification) _then)
+        _$AtFhirStu3ResourceNotificationImpl>
+    implements _$$AtFhirStu3ResourceNotificationImplCopyWith<$Res> {
+  __$$AtFhirStu3ResourceNotificationImplCopyWithImpl(
+      _$AtFhirStu3ResourceNotificationImpl _value,
+      $Res Function(_$AtFhirStu3ResourceNotificationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -365,7 +367,7 @@ class __$$AtFhirStu3ResourceNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$AtFhirStu3ResourceNotification(
+    return _then(_$AtFhirStu3ResourceNotificationImpl(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -376,14 +378,15 @@ class __$$AtFhirStu3ResourceNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$AtFhirStu3ResourceNotification extends AtFhirStu3ResourceNotification {
-  const _$AtFhirStu3ResourceNotification(this.value, {final String? $type})
+class _$AtFhirStu3ResourceNotificationImpl
+    extends AtFhirStu3ResourceNotification {
+  const _$AtFhirStu3ResourceNotificationImpl(this.value, {final String? $type})
       : $type = $type ?? 'stu3Resource',
         super._();
 
-  factory _$AtFhirStu3ResourceNotification.fromJson(
+  factory _$AtFhirStu3ResourceNotificationImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$AtFhirStu3ResourceNotificationFromJson(json);
+      _$$AtFhirStu3ResourceNotificationImplFromJson(json);
 
   @override
   final stu3.Resource value;
@@ -400,7 +403,7 @@ class _$AtFhirStu3ResourceNotification extends AtFhirStu3ResourceNotification {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AtFhirStu3ResourceNotification &&
+            other is _$AtFhirStu3ResourceNotificationImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -411,9 +414,10 @@ class _$AtFhirStu3ResourceNotification extends AtFhirStu3ResourceNotification {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AtFhirStu3ResourceNotificationCopyWith<_$AtFhirStu3ResourceNotification>
-      get copyWith => __$$AtFhirStu3ResourceNotificationCopyWithImpl<
-          _$AtFhirStu3ResourceNotification>(this, _$identity);
+  _$$AtFhirStu3ResourceNotificationImplCopyWith<
+          _$AtFhirStu3ResourceNotificationImpl>
+      get copyWith => __$$AtFhirStu3ResourceNotificationImplCopyWithImpl<
+          _$AtFhirStu3ResourceNotificationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -518,7 +522,7 @@ class _$AtFhirStu3ResourceNotification extends AtFhirStu3ResourceNotification {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AtFhirStu3ResourceNotificationToJson(
+    return _$$AtFhirStu3ResourceNotificationImplToJson(
       this,
     );
   }
@@ -526,37 +530,38 @@ class _$AtFhirStu3ResourceNotification extends AtFhirStu3ResourceNotification {
 
 abstract class AtFhirStu3ResourceNotification extends AtFhirNotification {
   const factory AtFhirStu3ResourceNotification(final stu3.Resource value) =
-      _$AtFhirStu3ResourceNotification;
+      _$AtFhirStu3ResourceNotificationImpl;
   const AtFhirStu3ResourceNotification._() : super._();
 
   factory AtFhirStu3ResourceNotification.fromJson(Map<String, dynamic> json) =
-      _$AtFhirStu3ResourceNotification.fromJson;
+      _$AtFhirStu3ResourceNotificationImpl.fromJson;
 
   @override
   stu3.Resource get value;
   @JsonKey(ignore: true)
-  _$$AtFhirStu3ResourceNotificationCopyWith<_$AtFhirStu3ResourceNotification>
+  _$$AtFhirStu3ResourceNotificationImplCopyWith<
+          _$AtFhirStu3ResourceNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AtFhirR4ResourceNotificationCopyWith<$Res> {
-  factory _$$AtFhirR4ResourceNotificationCopyWith(
-          _$AtFhirR4ResourceNotification value,
-          $Res Function(_$AtFhirR4ResourceNotification) then) =
-      __$$AtFhirR4ResourceNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirR4ResourceNotificationImplCopyWith<$Res> {
+  factory _$$AtFhirR4ResourceNotificationImplCopyWith(
+          _$AtFhirR4ResourceNotificationImpl value,
+          $Res Function(_$AtFhirR4ResourceNotificationImpl) then) =
+      __$$AtFhirR4ResourceNotificationImplCopyWithImpl<$Res>;
   @useResult
   $Res call({r4.Resource value});
 }
 
 /// @nodoc
-class __$$AtFhirR4ResourceNotificationCopyWithImpl<$Res>
+class __$$AtFhirR4ResourceNotificationImplCopyWithImpl<$Res>
     extends _$AtFhirNotificationCopyWithImpl<$Res,
-        _$AtFhirR4ResourceNotification>
-    implements _$$AtFhirR4ResourceNotificationCopyWith<$Res> {
-  __$$AtFhirR4ResourceNotificationCopyWithImpl(
-      _$AtFhirR4ResourceNotification _value,
-      $Res Function(_$AtFhirR4ResourceNotification) _then)
+        _$AtFhirR4ResourceNotificationImpl>
+    implements _$$AtFhirR4ResourceNotificationImplCopyWith<$Res> {
+  __$$AtFhirR4ResourceNotificationImplCopyWithImpl(
+      _$AtFhirR4ResourceNotificationImpl _value,
+      $Res Function(_$AtFhirR4ResourceNotificationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -564,7 +569,7 @@ class __$$AtFhirR4ResourceNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$AtFhirR4ResourceNotification(
+    return _then(_$AtFhirR4ResourceNotificationImpl(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -575,13 +580,14 @@ class __$$AtFhirR4ResourceNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$AtFhirR4ResourceNotification extends AtFhirR4ResourceNotification {
-  const _$AtFhirR4ResourceNotification(this.value, {final String? $type})
+class _$AtFhirR4ResourceNotificationImpl extends AtFhirR4ResourceNotification {
+  const _$AtFhirR4ResourceNotificationImpl(this.value, {final String? $type})
       : $type = $type ?? 'r4Resource',
         super._();
 
-  factory _$AtFhirR4ResourceNotification.fromJson(Map<String, dynamic> json) =>
-      _$$AtFhirR4ResourceNotificationFromJson(json);
+  factory _$AtFhirR4ResourceNotificationImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$AtFhirR4ResourceNotificationImplFromJson(json);
 
   @override
   final r4.Resource value;
@@ -598,7 +604,7 @@ class _$AtFhirR4ResourceNotification extends AtFhirR4ResourceNotification {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AtFhirR4ResourceNotification &&
+            other is _$AtFhirR4ResourceNotificationImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -609,9 +615,10 @@ class _$AtFhirR4ResourceNotification extends AtFhirR4ResourceNotification {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AtFhirR4ResourceNotificationCopyWith<_$AtFhirR4ResourceNotification>
-      get copyWith => __$$AtFhirR4ResourceNotificationCopyWithImpl<
-          _$AtFhirR4ResourceNotification>(this, _$identity);
+  _$$AtFhirR4ResourceNotificationImplCopyWith<
+          _$AtFhirR4ResourceNotificationImpl>
+      get copyWith => __$$AtFhirR4ResourceNotificationImplCopyWithImpl<
+          _$AtFhirR4ResourceNotificationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -716,7 +723,7 @@ class _$AtFhirR4ResourceNotification extends AtFhirR4ResourceNotification {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AtFhirR4ResourceNotificationToJson(
+    return _$$AtFhirR4ResourceNotificationImplToJson(
       this,
     );
   }
@@ -724,37 +731,38 @@ class _$AtFhirR4ResourceNotification extends AtFhirR4ResourceNotification {
 
 abstract class AtFhirR4ResourceNotification extends AtFhirNotification {
   const factory AtFhirR4ResourceNotification(final r4.Resource value) =
-      _$AtFhirR4ResourceNotification;
+      _$AtFhirR4ResourceNotificationImpl;
   const AtFhirR4ResourceNotification._() : super._();
 
   factory AtFhirR4ResourceNotification.fromJson(Map<String, dynamic> json) =
-      _$AtFhirR4ResourceNotification.fromJson;
+      _$AtFhirR4ResourceNotificationImpl.fromJson;
 
   @override
   r4.Resource get value;
   @JsonKey(ignore: true)
-  _$$AtFhirR4ResourceNotificationCopyWith<_$AtFhirR4ResourceNotification>
+  _$$AtFhirR4ResourceNotificationImplCopyWith<
+          _$AtFhirR4ResourceNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AtFhirR5ResourceNotificationCopyWith<$Res> {
-  factory _$$AtFhirR5ResourceNotificationCopyWith(
-          _$AtFhirR5ResourceNotification value,
-          $Res Function(_$AtFhirR5ResourceNotification) then) =
-      __$$AtFhirR5ResourceNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirR5ResourceNotificationImplCopyWith<$Res> {
+  factory _$$AtFhirR5ResourceNotificationImplCopyWith(
+          _$AtFhirR5ResourceNotificationImpl value,
+          $Res Function(_$AtFhirR5ResourceNotificationImpl) then) =
+      __$$AtFhirR5ResourceNotificationImplCopyWithImpl<$Res>;
   @useResult
   $Res call({r5.Resource value});
 }
 
 /// @nodoc
-class __$$AtFhirR5ResourceNotificationCopyWithImpl<$Res>
+class __$$AtFhirR5ResourceNotificationImplCopyWithImpl<$Res>
     extends _$AtFhirNotificationCopyWithImpl<$Res,
-        _$AtFhirR5ResourceNotification>
-    implements _$$AtFhirR5ResourceNotificationCopyWith<$Res> {
-  __$$AtFhirR5ResourceNotificationCopyWithImpl(
-      _$AtFhirR5ResourceNotification _value,
-      $Res Function(_$AtFhirR5ResourceNotification) _then)
+        _$AtFhirR5ResourceNotificationImpl>
+    implements _$$AtFhirR5ResourceNotificationImplCopyWith<$Res> {
+  __$$AtFhirR5ResourceNotificationImplCopyWithImpl(
+      _$AtFhirR5ResourceNotificationImpl _value,
+      $Res Function(_$AtFhirR5ResourceNotificationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -762,7 +770,7 @@ class __$$AtFhirR5ResourceNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$AtFhirR5ResourceNotification(
+    return _then(_$AtFhirR5ResourceNotificationImpl(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -773,13 +781,14 @@ class __$$AtFhirR5ResourceNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$AtFhirR5ResourceNotification extends AtFhirR5ResourceNotification {
-  const _$AtFhirR5ResourceNotification(this.value, {final String? $type})
+class _$AtFhirR5ResourceNotificationImpl extends AtFhirR5ResourceNotification {
+  const _$AtFhirR5ResourceNotificationImpl(this.value, {final String? $type})
       : $type = $type ?? 'r5Resource',
         super._();
 
-  factory _$AtFhirR5ResourceNotification.fromJson(Map<String, dynamic> json) =>
-      _$$AtFhirR5ResourceNotificationFromJson(json);
+  factory _$AtFhirR5ResourceNotificationImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$AtFhirR5ResourceNotificationImplFromJson(json);
 
   @override
   final r5.Resource value;
@@ -796,7 +805,7 @@ class _$AtFhirR5ResourceNotification extends AtFhirR5ResourceNotification {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AtFhirR5ResourceNotification &&
+            other is _$AtFhirR5ResourceNotificationImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -807,9 +816,10 @@ class _$AtFhirR5ResourceNotification extends AtFhirR5ResourceNotification {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AtFhirR5ResourceNotificationCopyWith<_$AtFhirR5ResourceNotification>
-      get copyWith => __$$AtFhirR5ResourceNotificationCopyWithImpl<
-          _$AtFhirR5ResourceNotification>(this, _$identity);
+  _$$AtFhirR5ResourceNotificationImplCopyWith<
+          _$AtFhirR5ResourceNotificationImpl>
+      get copyWith => __$$AtFhirR5ResourceNotificationImplCopyWithImpl<
+          _$AtFhirR5ResourceNotificationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -914,7 +924,7 @@ class _$AtFhirR5ResourceNotification extends AtFhirR5ResourceNotification {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AtFhirR5ResourceNotificationToJson(
+    return _$$AtFhirR5ResourceNotificationImplToJson(
       this,
     );
   }
@@ -922,39 +932,40 @@ class _$AtFhirR5ResourceNotification extends AtFhirR5ResourceNotification {
 
 abstract class AtFhirR5ResourceNotification extends AtFhirNotification {
   const factory AtFhirR5ResourceNotification(final r5.Resource value) =
-      _$AtFhirR5ResourceNotification;
+      _$AtFhirR5ResourceNotificationImpl;
   const AtFhirR5ResourceNotification._() : super._();
 
   factory AtFhirR5ResourceNotification.fromJson(Map<String, dynamic> json) =
-      _$AtFhirR5ResourceNotification.fromJson;
+      _$AtFhirR5ResourceNotificationImpl.fromJson;
 
   @override
   r5.Resource get value;
   @JsonKey(ignore: true)
-  _$$AtFhirR5ResourceNotificationCopyWith<_$AtFhirR5ResourceNotification>
+  _$$AtFhirR5ResourceNotificationImplCopyWith<
+          _$AtFhirR5ResourceNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AtFhirDstu2RequestNotificationCopyWith<$Res> {
-  factory _$$AtFhirDstu2RequestNotificationCopyWith(
-          _$AtFhirDstu2RequestNotification value,
-          $Res Function(_$AtFhirDstu2RequestNotification) then) =
-      __$$AtFhirDstu2RequestNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirDstu2RequestNotificationImplCopyWith<$Res> {
+  factory _$$AtFhirDstu2RequestNotificationImplCopyWith(
+          _$AtFhirDstu2RequestNotificationImpl value,
+          $Res Function(_$AtFhirDstu2RequestNotificationImpl) then) =
+      __$$AtFhirDstu2RequestNotificationImplCopyWithImpl<$Res>;
   @useResult
   $Res call({dstu2_request.FhirRequest value});
 
-  dstu2_request.$FhirRequestCopyWith<$Res> get value;
+  $FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class __$$AtFhirDstu2RequestNotificationCopyWithImpl<$Res>
+class __$$AtFhirDstu2RequestNotificationImplCopyWithImpl<$Res>
     extends _$AtFhirNotificationCopyWithImpl<$Res,
-        _$AtFhirDstu2RequestNotification>
-    implements _$$AtFhirDstu2RequestNotificationCopyWith<$Res> {
-  __$$AtFhirDstu2RequestNotificationCopyWithImpl(
-      _$AtFhirDstu2RequestNotification _value,
-      $Res Function(_$AtFhirDstu2RequestNotification) _then)
+        _$AtFhirDstu2RequestNotificationImpl>
+    implements _$$AtFhirDstu2RequestNotificationImplCopyWith<$Res> {
+  __$$AtFhirDstu2RequestNotificationImplCopyWithImpl(
+      _$AtFhirDstu2RequestNotificationImpl _value,
+      $Res Function(_$AtFhirDstu2RequestNotificationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -962,7 +973,7 @@ class __$$AtFhirDstu2RequestNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$AtFhirDstu2RequestNotification(
+    return _then(_$AtFhirDstu2RequestNotificationImpl(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -972,8 +983,8 @@ class __$$AtFhirDstu2RequestNotificationCopyWithImpl<$Res>
 
   @override
   @pragma('vm:prefer-inline')
-  dstu2_request.$FhirRequestCopyWith<$Res> get value {
-    return dstu2_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
+  $FhirRequestCopyWith<$Res> get value {
+    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
@@ -981,14 +992,15 @@ class __$$AtFhirDstu2RequestNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$AtFhirDstu2RequestNotification extends AtFhirDstu2RequestNotification {
-  const _$AtFhirDstu2RequestNotification(this.value, {final String? $type})
+class _$AtFhirDstu2RequestNotificationImpl
+    extends AtFhirDstu2RequestNotification {
+  const _$AtFhirDstu2RequestNotificationImpl(this.value, {final String? $type})
       : $type = $type ?? 'dstu2Request',
         super._();
 
-  factory _$AtFhirDstu2RequestNotification.fromJson(
+  factory _$AtFhirDstu2RequestNotificationImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$AtFhirDstu2RequestNotificationFromJson(json);
+      _$$AtFhirDstu2RequestNotificationImplFromJson(json);
 
   @override
   final dstu2_request.FhirRequest value;
@@ -1005,7 +1017,7 @@ class _$AtFhirDstu2RequestNotification extends AtFhirDstu2RequestNotification {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AtFhirDstu2RequestNotification &&
+            other is _$AtFhirDstu2RequestNotificationImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -1016,9 +1028,10 @@ class _$AtFhirDstu2RequestNotification extends AtFhirDstu2RequestNotification {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AtFhirDstu2RequestNotificationCopyWith<_$AtFhirDstu2RequestNotification>
-      get copyWith => __$$AtFhirDstu2RequestNotificationCopyWithImpl<
-          _$AtFhirDstu2RequestNotification>(this, _$identity);
+  _$$AtFhirDstu2RequestNotificationImplCopyWith<
+          _$AtFhirDstu2RequestNotificationImpl>
+      get copyWith => __$$AtFhirDstu2RequestNotificationImplCopyWithImpl<
+          _$AtFhirDstu2RequestNotificationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1123,7 +1136,7 @@ class _$AtFhirDstu2RequestNotification extends AtFhirDstu2RequestNotification {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AtFhirDstu2RequestNotificationToJson(
+    return _$$AtFhirDstu2RequestNotificationImplToJson(
       this,
     );
   }
@@ -1131,39 +1144,41 @@ class _$AtFhirDstu2RequestNotification extends AtFhirDstu2RequestNotification {
 
 abstract class AtFhirDstu2RequestNotification extends AtFhirNotification {
   const factory AtFhirDstu2RequestNotification(
-      final dstu2_request.FhirRequest value) = _$AtFhirDstu2RequestNotification;
+          final dstu2_request.FhirRequest value) =
+      _$AtFhirDstu2RequestNotificationImpl;
   const AtFhirDstu2RequestNotification._() : super._();
 
   factory AtFhirDstu2RequestNotification.fromJson(Map<String, dynamic> json) =
-      _$AtFhirDstu2RequestNotification.fromJson;
+      _$AtFhirDstu2RequestNotificationImpl.fromJson;
 
   @override
   dstu2_request.FhirRequest get value;
   @JsonKey(ignore: true)
-  _$$AtFhirDstu2RequestNotificationCopyWith<_$AtFhirDstu2RequestNotification>
+  _$$AtFhirDstu2RequestNotificationImplCopyWith<
+          _$AtFhirDstu2RequestNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AtFhirStu3RequestNotificationCopyWith<$Res> {
-  factory _$$AtFhirStu3RequestNotificationCopyWith(
-          _$AtFhirStu3RequestNotification value,
-          $Res Function(_$AtFhirStu3RequestNotification) then) =
-      __$$AtFhirStu3RequestNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirStu3RequestNotificationImplCopyWith<$Res> {
+  factory _$$AtFhirStu3RequestNotificationImplCopyWith(
+          _$AtFhirStu3RequestNotificationImpl value,
+          $Res Function(_$AtFhirStu3RequestNotificationImpl) then) =
+      __$$AtFhirStu3RequestNotificationImplCopyWithImpl<$Res>;
   @useResult
   $Res call({stu3_request.FhirRequest value});
 
-  stu3_request.$FhirRequestCopyWith<$Res> get value;
+  $FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class __$$AtFhirStu3RequestNotificationCopyWithImpl<$Res>
+class __$$AtFhirStu3RequestNotificationImplCopyWithImpl<$Res>
     extends _$AtFhirNotificationCopyWithImpl<$Res,
-        _$AtFhirStu3RequestNotification>
-    implements _$$AtFhirStu3RequestNotificationCopyWith<$Res> {
-  __$$AtFhirStu3RequestNotificationCopyWithImpl(
-      _$AtFhirStu3RequestNotification _value,
-      $Res Function(_$AtFhirStu3RequestNotification) _then)
+        _$AtFhirStu3RequestNotificationImpl>
+    implements _$$AtFhirStu3RequestNotificationImplCopyWith<$Res> {
+  __$$AtFhirStu3RequestNotificationImplCopyWithImpl(
+      _$AtFhirStu3RequestNotificationImpl _value,
+      $Res Function(_$AtFhirStu3RequestNotificationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1171,7 +1186,7 @@ class __$$AtFhirStu3RequestNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$AtFhirStu3RequestNotification(
+    return _then(_$AtFhirStu3RequestNotificationImpl(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -1181,8 +1196,8 @@ class __$$AtFhirStu3RequestNotificationCopyWithImpl<$Res>
 
   @override
   @pragma('vm:prefer-inline')
-  stu3_request.$FhirRequestCopyWith<$Res> get value {
-    return stu3_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
+  $FhirRequestCopyWith<$Res> get value {
+    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
@@ -1190,13 +1205,15 @@ class __$$AtFhirStu3RequestNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$AtFhirStu3RequestNotification extends AtFhirStu3RequestNotification {
-  const _$AtFhirStu3RequestNotification(this.value, {final String? $type})
+class _$AtFhirStu3RequestNotificationImpl
+    extends AtFhirStu3RequestNotification {
+  const _$AtFhirStu3RequestNotificationImpl(this.value, {final String? $type})
       : $type = $type ?? 'stu3Request',
         super._();
 
-  factory _$AtFhirStu3RequestNotification.fromJson(Map<String, dynamic> json) =>
-      _$$AtFhirStu3RequestNotificationFromJson(json);
+  factory _$AtFhirStu3RequestNotificationImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$AtFhirStu3RequestNotificationImplFromJson(json);
 
   @override
   final stu3_request.FhirRequest value;
@@ -1213,7 +1230,7 @@ class _$AtFhirStu3RequestNotification extends AtFhirStu3RequestNotification {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AtFhirStu3RequestNotification &&
+            other is _$AtFhirStu3RequestNotificationImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -1224,9 +1241,10 @@ class _$AtFhirStu3RequestNotification extends AtFhirStu3RequestNotification {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AtFhirStu3RequestNotificationCopyWith<_$AtFhirStu3RequestNotification>
-      get copyWith => __$$AtFhirStu3RequestNotificationCopyWithImpl<
-          _$AtFhirStu3RequestNotification>(this, _$identity);
+  _$$AtFhirStu3RequestNotificationImplCopyWith<
+          _$AtFhirStu3RequestNotificationImpl>
+      get copyWith => __$$AtFhirStu3RequestNotificationImplCopyWithImpl<
+          _$AtFhirStu3RequestNotificationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1331,7 +1349,7 @@ class _$AtFhirStu3RequestNotification extends AtFhirStu3RequestNotification {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AtFhirStu3RequestNotificationToJson(
+    return _$$AtFhirStu3RequestNotificationImplToJson(
       this,
     );
   }
@@ -1339,39 +1357,41 @@ class _$AtFhirStu3RequestNotification extends AtFhirStu3RequestNotification {
 
 abstract class AtFhirStu3RequestNotification extends AtFhirNotification {
   const factory AtFhirStu3RequestNotification(
-      final stu3_request.FhirRequest value) = _$AtFhirStu3RequestNotification;
+          final stu3_request.FhirRequest value) =
+      _$AtFhirStu3RequestNotificationImpl;
   const AtFhirStu3RequestNotification._() : super._();
 
   factory AtFhirStu3RequestNotification.fromJson(Map<String, dynamic> json) =
-      _$AtFhirStu3RequestNotification.fromJson;
+      _$AtFhirStu3RequestNotificationImpl.fromJson;
 
   @override
   stu3_request.FhirRequest get value;
   @JsonKey(ignore: true)
-  _$$AtFhirStu3RequestNotificationCopyWith<_$AtFhirStu3RequestNotification>
+  _$$AtFhirStu3RequestNotificationImplCopyWith<
+          _$AtFhirStu3RequestNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AtFhirR4RequestNotificationCopyWith<$Res> {
-  factory _$$AtFhirR4RequestNotificationCopyWith(
-          _$AtFhirR4RequestNotification value,
-          $Res Function(_$AtFhirR4RequestNotification) then) =
-      __$$AtFhirR4RequestNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirR4RequestNotificationImplCopyWith<$Res> {
+  factory _$$AtFhirR4RequestNotificationImplCopyWith(
+          _$AtFhirR4RequestNotificationImpl value,
+          $Res Function(_$AtFhirR4RequestNotificationImpl) then) =
+      __$$AtFhirR4RequestNotificationImplCopyWithImpl<$Res>;
   @useResult
   $Res call({r4_request.FhirRequest value});
 
-  r4_request.$FhirRequestCopyWith<$Res> get value;
+  $FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class __$$AtFhirR4RequestNotificationCopyWithImpl<$Res>
+class __$$AtFhirR4RequestNotificationImplCopyWithImpl<$Res>
     extends _$AtFhirNotificationCopyWithImpl<$Res,
-        _$AtFhirR4RequestNotification>
-    implements _$$AtFhirR4RequestNotificationCopyWith<$Res> {
-  __$$AtFhirR4RequestNotificationCopyWithImpl(
-      _$AtFhirR4RequestNotification _value,
-      $Res Function(_$AtFhirR4RequestNotification) _then)
+        _$AtFhirR4RequestNotificationImpl>
+    implements _$$AtFhirR4RequestNotificationImplCopyWith<$Res> {
+  __$$AtFhirR4RequestNotificationImplCopyWithImpl(
+      _$AtFhirR4RequestNotificationImpl _value,
+      $Res Function(_$AtFhirR4RequestNotificationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1379,7 +1399,7 @@ class __$$AtFhirR4RequestNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$AtFhirR4RequestNotification(
+    return _then(_$AtFhirR4RequestNotificationImpl(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -1389,8 +1409,8 @@ class __$$AtFhirR4RequestNotificationCopyWithImpl<$Res>
 
   @override
   @pragma('vm:prefer-inline')
-  r4_request.$FhirRequestCopyWith<$Res> get value {
-    return r4_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
+  $FhirRequestCopyWith<$Res> get value {
+    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
@@ -1398,13 +1418,14 @@ class __$$AtFhirR4RequestNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$AtFhirR4RequestNotification extends AtFhirR4RequestNotification {
-  const _$AtFhirR4RequestNotification(this.value, {final String? $type})
+class _$AtFhirR4RequestNotificationImpl extends AtFhirR4RequestNotification {
+  const _$AtFhirR4RequestNotificationImpl(this.value, {final String? $type})
       : $type = $type ?? 'r4Request',
         super._();
 
-  factory _$AtFhirR4RequestNotification.fromJson(Map<String, dynamic> json) =>
-      _$$AtFhirR4RequestNotificationFromJson(json);
+  factory _$AtFhirR4RequestNotificationImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$AtFhirR4RequestNotificationImplFromJson(json);
 
   @override
   final r4_request.FhirRequest value;
@@ -1421,7 +1442,7 @@ class _$AtFhirR4RequestNotification extends AtFhirR4RequestNotification {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AtFhirR4RequestNotification &&
+            other is _$AtFhirR4RequestNotificationImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -1432,9 +1453,9 @@ class _$AtFhirR4RequestNotification extends AtFhirR4RequestNotification {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AtFhirR4RequestNotificationCopyWith<_$AtFhirR4RequestNotification>
-      get copyWith => __$$AtFhirR4RequestNotificationCopyWithImpl<
-          _$AtFhirR4RequestNotification>(this, _$identity);
+  _$$AtFhirR4RequestNotificationImplCopyWith<_$AtFhirR4RequestNotificationImpl>
+      get copyWith => __$$AtFhirR4RequestNotificationImplCopyWithImpl<
+          _$AtFhirR4RequestNotificationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1539,7 +1560,7 @@ class _$AtFhirR4RequestNotification extends AtFhirR4RequestNotification {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AtFhirR4RequestNotificationToJson(
+    return _$$AtFhirR4RequestNotificationImplToJson(
       this,
     );
   }
@@ -1547,39 +1568,39 @@ class _$AtFhirR4RequestNotification extends AtFhirR4RequestNotification {
 
 abstract class AtFhirR4RequestNotification extends AtFhirNotification {
   const factory AtFhirR4RequestNotification(
-      final r4_request.FhirRequest value) = _$AtFhirR4RequestNotification;
+      final r4_request.FhirRequest value) = _$AtFhirR4RequestNotificationImpl;
   const AtFhirR4RequestNotification._() : super._();
 
   factory AtFhirR4RequestNotification.fromJson(Map<String, dynamic> json) =
-      _$AtFhirR4RequestNotification.fromJson;
+      _$AtFhirR4RequestNotificationImpl.fromJson;
 
   @override
   r4_request.FhirRequest get value;
   @JsonKey(ignore: true)
-  _$$AtFhirR4RequestNotificationCopyWith<_$AtFhirR4RequestNotification>
+  _$$AtFhirR4RequestNotificationImplCopyWith<_$AtFhirR4RequestNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AtFhirR5RequestNotificationCopyWith<$Res> {
-  factory _$$AtFhirR5RequestNotificationCopyWith(
-          _$AtFhirR5RequestNotification value,
-          $Res Function(_$AtFhirR5RequestNotification) then) =
-      __$$AtFhirR5RequestNotificationCopyWithImpl<$Res>;
+abstract class _$$AtFhirR5RequestNotificationImplCopyWith<$Res> {
+  factory _$$AtFhirR5RequestNotificationImplCopyWith(
+          _$AtFhirR5RequestNotificationImpl value,
+          $Res Function(_$AtFhirR5RequestNotificationImpl) then) =
+      __$$AtFhirR5RequestNotificationImplCopyWithImpl<$Res>;
   @useResult
   $Res call({r5_request.FhirRequest value});
 
-  r5_request.$FhirRequestCopyWith<$Res> get value;
+  $FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
-class __$$AtFhirR5RequestNotificationCopyWithImpl<$Res>
+class __$$AtFhirR5RequestNotificationImplCopyWithImpl<$Res>
     extends _$AtFhirNotificationCopyWithImpl<$Res,
-        _$AtFhirR5RequestNotification>
-    implements _$$AtFhirR5RequestNotificationCopyWith<$Res> {
-  __$$AtFhirR5RequestNotificationCopyWithImpl(
-      _$AtFhirR5RequestNotification _value,
-      $Res Function(_$AtFhirR5RequestNotification) _then)
+        _$AtFhirR5RequestNotificationImpl>
+    implements _$$AtFhirR5RequestNotificationImplCopyWith<$Res> {
+  __$$AtFhirR5RequestNotificationImplCopyWithImpl(
+      _$AtFhirR5RequestNotificationImpl _value,
+      $Res Function(_$AtFhirR5RequestNotificationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1587,7 +1608,7 @@ class __$$AtFhirR5RequestNotificationCopyWithImpl<$Res>
   $Res call({
     Object? value = null,
   }) {
-    return _then(_$AtFhirR5RequestNotification(
+    return _then(_$AtFhirR5RequestNotificationImpl(
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -1597,8 +1618,8 @@ class __$$AtFhirR5RequestNotificationCopyWithImpl<$Res>
 
   @override
   @pragma('vm:prefer-inline')
-  r5_request.$FhirRequestCopyWith<$Res> get value {
-    return r5_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
+  $FhirRequestCopyWith<$Res> get value {
+    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
@@ -1606,13 +1627,14 @@ class __$$AtFhirR5RequestNotificationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$AtFhirR5RequestNotification extends AtFhirR5RequestNotification {
-  const _$AtFhirR5RequestNotification(this.value, {final String? $type})
+class _$AtFhirR5RequestNotificationImpl extends AtFhirR5RequestNotification {
+  const _$AtFhirR5RequestNotificationImpl(this.value, {final String? $type})
       : $type = $type ?? 'r5Request',
         super._();
 
-  factory _$AtFhirR5RequestNotification.fromJson(Map<String, dynamic> json) =>
-      _$$AtFhirR5RequestNotificationFromJson(json);
+  factory _$AtFhirR5RequestNotificationImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$AtFhirR5RequestNotificationImplFromJson(json);
 
   @override
   final r5_request.FhirRequest value;
@@ -1629,7 +1651,7 @@ class _$AtFhirR5RequestNotification extends AtFhirR5RequestNotification {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AtFhirR5RequestNotification &&
+            other is _$AtFhirR5RequestNotificationImpl &&
             (identical(other.value, value) || other.value == value));
   }
 
@@ -1640,9 +1662,9 @@ class _$AtFhirR5RequestNotification extends AtFhirR5RequestNotification {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AtFhirR5RequestNotificationCopyWith<_$AtFhirR5RequestNotification>
-      get copyWith => __$$AtFhirR5RequestNotificationCopyWithImpl<
-          _$AtFhirR5RequestNotification>(this, _$identity);
+  _$$AtFhirR5RequestNotificationImplCopyWith<_$AtFhirR5RequestNotificationImpl>
+      get copyWith => __$$AtFhirR5RequestNotificationImplCopyWithImpl<
+          _$AtFhirR5RequestNotificationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1747,7 +1769,7 @@ class _$AtFhirR5RequestNotification extends AtFhirR5RequestNotification {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AtFhirR5RequestNotificationToJson(
+    return _$$AtFhirR5RequestNotificationImplToJson(
       this,
     );
   }
@@ -1755,15 +1777,15 @@ class _$AtFhirR5RequestNotification extends AtFhirR5RequestNotification {
 
 abstract class AtFhirR5RequestNotification extends AtFhirNotification {
   const factory AtFhirR5RequestNotification(
-      final r5_request.FhirRequest value) = _$AtFhirR5RequestNotification;
+      final r5_request.FhirRequest value) = _$AtFhirR5RequestNotificationImpl;
   const AtFhirR5RequestNotification._() : super._();
 
   factory AtFhirR5RequestNotification.fromJson(Map<String, dynamic> json) =
-      _$AtFhirR5RequestNotification.fromJson;
+      _$AtFhirR5RequestNotificationImpl.fromJson;
 
   @override
   r5_request.FhirRequest get value;
   @JsonKey(ignore: true)
-  _$$AtFhirR5RequestNotificationCopyWith<_$AtFhirR5RequestNotification>
+  _$$AtFhirR5RequestNotificationImplCopyWith<_$AtFhirR5RequestNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
