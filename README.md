@@ -23,7 +23,7 @@ There are at least 4 groups/workflows we are trying to account for with this pac
 3) Clinician
 4) Server
 
-### ![Patient Workflow](png/patient_workflow.png)
+### ![Patient Workflow](https://github.com/fhir-fli/at_fhir/blob/main/png/patient_workflow.png)
 
 The patient will use the @protocol very much like it is usually demonstrated. 
 1. Login to an app using their atkeys. 
@@ -60,7 +60,7 @@ This one feels the most normal to me (but I may be biased).
 5. The clinician's app listens for any notifications 
 6. Depending on the type of notification, the clinicians app may update resources being displayed to the clinician, or add certain information to the display
 
-### ![Server Workflow](png/server_workflow.png)
+### ![Server Workflow](https://github.com/fhir-fli/at_fhir/blob/main/png/server_workflow.png)
 
 The @central fhir server acts as both a reverse proxy and as a repository for data that's NOT FHIR.
 1. The @central server has a headless atsign app that's always listening for notifications
