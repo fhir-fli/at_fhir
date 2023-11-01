@@ -1,3 +1,7 @@
+## 0.11.0-dev2
+
+- Updated diagrams in the Readme
+
 ## 0.11.0-dev1
 
 - Initial version.
