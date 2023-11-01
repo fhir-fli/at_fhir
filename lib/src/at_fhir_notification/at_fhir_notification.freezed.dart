@@ -955,7 +955,7 @@ abstract class _$$AtFhirDstu2RequestNotificationImplCopyWith<$Res> {
   @useResult
   $Res call({dstu2_request.FhirRequest value});
 
-  $FhirRequestCopyWith<$Res> get value;
+  dstu2_request.$FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
@@ -983,8 +983,8 @@ class __$$AtFhirDstu2RequestNotificationImplCopyWithImpl<$Res>
 
   @override
   @pragma('vm:prefer-inline')
-  $FhirRequestCopyWith<$Res> get value {
-    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
+  dstu2_request.$FhirRequestCopyWith<$Res> get value {
+    return dstu2_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
@@ -1168,7 +1168,7 @@ abstract class _$$AtFhirStu3RequestNotificationImplCopyWith<$Res> {
   @useResult
   $Res call({stu3_request.FhirRequest value});
 
-  $FhirRequestCopyWith<$Res> get value;
+  stu3_request.$FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
@@ -1196,8 +1196,8 @@ class __$$AtFhirStu3RequestNotificationImplCopyWithImpl<$Res>
 
   @override
   @pragma('vm:prefer-inline')
-  $FhirRequestCopyWith<$Res> get value {
-    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
+  stu3_request.$FhirRequestCopyWith<$Res> get value {
+    return stu3_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
@@ -1381,7 +1381,7 @@ abstract class _$$AtFhirR4RequestNotificationImplCopyWith<$Res> {
   @useResult
   $Res call({r4_request.FhirRequest value});
 
-  $FhirRequestCopyWith<$Res> get value;
+  r4_request.$FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
@@ -1409,8 +1409,8 @@ class __$$AtFhirR4RequestNotificationImplCopyWithImpl<$Res>
 
   @override
   @pragma('vm:prefer-inline')
-  $FhirRequestCopyWith<$Res> get value {
-    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
+  r4_request.$FhirRequestCopyWith<$Res> get value {
+    return r4_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
@@ -1590,7 +1590,7 @@ abstract class _$$AtFhirR5RequestNotificationImplCopyWith<$Res> {
   @useResult
   $Res call({r5_request.FhirRequest value});
 
-  $FhirRequestCopyWith<$Res> get value;
+  r5_request.$FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
@@ -1618,8 +1618,8 @@ class __$$AtFhirR5RequestNotificationImplCopyWithImpl<$Res>
 
   @override
   @pragma('vm:prefer-inline')
-  $FhirRequestCopyWith<$Res> get value {
-    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
+  r5_request.$FhirRequestCopyWith<$Res> get value {
+    return r5_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
