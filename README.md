@@ -2,7 +2,20 @@
 
 Group of utility classes for working with the atsign and fhir
 
-## Groups and Workflow
+## Current State
+
+1. AtFhirNotification: a class that simplifies sending and receiving FHIR information using the @protocol
+2. atFhirListen & atFhirNotify are simple functions to simplify sending AtFhirNotifications back and forth
+3. You will need to add a dependency override to your pubspec.yaml
+
+```yaml
+dependency_overrides:
+  uuid: ^4.1.0
+```
+
+## Future State
+
+These are the ideas I have for how the @protocol  an be used with FHIR. It is not implemented yet.
 
 There are at least 4 groups/workflows we are trying to account for with this package, that are notably different, although they share the same kind of data.
 1) Patient
