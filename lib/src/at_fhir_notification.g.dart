@@ -65,8 +65,7 @@ Map<String, dynamic> _$$AtFhirR5ResourceNotificationImplToJson(
 _$AtFhirDstu2RequestNotificationImpl
     _$$AtFhirDstu2RequestNotificationImplFromJson(Map<String, dynamic> json) =>
         _$AtFhirDstu2RequestNotificationImpl(
-          dstu2_request.FhirRequest.fromJson(
-              json['value'] as Map<String, dynamic>),
+          dstu2.FhirRequest.fromJson(json['value'] as Map<String, dynamic>),
           $type: json['runtimeType'] as String?,
         );
 
@@ -80,8 +79,7 @@ Map<String, dynamic> _$$AtFhirDstu2RequestNotificationImplToJson(
 _$AtFhirStu3RequestNotificationImpl
     _$$AtFhirStu3RequestNotificationImplFromJson(Map<String, dynamic> json) =>
         _$AtFhirStu3RequestNotificationImpl(
-          stu3_request.FhirRequest.fromJson(
-              json['value'] as Map<String, dynamic>),
+          stu3.FhirRequest.fromJson(json['value'] as Map<String, dynamic>),
           $type: json['runtimeType'] as String?,
         );
 
@@ -95,7 +93,7 @@ Map<String, dynamic> _$$AtFhirStu3RequestNotificationImplToJson(
 _$AtFhirR4RequestNotificationImpl _$$AtFhirR4RequestNotificationImplFromJson(
         Map<String, dynamic> json) =>
     _$AtFhirR4RequestNotificationImpl(
-      r4_request.FhirRequest.fromJson(json['value'] as Map<String, dynamic>),
+      r4.FhirRequest.fromJson(json['value'] as Map<String, dynamic>),
       $type: json['runtimeType'] as String?,
     );
 
@@ -109,7 +107,7 @@ Map<String, dynamic> _$$AtFhirR4RequestNotificationImplToJson(
 _$AtFhirR5RequestNotificationImpl _$$AtFhirR5RequestNotificationImplFromJson(
         Map<String, dynamic> json) =>
     _$AtFhirR5RequestNotificationImpl(
-      r5_request.FhirRequest.fromJson(json['value'] as Map<String, dynamic>),
+      r5.FhirRequest.fromJson(json['value'] as Map<String, dynamic>),
       $type: json['runtimeType'] as String?,
     );
 

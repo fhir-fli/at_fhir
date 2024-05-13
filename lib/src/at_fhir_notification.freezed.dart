@@ -12,7 +12,7 @@ part of 'at_fhir_notification.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 AtFhirNotification _$AtFhirNotificationFromJson(Map<String, dynamic> json) {
   switch (json['runtimeType']) {
@@ -48,10 +48,10 @@ mixin _$AtFhirNotification {
     required TResult Function(stu3.Resource value) stu3Resource,
     required TResult Function(r4.Resource value) r4Resource,
     required TResult Function(r5.Resource value) r5Resource,
-    required TResult Function(dstu2_request.FhirRequest value) dstu2Request,
-    required TResult Function(stu3_request.FhirRequest value) stu3Request,
-    required TResult Function(r4_request.FhirRequest value) r4Request,
-    required TResult Function(r5_request.FhirRequest value) r5Request,
+    required TResult Function(dstu2.FhirRequest value) dstu2Request,
+    required TResult Function(stu3.FhirRequest value) stu3Request,
+    required TResult Function(r4.FhirRequest value) r4Request,
+    required TResult Function(r5.FhirRequest value) r5Request,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -60,10 +60,10 @@ mixin _$AtFhirNotification {
     TResult? Function(stu3.Resource value)? stu3Resource,
     TResult? Function(r4.Resource value)? r4Resource,
     TResult? Function(r5.Resource value)? r5Resource,
-    TResult? Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult? Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult? Function(r4_request.FhirRequest value)? r4Request,
-    TResult? Function(r5_request.FhirRequest value)? r5Request,
+    TResult? Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult? Function(stu3.FhirRequest value)? stu3Request,
+    TResult? Function(r4.FhirRequest value)? r4Request,
+    TResult? Function(r5.FhirRequest value)? r5Request,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -72,10 +72,10 @@ mixin _$AtFhirNotification {
     TResult Function(stu3.Resource value)? stu3Resource,
     TResult Function(r4.Resource value)? r4Resource,
     TResult Function(r5.Resource value)? r5Resource,
-    TResult Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult Function(r4_request.FhirRequest value)? r4Request,
-    TResult Function(r5_request.FhirRequest value)? r5Request,
+    TResult Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult Function(stu3.FhirRequest value)? stu3Request,
+    TResult Function(r4.FhirRequest value)? r4Request,
+    TResult Function(r5.FhirRequest value)? r5Request,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -198,7 +198,7 @@ class _$AtFhirDstu2ResourceNotificationImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AtFhirDstu2ResourceNotificationImpl &&
@@ -224,10 +224,10 @@ class _$AtFhirDstu2ResourceNotificationImpl
     required TResult Function(stu3.Resource value) stu3Resource,
     required TResult Function(r4.Resource value) r4Resource,
     required TResult Function(r5.Resource value) r5Resource,
-    required TResult Function(dstu2_request.FhirRequest value) dstu2Request,
-    required TResult Function(stu3_request.FhirRequest value) stu3Request,
-    required TResult Function(r4_request.FhirRequest value) r4Request,
-    required TResult Function(r5_request.FhirRequest value) r5Request,
+    required TResult Function(dstu2.FhirRequest value) dstu2Request,
+    required TResult Function(stu3.FhirRequest value) stu3Request,
+    required TResult Function(r4.FhirRequest value) r4Request,
+    required TResult Function(r5.FhirRequest value) r5Request,
   }) {
     return dstu2Resource(value);
   }
@@ -239,10 +239,10 @@ class _$AtFhirDstu2ResourceNotificationImpl
     TResult? Function(stu3.Resource value)? stu3Resource,
     TResult? Function(r4.Resource value)? r4Resource,
     TResult? Function(r5.Resource value)? r5Resource,
-    TResult? Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult? Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult? Function(r4_request.FhirRequest value)? r4Request,
-    TResult? Function(r5_request.FhirRequest value)? r5Request,
+    TResult? Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult? Function(stu3.FhirRequest value)? stu3Request,
+    TResult? Function(r4.FhirRequest value)? r4Request,
+    TResult? Function(r5.FhirRequest value)? r5Request,
   }) {
     return dstu2Resource?.call(value);
   }
@@ -254,10 +254,10 @@ class _$AtFhirDstu2ResourceNotificationImpl
     TResult Function(stu3.Resource value)? stu3Resource,
     TResult Function(r4.Resource value)? r4Resource,
     TResult Function(r5.Resource value)? r5Resource,
-    TResult Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult Function(r4_request.FhirRequest value)? r4Request,
-    TResult Function(r5_request.FhirRequest value)? r5Request,
+    TResult Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult Function(stu3.FhirRequest value)? stu3Request,
+    TResult Function(r4.FhirRequest value)? r4Request,
+    TResult Function(r5.FhirRequest value)? r5Request,
     required TResult orElse(),
   }) {
     if (dstu2Resource != null) {
@@ -400,7 +400,7 @@ class _$AtFhirStu3ResourceNotificationImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AtFhirStu3ResourceNotificationImpl &&
@@ -426,10 +426,10 @@ class _$AtFhirStu3ResourceNotificationImpl
     required TResult Function(stu3.Resource value) stu3Resource,
     required TResult Function(r4.Resource value) r4Resource,
     required TResult Function(r5.Resource value) r5Resource,
-    required TResult Function(dstu2_request.FhirRequest value) dstu2Request,
-    required TResult Function(stu3_request.FhirRequest value) stu3Request,
-    required TResult Function(r4_request.FhirRequest value) r4Request,
-    required TResult Function(r5_request.FhirRequest value) r5Request,
+    required TResult Function(dstu2.FhirRequest value) dstu2Request,
+    required TResult Function(stu3.FhirRequest value) stu3Request,
+    required TResult Function(r4.FhirRequest value) r4Request,
+    required TResult Function(r5.FhirRequest value) r5Request,
   }) {
     return stu3Resource(value);
   }
@@ -441,10 +441,10 @@ class _$AtFhirStu3ResourceNotificationImpl
     TResult? Function(stu3.Resource value)? stu3Resource,
     TResult? Function(r4.Resource value)? r4Resource,
     TResult? Function(r5.Resource value)? r5Resource,
-    TResult? Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult? Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult? Function(r4_request.FhirRequest value)? r4Request,
-    TResult? Function(r5_request.FhirRequest value)? r5Request,
+    TResult? Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult? Function(stu3.FhirRequest value)? stu3Request,
+    TResult? Function(r4.FhirRequest value)? r4Request,
+    TResult? Function(r5.FhirRequest value)? r5Request,
   }) {
     return stu3Resource?.call(value);
   }
@@ -456,10 +456,10 @@ class _$AtFhirStu3ResourceNotificationImpl
     TResult Function(stu3.Resource value)? stu3Resource,
     TResult Function(r4.Resource value)? r4Resource,
     TResult Function(r5.Resource value)? r5Resource,
-    TResult Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult Function(r4_request.FhirRequest value)? r4Request,
-    TResult Function(r5_request.FhirRequest value)? r5Request,
+    TResult Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult Function(stu3.FhirRequest value)? stu3Request,
+    TResult Function(r4.FhirRequest value)? r4Request,
+    TResult Function(r5.FhirRequest value)? r5Request,
     required TResult orElse(),
   }) {
     if (stu3Resource != null) {
@@ -601,7 +601,7 @@ class _$AtFhirR4ResourceNotificationImpl extends AtFhirR4ResourceNotification {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AtFhirR4ResourceNotificationImpl &&
@@ -627,10 +627,10 @@ class _$AtFhirR4ResourceNotificationImpl extends AtFhirR4ResourceNotification {
     required TResult Function(stu3.Resource value) stu3Resource,
     required TResult Function(r4.Resource value) r4Resource,
     required TResult Function(r5.Resource value) r5Resource,
-    required TResult Function(dstu2_request.FhirRequest value) dstu2Request,
-    required TResult Function(stu3_request.FhirRequest value) stu3Request,
-    required TResult Function(r4_request.FhirRequest value) r4Request,
-    required TResult Function(r5_request.FhirRequest value) r5Request,
+    required TResult Function(dstu2.FhirRequest value) dstu2Request,
+    required TResult Function(stu3.FhirRequest value) stu3Request,
+    required TResult Function(r4.FhirRequest value) r4Request,
+    required TResult Function(r5.FhirRequest value) r5Request,
   }) {
     return r4Resource(value);
   }
@@ -642,10 +642,10 @@ class _$AtFhirR4ResourceNotificationImpl extends AtFhirR4ResourceNotification {
     TResult? Function(stu3.Resource value)? stu3Resource,
     TResult? Function(r4.Resource value)? r4Resource,
     TResult? Function(r5.Resource value)? r5Resource,
-    TResult? Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult? Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult? Function(r4_request.FhirRequest value)? r4Request,
-    TResult? Function(r5_request.FhirRequest value)? r5Request,
+    TResult? Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult? Function(stu3.FhirRequest value)? stu3Request,
+    TResult? Function(r4.FhirRequest value)? r4Request,
+    TResult? Function(r5.FhirRequest value)? r5Request,
   }) {
     return r4Resource?.call(value);
   }
@@ -657,10 +657,10 @@ class _$AtFhirR4ResourceNotificationImpl extends AtFhirR4ResourceNotification {
     TResult Function(stu3.Resource value)? stu3Resource,
     TResult Function(r4.Resource value)? r4Resource,
     TResult Function(r5.Resource value)? r5Resource,
-    TResult Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult Function(r4_request.FhirRequest value)? r4Request,
-    TResult Function(r5_request.FhirRequest value)? r5Request,
+    TResult Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult Function(stu3.FhirRequest value)? stu3Request,
+    TResult Function(r4.FhirRequest value)? r4Request,
+    TResult Function(r5.FhirRequest value)? r5Request,
     required TResult orElse(),
   }) {
     if (r4Resource != null) {
@@ -802,7 +802,7 @@ class _$AtFhirR5ResourceNotificationImpl extends AtFhirR5ResourceNotification {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AtFhirR5ResourceNotificationImpl &&
@@ -828,10 +828,10 @@ class _$AtFhirR5ResourceNotificationImpl extends AtFhirR5ResourceNotification {
     required TResult Function(stu3.Resource value) stu3Resource,
     required TResult Function(r4.Resource value) r4Resource,
     required TResult Function(r5.Resource value) r5Resource,
-    required TResult Function(dstu2_request.FhirRequest value) dstu2Request,
-    required TResult Function(stu3_request.FhirRequest value) stu3Request,
-    required TResult Function(r4_request.FhirRequest value) r4Request,
-    required TResult Function(r5_request.FhirRequest value) r5Request,
+    required TResult Function(dstu2.FhirRequest value) dstu2Request,
+    required TResult Function(stu3.FhirRequest value) stu3Request,
+    required TResult Function(r4.FhirRequest value) r4Request,
+    required TResult Function(r5.FhirRequest value) r5Request,
   }) {
     return r5Resource(value);
   }
@@ -843,10 +843,10 @@ class _$AtFhirR5ResourceNotificationImpl extends AtFhirR5ResourceNotification {
     TResult? Function(stu3.Resource value)? stu3Resource,
     TResult? Function(r4.Resource value)? r4Resource,
     TResult? Function(r5.Resource value)? r5Resource,
-    TResult? Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult? Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult? Function(r4_request.FhirRequest value)? r4Request,
-    TResult? Function(r5_request.FhirRequest value)? r5Request,
+    TResult? Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult? Function(stu3.FhirRequest value)? stu3Request,
+    TResult? Function(r4.FhirRequest value)? r4Request,
+    TResult? Function(r5.FhirRequest value)? r5Request,
   }) {
     return r5Resource?.call(value);
   }
@@ -858,10 +858,10 @@ class _$AtFhirR5ResourceNotificationImpl extends AtFhirR5ResourceNotification {
     TResult Function(stu3.Resource value)? stu3Resource,
     TResult Function(r4.Resource value)? r4Resource,
     TResult Function(r5.Resource value)? r5Resource,
-    TResult Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult Function(r4_request.FhirRequest value)? r4Request,
-    TResult Function(r5_request.FhirRequest value)? r5Request,
+    TResult Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult Function(stu3.FhirRequest value)? stu3Request,
+    TResult Function(r4.FhirRequest value)? r4Request,
+    TResult Function(r5.FhirRequest value)? r5Request,
     required TResult orElse(),
   }) {
     if (r5Resource != null) {
@@ -953,9 +953,9 @@ abstract class _$$AtFhirDstu2RequestNotificationImplCopyWith<$Res> {
           $Res Function(_$AtFhirDstu2RequestNotificationImpl) then) =
       __$$AtFhirDstu2RequestNotificationImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({dstu2_request.FhirRequest value});
+  $Res call({dstu2.FhirRequest value});
 
-  dstu2_request.$FhirRequestCopyWith<$Res> get value;
+  $FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
@@ -977,14 +977,14 @@ class __$$AtFhirDstu2RequestNotificationImplCopyWithImpl<$Res>
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
-              as dstu2_request.FhirRequest,
+              as dstu2.FhirRequest,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  dstu2_request.$FhirRequestCopyWith<$Res> get value {
-    return dstu2_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
+  $FhirRequestCopyWith<$Res> get value {
+    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
@@ -1003,7 +1003,7 @@ class _$AtFhirDstu2RequestNotificationImpl
       _$$AtFhirDstu2RequestNotificationImplFromJson(json);
 
   @override
-  final dstu2_request.FhirRequest value;
+  final dstu2.FhirRequest value;
 
   @JsonKey(name: 'runtimeType')
   final String $type;
@@ -1014,7 +1014,7 @@ class _$AtFhirDstu2RequestNotificationImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AtFhirDstu2RequestNotificationImpl &&
@@ -1040,10 +1040,10 @@ class _$AtFhirDstu2RequestNotificationImpl
     required TResult Function(stu3.Resource value) stu3Resource,
     required TResult Function(r4.Resource value) r4Resource,
     required TResult Function(r5.Resource value) r5Resource,
-    required TResult Function(dstu2_request.FhirRequest value) dstu2Request,
-    required TResult Function(stu3_request.FhirRequest value) stu3Request,
-    required TResult Function(r4_request.FhirRequest value) r4Request,
-    required TResult Function(r5_request.FhirRequest value) r5Request,
+    required TResult Function(dstu2.FhirRequest value) dstu2Request,
+    required TResult Function(stu3.FhirRequest value) stu3Request,
+    required TResult Function(r4.FhirRequest value) r4Request,
+    required TResult Function(r5.FhirRequest value) r5Request,
   }) {
     return dstu2Request(value);
   }
@@ -1055,10 +1055,10 @@ class _$AtFhirDstu2RequestNotificationImpl
     TResult? Function(stu3.Resource value)? stu3Resource,
     TResult? Function(r4.Resource value)? r4Resource,
     TResult? Function(r5.Resource value)? r5Resource,
-    TResult? Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult? Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult? Function(r4_request.FhirRequest value)? r4Request,
-    TResult? Function(r5_request.FhirRequest value)? r5Request,
+    TResult? Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult? Function(stu3.FhirRequest value)? stu3Request,
+    TResult? Function(r4.FhirRequest value)? r4Request,
+    TResult? Function(r5.FhirRequest value)? r5Request,
   }) {
     return dstu2Request?.call(value);
   }
@@ -1070,10 +1070,10 @@ class _$AtFhirDstu2RequestNotificationImpl
     TResult Function(stu3.Resource value)? stu3Resource,
     TResult Function(r4.Resource value)? r4Resource,
     TResult Function(r5.Resource value)? r5Resource,
-    TResult Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult Function(r4_request.FhirRequest value)? r4Request,
-    TResult Function(r5_request.FhirRequest value)? r5Request,
+    TResult Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult Function(stu3.FhirRequest value)? stu3Request,
+    TResult Function(r4.FhirRequest value)? r4Request,
+    TResult Function(r5.FhirRequest value)? r5Request,
     required TResult orElse(),
   }) {
     if (dstu2Request != null) {
@@ -1143,8 +1143,7 @@ class _$AtFhirDstu2RequestNotificationImpl
 }
 
 abstract class AtFhirDstu2RequestNotification extends AtFhirNotification {
-  const factory AtFhirDstu2RequestNotification(
-          final dstu2_request.FhirRequest value) =
+  const factory AtFhirDstu2RequestNotification(final dstu2.FhirRequest value) =
       _$AtFhirDstu2RequestNotificationImpl;
   const AtFhirDstu2RequestNotification._() : super._();
 
@@ -1152,7 +1151,7 @@ abstract class AtFhirDstu2RequestNotification extends AtFhirNotification {
       _$AtFhirDstu2RequestNotificationImpl.fromJson;
 
   @override
-  dstu2_request.FhirRequest get value;
+  dstu2.FhirRequest get value;
   @JsonKey(ignore: true)
   _$$AtFhirDstu2RequestNotificationImplCopyWith<
           _$AtFhirDstu2RequestNotificationImpl>
@@ -1166,9 +1165,9 @@ abstract class _$$AtFhirStu3RequestNotificationImplCopyWith<$Res> {
           $Res Function(_$AtFhirStu3RequestNotificationImpl) then) =
       __$$AtFhirStu3RequestNotificationImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({stu3_request.FhirRequest value});
+  $Res call({stu3.FhirRequest value});
 
-  stu3_request.$FhirRequestCopyWith<$Res> get value;
+  $FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
@@ -1190,14 +1189,14 @@ class __$$AtFhirStu3RequestNotificationImplCopyWithImpl<$Res>
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
-              as stu3_request.FhirRequest,
+              as stu3.FhirRequest,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  stu3_request.$FhirRequestCopyWith<$Res> get value {
-    return stu3_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
+  $FhirRequestCopyWith<$Res> get value {
+    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
@@ -1216,7 +1215,7 @@ class _$AtFhirStu3RequestNotificationImpl
       _$$AtFhirStu3RequestNotificationImplFromJson(json);
 
   @override
-  final stu3_request.FhirRequest value;
+  final stu3.FhirRequest value;
 
   @JsonKey(name: 'runtimeType')
   final String $type;
@@ -1227,7 +1226,7 @@ class _$AtFhirStu3RequestNotificationImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AtFhirStu3RequestNotificationImpl &&
@@ -1253,10 +1252,10 @@ class _$AtFhirStu3RequestNotificationImpl
     required TResult Function(stu3.Resource value) stu3Resource,
     required TResult Function(r4.Resource value) r4Resource,
     required TResult Function(r5.Resource value) r5Resource,
-    required TResult Function(dstu2_request.FhirRequest value) dstu2Request,
-    required TResult Function(stu3_request.FhirRequest value) stu3Request,
-    required TResult Function(r4_request.FhirRequest value) r4Request,
-    required TResult Function(r5_request.FhirRequest value) r5Request,
+    required TResult Function(dstu2.FhirRequest value) dstu2Request,
+    required TResult Function(stu3.FhirRequest value) stu3Request,
+    required TResult Function(r4.FhirRequest value) r4Request,
+    required TResult Function(r5.FhirRequest value) r5Request,
   }) {
     return stu3Request(value);
   }
@@ -1268,10 +1267,10 @@ class _$AtFhirStu3RequestNotificationImpl
     TResult? Function(stu3.Resource value)? stu3Resource,
     TResult? Function(r4.Resource value)? r4Resource,
     TResult? Function(r5.Resource value)? r5Resource,
-    TResult? Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult? Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult? Function(r4_request.FhirRequest value)? r4Request,
-    TResult? Function(r5_request.FhirRequest value)? r5Request,
+    TResult? Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult? Function(stu3.FhirRequest value)? stu3Request,
+    TResult? Function(r4.FhirRequest value)? r4Request,
+    TResult? Function(r5.FhirRequest value)? r5Request,
   }) {
     return stu3Request?.call(value);
   }
@@ -1283,10 +1282,10 @@ class _$AtFhirStu3RequestNotificationImpl
     TResult Function(stu3.Resource value)? stu3Resource,
     TResult Function(r4.Resource value)? r4Resource,
     TResult Function(r5.Resource value)? r5Resource,
-    TResult Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult Function(r4_request.FhirRequest value)? r4Request,
-    TResult Function(r5_request.FhirRequest value)? r5Request,
+    TResult Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult Function(stu3.FhirRequest value)? stu3Request,
+    TResult Function(r4.FhirRequest value)? r4Request,
+    TResult Function(r5.FhirRequest value)? r5Request,
     required TResult orElse(),
   }) {
     if (stu3Request != null) {
@@ -1356,8 +1355,7 @@ class _$AtFhirStu3RequestNotificationImpl
 }
 
 abstract class AtFhirStu3RequestNotification extends AtFhirNotification {
-  const factory AtFhirStu3RequestNotification(
-          final stu3_request.FhirRequest value) =
+  const factory AtFhirStu3RequestNotification(final stu3.FhirRequest value) =
       _$AtFhirStu3RequestNotificationImpl;
   const AtFhirStu3RequestNotification._() : super._();
 
@@ -1365,7 +1363,7 @@ abstract class AtFhirStu3RequestNotification extends AtFhirNotification {
       _$AtFhirStu3RequestNotificationImpl.fromJson;
 
   @override
-  stu3_request.FhirRequest get value;
+  stu3.FhirRequest get value;
   @JsonKey(ignore: true)
   _$$AtFhirStu3RequestNotificationImplCopyWith<
           _$AtFhirStu3RequestNotificationImpl>
@@ -1379,9 +1377,9 @@ abstract class _$$AtFhirR4RequestNotificationImplCopyWith<$Res> {
           $Res Function(_$AtFhirR4RequestNotificationImpl) then) =
       __$$AtFhirR4RequestNotificationImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({r4_request.FhirRequest value});
+  $Res call({r4.FhirRequest value});
 
-  r4_request.$FhirRequestCopyWith<$Res> get value;
+  $FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
@@ -1403,14 +1401,14 @@ class __$$AtFhirR4RequestNotificationImplCopyWithImpl<$Res>
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
-              as r4_request.FhirRequest,
+              as r4.FhirRequest,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  r4_request.$FhirRequestCopyWith<$Res> get value {
-    return r4_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
+  $FhirRequestCopyWith<$Res> get value {
+    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
@@ -1428,7 +1426,7 @@ class _$AtFhirR4RequestNotificationImpl extends AtFhirR4RequestNotification {
       _$$AtFhirR4RequestNotificationImplFromJson(json);
 
   @override
-  final r4_request.FhirRequest value;
+  final r4.FhirRequest value;
 
   @JsonKey(name: 'runtimeType')
   final String $type;
@@ -1439,7 +1437,7 @@ class _$AtFhirR4RequestNotificationImpl extends AtFhirR4RequestNotification {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AtFhirR4RequestNotificationImpl &&
@@ -1464,10 +1462,10 @@ class _$AtFhirR4RequestNotificationImpl extends AtFhirR4RequestNotification {
     required TResult Function(stu3.Resource value) stu3Resource,
     required TResult Function(r4.Resource value) r4Resource,
     required TResult Function(r5.Resource value) r5Resource,
-    required TResult Function(dstu2_request.FhirRequest value) dstu2Request,
-    required TResult Function(stu3_request.FhirRequest value) stu3Request,
-    required TResult Function(r4_request.FhirRequest value) r4Request,
-    required TResult Function(r5_request.FhirRequest value) r5Request,
+    required TResult Function(dstu2.FhirRequest value) dstu2Request,
+    required TResult Function(stu3.FhirRequest value) stu3Request,
+    required TResult Function(r4.FhirRequest value) r4Request,
+    required TResult Function(r5.FhirRequest value) r5Request,
   }) {
     return r4Request(value);
   }
@@ -1479,10 +1477,10 @@ class _$AtFhirR4RequestNotificationImpl extends AtFhirR4RequestNotification {
     TResult? Function(stu3.Resource value)? stu3Resource,
     TResult? Function(r4.Resource value)? r4Resource,
     TResult? Function(r5.Resource value)? r5Resource,
-    TResult? Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult? Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult? Function(r4_request.FhirRequest value)? r4Request,
-    TResult? Function(r5_request.FhirRequest value)? r5Request,
+    TResult? Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult? Function(stu3.FhirRequest value)? stu3Request,
+    TResult? Function(r4.FhirRequest value)? r4Request,
+    TResult? Function(r5.FhirRequest value)? r5Request,
   }) {
     return r4Request?.call(value);
   }
@@ -1494,10 +1492,10 @@ class _$AtFhirR4RequestNotificationImpl extends AtFhirR4RequestNotification {
     TResult Function(stu3.Resource value)? stu3Resource,
     TResult Function(r4.Resource value)? r4Resource,
     TResult Function(r5.Resource value)? r5Resource,
-    TResult Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult Function(r4_request.FhirRequest value)? r4Request,
-    TResult Function(r5_request.FhirRequest value)? r5Request,
+    TResult Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult Function(stu3.FhirRequest value)? stu3Request,
+    TResult Function(r4.FhirRequest value)? r4Request,
+    TResult Function(r5.FhirRequest value)? r5Request,
     required TResult orElse(),
   }) {
     if (r4Request != null) {
@@ -1567,15 +1565,15 @@ class _$AtFhirR4RequestNotificationImpl extends AtFhirR4RequestNotification {
 }
 
 abstract class AtFhirR4RequestNotification extends AtFhirNotification {
-  const factory AtFhirR4RequestNotification(
-      final r4_request.FhirRequest value) = _$AtFhirR4RequestNotificationImpl;
+  const factory AtFhirR4RequestNotification(final r4.FhirRequest value) =
+      _$AtFhirR4RequestNotificationImpl;
   const AtFhirR4RequestNotification._() : super._();
 
   factory AtFhirR4RequestNotification.fromJson(Map<String, dynamic> json) =
       _$AtFhirR4RequestNotificationImpl.fromJson;
 
   @override
-  r4_request.FhirRequest get value;
+  r4.FhirRequest get value;
   @JsonKey(ignore: true)
   _$$AtFhirR4RequestNotificationImplCopyWith<_$AtFhirR4RequestNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1588,9 +1586,9 @@ abstract class _$$AtFhirR5RequestNotificationImplCopyWith<$Res> {
           $Res Function(_$AtFhirR5RequestNotificationImpl) then) =
       __$$AtFhirR5RequestNotificationImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({r5_request.FhirRequest value});
+  $Res call({r5.FhirRequest value});
 
-  r5_request.$FhirRequestCopyWith<$Res> get value;
+  $FhirRequestCopyWith<$Res> get value;
 }
 
 /// @nodoc
@@ -1612,14 +1610,14 @@ class __$$AtFhirR5RequestNotificationImplCopyWithImpl<$Res>
       null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
-              as r5_request.FhirRequest,
+              as r5.FhirRequest,
     ));
   }
 
   @override
   @pragma('vm:prefer-inline')
-  r5_request.$FhirRequestCopyWith<$Res> get value {
-    return r5_request.$FhirRequestCopyWith<$Res>(_value.value, (value) {
+  $FhirRequestCopyWith<$Res> get value {
+    return $FhirRequestCopyWith<$Res>(_value.value, (value) {
       return _then(_value.copyWith(value: value));
     });
   }
@@ -1637,7 +1635,7 @@ class _$AtFhirR5RequestNotificationImpl extends AtFhirR5RequestNotification {
       _$$AtFhirR5RequestNotificationImplFromJson(json);
 
   @override
-  final r5_request.FhirRequest value;
+  final r5.FhirRequest value;
 
   @JsonKey(name: 'runtimeType')
   final String $type;
@@ -1648,7 +1646,7 @@ class _$AtFhirR5RequestNotificationImpl extends AtFhirR5RequestNotification {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AtFhirR5RequestNotificationImpl &&
@@ -1673,10 +1671,10 @@ class _$AtFhirR5RequestNotificationImpl extends AtFhirR5RequestNotification {
     required TResult Function(stu3.Resource value) stu3Resource,
     required TResult Function(r4.Resource value) r4Resource,
     required TResult Function(r5.Resource value) r5Resource,
-    required TResult Function(dstu2_request.FhirRequest value) dstu2Request,
-    required TResult Function(stu3_request.FhirRequest value) stu3Request,
-    required TResult Function(r4_request.FhirRequest value) r4Request,
-    required TResult Function(r5_request.FhirRequest value) r5Request,
+    required TResult Function(dstu2.FhirRequest value) dstu2Request,
+    required TResult Function(stu3.FhirRequest value) stu3Request,
+    required TResult Function(r4.FhirRequest value) r4Request,
+    required TResult Function(r5.FhirRequest value) r5Request,
   }) {
     return r5Request(value);
   }
@@ -1688,10 +1686,10 @@ class _$AtFhirR5RequestNotificationImpl extends AtFhirR5RequestNotification {
     TResult? Function(stu3.Resource value)? stu3Resource,
     TResult? Function(r4.Resource value)? r4Resource,
     TResult? Function(r5.Resource value)? r5Resource,
-    TResult? Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult? Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult? Function(r4_request.FhirRequest value)? r4Request,
-    TResult? Function(r5_request.FhirRequest value)? r5Request,
+    TResult? Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult? Function(stu3.FhirRequest value)? stu3Request,
+    TResult? Function(r4.FhirRequest value)? r4Request,
+    TResult? Function(r5.FhirRequest value)? r5Request,
   }) {
     return r5Request?.call(value);
   }
@@ -1703,10 +1701,10 @@ class _$AtFhirR5RequestNotificationImpl extends AtFhirR5RequestNotification {
     TResult Function(stu3.Resource value)? stu3Resource,
     TResult Function(r4.Resource value)? r4Resource,
     TResult Function(r5.Resource value)? r5Resource,
-    TResult Function(dstu2_request.FhirRequest value)? dstu2Request,
-    TResult Function(stu3_request.FhirRequest value)? stu3Request,
-    TResult Function(r4_request.FhirRequest value)? r4Request,
-    TResult Function(r5_request.FhirRequest value)? r5Request,
+    TResult Function(dstu2.FhirRequest value)? dstu2Request,
+    TResult Function(stu3.FhirRequest value)? stu3Request,
+    TResult Function(r4.FhirRequest value)? r4Request,
+    TResult Function(r5.FhirRequest value)? r5Request,
     required TResult orElse(),
   }) {
     if (r5Request != null) {
@@ -1776,15 +1774,15 @@ class _$AtFhirR5RequestNotificationImpl extends AtFhirR5RequestNotification {
 }
 
 abstract class AtFhirR5RequestNotification extends AtFhirNotification {
-  const factory AtFhirR5RequestNotification(
-      final r5_request.FhirRequest value) = _$AtFhirR5RequestNotificationImpl;
+  const factory AtFhirR5RequestNotification(final r5.FhirRequest value) =
+      _$AtFhirR5RequestNotificationImpl;
   const AtFhirR5RequestNotification._() : super._();
 
   factory AtFhirR5RequestNotification.fromJson(Map<String, dynamic> json) =
       _$AtFhirR5RequestNotificationImpl.fromJson;
 
   @override
-  r5_request.FhirRequest get value;
+  r5.FhirRequest get value;
   @JsonKey(ignore: true)
   _$$AtFhirR5RequestNotificationImplCopyWith<_$AtFhirR5RequestNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;

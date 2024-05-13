@@ -1,8 +1,8 @@
 import 'package:at_client/at_client.dart';
-import 'package:fhir/dstu2.dart' as dstu2;
-import 'package:fhir/r4.dart' as r4;
-import 'package:fhir/r5.dart' as r5;
-import 'package:fhir/stu3.dart' as stu3;
+import 'package:fhir_dstu2/fhir_dstu2.dart' as dstu2;
+import 'package:fhir_r4/fhir_r4.dart' as r4;
+import 'package:fhir_r5/fhir_r5.dart' as r5;
+import 'package:fhir_stu3/fhir_stu3.dart' as stu3;
 
 import '../at_fhir.dart';
 
@@ -53,7 +53,7 @@ Future<bool> atSignPutFhir({
     return atSignPut(
       atClient: atClient,
       value: resource.toJsonString(),
-      atKey: 'fhir.r5.${newResource.resourceTypeString}.${newResource.fhirId}',
+      atKey: 'fhir.r5.${newResource.resourceTypeString}.${newResource.id}',
       nameSpace: nameSpace,
     );
   } else if (resource is r4.Resource) {
@@ -61,7 +61,7 @@ Future<bool> atSignPutFhir({
     return atSignPut(
       atClient: atClient,
       value: resource.toJsonString(),
-      atKey: 'fhir.r4.${newResource.resourceTypeString}.${newResource.fhirId}',
+      atKey: 'fhir.r4.${newResource.resourceTypeString}.${newResource.id}',
       nameSpace: nameSpace,
     );
   } else if (resource is stu3.Resource) {
@@ -69,8 +69,7 @@ Future<bool> atSignPutFhir({
     return atSignPut(
       atClient: atClient,
       value: resource.toJsonString(),
-      atKey:
-          'fhir.stu3.${newResource.resourceTypeString}.${newResource.fhirId}',
+      atKey: 'fhir.stu3.${newResource.resourceTypeString}.${newResource.id}',
       nameSpace: nameSpace,
     );
   } else if (resource is dstu2.Resource) {
@@ -78,8 +77,7 @@ Future<bool> atSignPutFhir({
     return atSignPut(
       atClient: atClient,
       value: resource.toJsonString(),
-      atKey:
-          'fhir.dstu2.${newResource.resourceTypeString}.${newResource.fhirId}',
+      atKey: 'fhir.dstu2.${newResource.resourceTypeString}.${newResource.id}',
       nameSpace: nameSpace,
     );
   } else {

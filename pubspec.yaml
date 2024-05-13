@@ -8,18 +8,23 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  at_client: ^3.0.67
-  fhir: ^0.11.4
-  fhir_at_rest: ^0.11.4
-  fhir_auth: ^0.11.0-dev.1
+  at_client: ^3.0.75
+  fhir_dstu2:
+    path: ../fhir_dstu2
+  fhir_r4:
+    path: ../fhir_r4
+  fhir_r5:
+    path: ../fhir_r5
+  fhir_stu3:
+    path: ../fhir_stu3
   freezed_annotation: ^2.4.1
-  json_annotation: ^4.8.1
+  json_annotation: ^4.9.0
 
 dev_dependencies:
-  build_runner: ^2.4.6
-  freezed: ^2.4.5
-  json_serializable: ^6.7.1
-  test: ^1.24.9
+  build_runner: ^2.4.9
+  freezed: ^2.5.2
+  json_serializable: ^6.8.0
+  test: ^1.25.5
 
 dependency_overrides:
   uuid: ^4.1.0
